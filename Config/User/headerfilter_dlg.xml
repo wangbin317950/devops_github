@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filterList>
+	<element name="最新" colid="3" unit="" key="010101"/>
+	<element name="涨跌" colid="5" unit="" key="010104"/>
+	<element name="最高" colid="16" unit="" key="010105"/>
+	<element name="最低" colid="17" unit="" key="010106"/>
+	<element name="开盘" colid="15" unit="" key="010107"/>
+	<element name="昨收" colid="14" unit="" key="010108"/>
+	<element name="买入价" colid="6" unit="" key="010109"/>
+	<element name="卖出价" colid="7" unit="" key="010110"/>
+	<element name="涨幅" colid="4" unit="%" key="010201"/>
+	<element name="3日涨幅" colid="23" unit="%" key="010202"/>
+	<element name="5日涨幅" colid="340" unit="%" key="010203"/>
+	<element name="6日涨幅" colid="24" unit="%" key="010204"/>
+	<element name="20日涨幅" colid="342" unit="%" key="010205"/>
+	<element name="60日涨幅" unit="%" key="010206"/>
+	<element name="今年涨幅" colid="1314" unit="%" key="010207"/>
+	<element name="10日涨幅" colid="341" unit="%" key="010208"/>
+	<element name="本月涨幅" colid="1313" unit="%" key="010209"/>
+	<element name="近一月涨幅" unit="%" key="010210"/>
+	<element name="近一年涨幅" unit="%" key="010211"/>
+	<element name="上市至今涨幅" unit="%" key="010212"/>
+	<element name="首日涨幅" unit="%" key="010213"/>
+	<element name="昨日涨幅" unit="%" key="010214"/>
+	<element name="总量" unit="万" colid="8" nunit="10000" key="010303"/>
+	<element name="买一量" unit="" key="010301"/>
+	<element name="卖一量" unit="" key="010302"/>
+	<element name="金额" colid="10" unit="亿" nunit="100000000" key="010400"/>
+	<element name="换手" colid="12" unit="%" key="010500"/>
+	<element name="3日换手" unit="%" key="010501"/>
+	<element name="5日换手率" unit="%" key="010502"/>
+	<element name="6日换手" unit="%" key="010503"/>
+	<element name="10日换手率" unit="%" key="010504"/>
+	<element name="20日换手率" unit="%" key="010505"/>
+	<element name="首日换手" unit="%" key="010506"/>
+	<element name="市盈率(动)" colid="11" unit="" key="030100"/>
+	<element name="市盈率(静)" colid="122" unit="" key="030200"/>
+	<element name="市净率" colid="19" unit="" key="030400"/>
+	<element name="现量" unit="" key="011000"/>
+	<element name="涨速" colid="156" unit="%" key="011101"/>
+	<element name="1分钟涨速" unit="%" key="011102"/>
+	<element name="2分钟涨速" unit="%" key="011103"/>
+	<element name="3分钟涨速" unit="%" key="011104"/>
+	<element name="4分钟涨速" unit="%" key="011105"/>
+	<element name="5分钟涨速" unit="%" key="011106"/>
+	<element name="振幅" colid="18" unit="%" key="011201"/>
+	<element name="首日振幅" unit="%" key="011202"/>
+	<element name="量比" colid="13" unit="" key="011300"/>
+	<element name="委比" unit="%" key="011400"/>
+	<element name="委差" unit="" key="011500"/>
+	<element name="均价" unit="" key="011600"/>
+	<element name="内盘" unit="万" nunit="10000" key="011700"/>
+	<element name="外盘" unit="万" nunit="10000" key="011800"/>
+	<element name="内外比" unit="" key="011900"/>
+	<element name="5日跑赢大盘天数" unit="" key="012001"/>
+	<element name="10日跑赢大盘天数" unit="" key="012002"/>
+	<element name="20日跑赢大盘天数" unit="" key="012003"/>
+	<element name="总股本" colid="27" unit="亿" nunit="100000000" key="012101"/>
+	<element name="总市值" colid="28" unit="亿" nunit="100000000" key="012102"/>
+	<element name="流通股本" colid="29" unit="亿" nunit="100000000" key="012103"/>
+	<element name="流通市值" colid="30" unit="亿" nunit="100000000" key="012104"/>
+	<element name="流通A股" unit="亿" nunit="100000000" key="012105"/>
+	<element name="流通B股" unit="万" nunit="10000" key="012106"/>
+	<element name="H股" unit="万" nunit="10000" key="012107"/>
+	<element name="人均持股数" unit="" key="012108"/>
+	<element name="每股收益" colid="36" unit="" key="012109"/>
+	<element name="每股净资产" colid="37" unit="" key="012110"/>
+	<element name="加权净资产收益率" unit="%" key="012111"/>
+	<element name="营业收入" unit="亿"  nunit="100000000" key="012112"/>
+	<element name="营业总收入同比" unit="%" key="012113"/>
+	<element name="营业利润" unit="亿" nunit="100000000" key="012114"/>
+	<element name="投资收益" unit="亿" nunit="100000000" key="012115"/>
+	<element name="利润总额" unit="亿" nunit="100000000" key="012116"/>
+	<element name="净利润" unit="亿" nunit="100000000" key="012117"/>
+	<element name="归属净利润同比" unit="%" key="012118"/>
+	<element name="未分配利润" unit="亿" nunit="100000000" key="012119"/>
+	<element name="每股未分配利润" unit="" key="012120"/>
+	<element name="销售毛利率" unit="%" key="012121"/>
+	<element name="总资产" unit="亿"  nunit="100000000" key="012122"/>
+	<element name="流动资产" unit="亿" nunit="100000000" key="012123"/>
+	<element name="固定资产" unit="亿" nunit="100000000" key="012124"/>
+	<element name="无形资产" unit="亿" nunit="100000000" key="012125"/>
+	<element name="总负债" unit="亿" nunit="100000000" key="012126"/>
+	<element name="流动负债" unit="亿" nunit="100000000" key="012127"/>
+	<element name="长期负债" unit="亿" nunit="100000000" key="012128"/>
+	<element name="资产负债比率" unit="%" key="012129"/>
+	<element name="股东权益" unit="亿" nunit="100000000" key="012130"/>
+	<element name="公积金" unit="亿" nunit="100000000" key="012131"/>
+	<element name="每股公积金" unit="" key="012132"/>
+	<element name="发行市盈率" unit="" key="012200"/>
+	<element name="发行价" unit="" key="012201"/>
+	<element name="中签率" unit="%" key="012202"/>
+	<element name="发行总数" unit="万" nunit="10000" key="012203"/>
+	<element name="网上发行" unit="万" nunit="10000" key="012204"/>
+	<element name="机构认购倍率" unit="" key="012205"/>
+	<element name="申购上限" unit="万" nunit="10000" key="012206"/>
+	<element name="顶格需配市值" unit="万" nunit="10000" key="012207"/>
+	<element name="募集资金" unit="亿" nunit="100000000" key="012208"/>
+	<element name="实际募集资金" unit="亿" nunit="100000000" key="012209"/>
+	<element name="主力净流入" unit="万" nunit="10000" key="012301"/>
+	<element name="主力流速" unit="万" nunit="10000" key="012302"/>
+	<element name="超大单净流入" unit="万" nunit="10000" key="012303"/>
+	<element name="大单净流入" unit="万" nunit="10000" key="012304"/>
+	<element name="中单净流入" unit="万" nunit="10000" key="012305"/>
+	<element name="小单净流入" unit="万" nunit="10000" key="012306"/>
+	<element name="主力增仓" unit="%" key="012401"/>
+	<element name="2日增仓" unit="%" key="012402"/>
+	<element name="3日增仓" unit="%" key="012403"/>
+	<element name="5日增仓" unit="%" key="012404"/>
+	<element name="10日增仓" unit="%" key="012405"/>
+	<element name="DDX" unit="" key="012501"/>
+	<element name="5日DDX" unit="" key="012502"/>
+	<element name="10日DDX" unit="" key="012503"/>
+	<element name="DDX连续飘红" unit="" key="012504"/>
+	<element name="5日内DDX飘红" unit="" key="012505"/>
+	<element name="10日内DDX飘红" unit="" key="012506"/>
+	<element name="过滤ST" unit="" key="080100"/>
+	<element name="过滤新股" unit="" key="080200"/>
+	<element name="过滤退市" unit="" key="080300"/>
+	<element name="过滤创业板" unit="" key="080400"/>
+	<element name="过滤科创板" unit="" key="080500"/>
+	<element name="过滤京A" unit="" key="080600"/>
+</filterList>

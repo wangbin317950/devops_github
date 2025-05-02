@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style_root current_style="default">
+	<style name="default" path_palette="config/palette.xml" path_palette_base="config/palette.base.xml" path_palette_encrypt="config/palette.dat" path_bitmap="res"/>
+	<style name="white" path_palette="config/palette_white.xml" path_palette_base="config/palette_white.base.xml" path_palette_encrypt="config/palette.dat" path_bitmap="res"/>
+	<style name="default_invert" path_palette="config/palette_invert.xml" path_palette_encrypt="config/palette_invert.dat" path_bitmap="res_invert"/>
+</style_root>

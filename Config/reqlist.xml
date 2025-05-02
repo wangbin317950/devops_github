@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root> 
+  <marketdict notify="正在请求码表数据"> 
+      <item marketid='0' market="sz" instrument="" ignore="0">深圳市场</item> 
+	  <item marketid='1' market="sh" instrument="" ignore="0">上海市场</item> 
+  	  <item marketid='2' market="AHZSECTOR" instrument="" ignore="0">沪深板块</item>
+	  <item marketid='3' market="bj" instrument="" ignore="0">北京市场</item>	  
+	  <item marketid='7' market="zzidx" instrument="" ignore="0">中证指数</item>
+	  <item marketid='8' market="gzidx" instrument="" ignore="0">国证指数</item>
+      <item marketid='12' market="AHZBSECTOR" instrument="" ignore="0">沪深京板块</item>
+      <item marketid="100" market="GOLD" instrument="" ignore="0">国际黄金</item> 
+      <item marketid="101" market="SSGE" instrument="" ignore="0">上海黄金交易所</item> 
+      <item marketid="102" market="HKSE" instrument="" ignore="0">港股合约</item> 
+      <item marketid="103" market="COMEX" instrument="" ignore="0">纽约金属交易所</item> 
+	  <item marketid="104" market="HKSECTOR" instrument="" ignore="0">港股板块</item>  
+   	  <item marketid="105" market="CME" instrument="" ignore="0">芝加哥商品交易所</item>  
+      <item marketid="106" market="NASDAQ" instrument="" ignore="0">纳斯达克市场</item> 
+      <item marketid="107" market="NYSE" instrument="" ignore="0">纽约交易所</item> 
+	  <item marketid="108" market="AMEX" instrument="" ignore="0">美国交易所</item>
+      <item marketid="122" market="FOREXCN" instrument="" ignore="0">外汇中国市场</item>
+      <item marketid="123" market="FOREXGL" instrument="" ignore="0">外汇全球市场</item> 	
+	  <item marketid="110" market="SGX" instrument="" ignore="0">新加坡交易所</item> 
+	  <item marketid="111" market="NYMEX" instrument="" ignore="0">纽约能源交易所</item> 
+	  <item marketid="112" market="DCE" instrument="" ignore="0">大商所</item> 
+	  <item marketid="113" market="INE" instrument="" ignore="0">上期能源交易所</item> 
+	  <item marketid="114" market="SHFE" instrument="" ignore="0">上期所</item> 
+	  <item marketid="115" market="CZCE" instrument="" ignore="0">郑商所</item> 
+	  <item marketid="116" market="CFFEX" instrument="" ignore="0">中金所</item> 
+	  <item marketid="117" market="USSECTOR" instrument="" ignore="0">美股板块</item> 
+	  <item marketid="118" market="HKIDX" instrument="" ignore="0">香港指数</item>
+	  <item marketid="119" market="HKQZ" instrument="" ignore="0">涡轮牛熊证</item>
+	  <item marketid="121" market="HKDD" instrument="" ignore="1">暗盘</item>
+	  <item marketid="120" market="FHSI" instrument="" ignore="0">香港恒指期货</item>	  
+	  <item marketid="124" market="HKCF" instrument="" ignore="0">HKCF</item>	  
+	  <item marketid="126" market="FUND" instrument="" ignore="0">场外基金</item>	  
+	  <item marketid="127" market="CMEOTHER" instrument="" ignore="0">CMEOTHER</item>
+	  <item marketid="128" market="IMM" instrument="" ignore="0">IMM</item>
+	  <item marketid="129" market="CBOT" instrument="" ignore="0">CBOT</item>
+	  <item marketid="150" market="QQZS" instrument="" ignore="0">全球指数</item> 
+  </marketdict>
+  <stockMarketList> 
+    <item type="7" ignore="0" desc="ETF基金"> 
+      <instItem marketid="0" stockMarket="107">上证ETF</instItem> 
+      <instItem marketid="1" stockMarket="101">深证ETF</instItem> 
+    </item> 
+    <item type="51" ignore="0" desc="沪深A股"> 
+      <instItem marketid="1" stockMarket="2">上证A股</instItem>  
+      <instItem marketid="0" stockMarket="6">深证A股</instItem>  
+      <instItem marketid="0" stockMarket="13">中小板</instItem>  
+      <instItem marketid="0" stockMarket="80">创业板</instItem>  
+      <instItem marketid="1" stockMarket="27">科创板</instItem> 
+    </item>  
+    <item type="52" ignore="0" desc="上证A股"> 
+      <instItem marketid="1" stockMarket="2">上证A股</instItem> 
+      <instItem marketid="1" stockMarket="27">科创板</instItem> 
+    </item>  
+    <item type="53" ignore="0" desc="深圳A股"> 
+      <instItem marketid="0" stockMarket="6">深圳A股</instItem>  
+      <instItem marketid="0" stockMarket="80">创业板</instItem> 
+	   <instItem marketid="0" stockMarket="13">中小板</instItem>  
+    </item>  
+    <item type="54" ignore="0" desc="创业板"> 
+      <instItem marketid="0" stockMarket="80">创业板</instItem> 
+    </item>  
+    <item type="55" ignore="0" desc="中小板"> 
+      <instItem marketid="0" stockMarket="13">中小板</instItem> 
+    </item>  
+    <item type="56" ignore="0" desc="上证B股"> 
+      <instItem marketid="1" stockMarket="3">上证B股</instItem> 
+    </item>  
+    <item type="57" ignore="0" desc="深证B股"> 
+      <instItem marketid="0" stockMarket="7">深证B股</instItem> 
+    </item>  
+    <item type="58" ignore="0" desc="科创板"> 
+      <instItem marketid="1" stockMarket="27">科创板</instItem> 
+    </item>
+    <item type="77" ignore="0" desc="沪深京A股"> 
+      <instItem marketid="1" stockMarket="2">上证A股</instItem>  
+      <instItem marketid="0" stockMarket="6">深证A股</instItem>  
+      <instItem marketid="0" stockMarket="13">中小板</instItem>  
+      <instItem marketid="0" stockMarket="80">创业板</instItem>  
+      <instItem marketid="1" stockMarket="27">科创板</instItem>
+	  <instItem marketid="3" stockMarket="42">北证A股</instItem>	  
+    </item>  
+    <item type="78" ignore="0" desc="北证A股"> 
+      <instItem marketid="3" stockMarket="42">北证A股</instItem>	  
+    </item>  	
+    <item type="83" ignore="0" desc="沪深京AB"> 
+      <instItem marketid="1" stockMarket="2">上证A股</instItem>  
+      <instItem marketid="0" stockMarket="6">深证A股</instItem>  
+      <instItem marketid="0" stockMarket="13">中小板</instItem>  
+      <instItem marketid="0" stockMarket="80">创业板</instItem>  
+      <instItem marketid="1" stockMarket="27">科创板</instItem>
+	  <instItem marketid="3" stockMarket="42">北证A股</instItem>
+      <instItem marketid="1" stockMarket="3">上证B股</instItem> 
+      <instItem marketid="0" stockMarket="7">深证B股</instItem> 
+    </item>  	
+    <item type="11" ignore="0" desc="上证基金"> 
+      <instItem marketid="1" stockMarket="106">开放式基金</instItem> 
+      <instItem marketid="1" stockMarket="107">ETF</instItem> 
+      <instItem marketid="1" stockMarket="108">LOF</instItem> 
+      <instItem marketid="1" stockMarket="109">封闭基金</instItem> 
+      <instItem marketid="1" stockMarket="110">上交所基础设施基金</instItem> 
+      <instItem marketid="1" stockMarket="112">上交所其他基金</instItem> 
+    </item>  
+    <item type="12" ignore="0" desc="深证基金"> 
+      <instItem marketid="0" stockMarket="101">etf</instItem> 
+      <instItem marketid="0" stockMarket="102">LOF</instItem> 
+      <instItem marketid="0" stockMarket="103">分级基金</instItem> 
+      <instItem marketid="0" stockMarket="104">封闭基金</instItem> 
+      <instItem marketid="0" stockMarket="105">仅申赎</instItem> 
+      <instItem marketid="0" stockMarket="111">深交所基础设施基金</instItem> 
+    </item>	
+	<item type="370" ignore="0" desc="场内基金沪深基础设施REITs">
+		<instItem marketid="1" stockMarket="110">上交所基础设施基金</instItem>
+		<instItem marketid="0" stockMarket="111">深交所基础设施基金</instItem>
+	</item>	
+	<item type="371" ignore="0" desc="场内基金沪市基础设施REITs">
+		<instItem marketid="1" stockMarket="110">上交所基础设施基金</instItem>
+	</item>
+	<item type="372" ignore="0" desc="场内基金深市基础设施REITs">
+		<instItem marketid="0" stockMarket="111">深交所基础设施基金</instItem>
+	</item>	
+    <item type="17" ignore="0" desc="上证指数"> 
+      <instItem marketid="1" stockMarket="1">上证指数</instItem> 
+    </item>  
+    <item type="18" ignore="0" desc="深证指数"> 
+      <instItem marketid="0" stockMarket="5">深证指数</instItem> 
+    </item>  
+	<item type="20" ignore="0" busitype="1" desc="国证指数"> 
+       <instItem marketid="8" >国证指数</instItem> 
+    </item>	
+    <item type="65" ignore="0" desc="上证债券"> 
+      <instItem marketid="1" stockMarket="4">上海其他债券</instItem> 
+      <instItem marketid="1" stockMarket="28">上海债券回购</instItem> 
+      <instItem marketid="1" stockMarket="30">上海证券申购</instItem> 
+      <instItem marketid="1" stockMarket="31">上海可转债</instItem> 
+    </item>  
+    <item type="66" ignore="0" desc="深证债券"> 
+      <instItem marketid="0" stockMarket="8">深圳其他债券</instItem> 
+      <instItem marketid="0" stockMarket="29">深圳债券回购</instItem> 
+      <instItem marketid="0" stockMarket="32">深圳可转债</instItem> 
+      <instItem marketid="0" stockMarket="35">深圳证券申购</instItem> 
+    </item>  
+    <item type="67" ignore="1" desc="上证期权"> 
+      <instItem marketid="1" stockMarket="11">上海权证</instItem> 
+    </item>  
+    <item type="68" ignore="1" desc="深证期权"> 
+      <instItem marketid="0" stockMarket="12">深圳权证</instItem> 
+    </item>  
+    <item type="69" ignore="0" desc="上证主板"> 
+      <instItem marketid="1" stockMarket="2">上证A股</instItem> 
+    </item>  
+    <item type="70" ignore="0" desc="深证主板"> 
+      <instItem marketid="0" stockMarket="6">深证A股</instItem> 
+    </item> 
+    <item type="79" ignore="0" desc="全部转债"> 
+      <instItem marketid="1" stockMarket="31">上海可转债</instItem> 
+      <instItem marketid="0" stockMarket="32">深圳可转债</instItem>
+    </item> 
+	<item type="80" ignore="0" desc="上证转债"> 
+      <instItem marketid="1" stockMarket="31">上海可转债</instItem> 
+    </item> 
+	<item type="81" ignore="0" desc="深证转债"> 
+      <instItem marketid="0" stockMarket="32">深圳可转债</instItem>
+    </item> 
+    <item type="82" ignore="0" desc="债券回购"> 
+      <instItem marketid="1" stockMarket="28">上海债券回购</instItem> 
+      <instItem marketid="0" stockMarket="29">深圳债券回购</instItem> 
+    </item> 
+    <item type="101" ignore="0" busitype="1" desc="全部板块"> 
+      <instItem marketid="2" stockMarket="22">行业板块</instItem> 
+      <instItem marketid="2" stockMarket="24">概念板块</instItem> 
+      <instItem marketid="2" stockMarket="23">地区板块</instItem>
+    </item> 
+    <item type="102" ignore="0" busitype="1" desc="行业板块"> 
+      <instItem marketid="2" stockMarket="22">行业板块</instItem> 
+    </item> 
+    <item type="103" ignore="0" busitype="1" desc="概念板块"> 
+       <instItem marketid="2" stockMarket="24">概念板块</instItem> 
+    </item> 
+    <item type="104" ignore="0" busitype="1" desc="地区板块"> 
+      <instItem marketid="2" stockMarket="23">地区板块</instItem> 
+    </item>
+    <item type="105" ignore="0" busitype="1" desc="九方指数"> 
+      <instItem marketid="2" stockMarket="37">九方指数</instItem> 
+      <instItem marketid="12" stockMarket="70">白马指数</instItem> 
+    </item>
+    <item type="113" ignore="0" busitype="1" desc="统计板块">
+      <instItem marketid="2" stockMarket="36">统计板块</instItem>
+    </item>
+    <item type="173" ignore="0" desc="中金所CFFEX"> 
+      <instItem marketid="116" stockMarket="">中金所</instItem> 
+    </item> 
+    <item type="175" ignore="0" desc="上期所SHFE"> 
+      <instItem marketid="114" stockMarket="">上期所</instItem> 
+    </item> 
+    <item type="176" ignore="0" desc="大商所DCE"> 
+      <instItem marketid="112" stockMarket="">大商所</instItem> 
+    </item> 
+    <item type="177" ignore="0" desc="郑商所CZCE"> 
+      <instItem marketid="115" stockMarket="">郑商所</instItem> 
+    </item> 
+    <item type="172" ignore="0" desc="上期能源INE"> 
+      <instItem marketid="113" stockMarket="">上期能源INE</instItem> 
+    </item> 	
+    <item type="161" ignore="0" desc="国内黄金"> 
+      <instItem marketid="101" stockMarket="">上海黄金交易所</instItem> 
+    </item>
+    <item type="179" ignore="0" desc="纽约NYMEX"> 
+      <instItem marketid="111" stockMarket="">纽约NYMEX</instItem> 
+    </item> 
+    <item type="180" ignore="0" desc="纽约COMEX"> 
+      <instItem marketid="103" stockMarket="">纽约COMEX</instItem> 
+    </item> 
+    <item type="181" ignore="0" desc="芝加哥CME"> 
+      <instItem marketid="105" stockMarket="">芝加哥CME</instItem> 
+	  <instItem marketid="127" stockMarket="">CMEOTHER</instItem> 
+	  <instItem marketid="128" stockMarket="">IMM</instItem> 
+	  <instItem marketid="129" stockMarket="">CBOT</instItem> 
+    </item> 
+    <item type="182" ignore="0" desc="香港HKEX"> 
+      <instItem marketid="120" stockMarket="">香港HKEX</instItem> 
+	  <instItem marketid="124" stockMarket="">香港HKCF</instItem> 
+    </item> 
+    <item type="183" ignore="0" desc="新加坡SGX"> 
+      <instItem marketid="110" stockMarket="">新加坡SGX</instItem> 
+    </item> 
+	<item type="340" ignore="0" busitype="4" desc="场外基金(全部开放式基金)"> 
+      <instItem marketid="126" stockMarket="2">场外基金(股票型)</instItem> 
+	  <instItem marketid="126" stockMarket="4">场外基金(混合型)</instItem>
+	  <instItem marketid="126" stockMarket="8">场外基金(债券型)</instItem>
+	  <instItem marketid="126" stockMarket="16">场外基金(指数型)</instItem>
+	  <instItem marketid="126" stockMarket="32">场外基金(QDII)</instItem>
+	  <instItem marketid="126" stockMarket="64">场外基金(LOF)</instItem>
+	  <instItem marketid="126" stockMarket="128">场外基金(FOF)</instItem>
+	  <instItem marketid="126" stockMarket="512">场外基金(净值型和货币型)</instItem>
+    </item>
+	<item type="341" ignore="0" busitype="4" desc="场外基金(股票型)"> 
+      <instItem marketid="126" stockMarket="2">场外基金(股票型)</instItem>
+    </item>
+	<item type="342" ignore="0" busitype="4" desc="场外基金(混合型)"> 
+      <instItem marketid="126" stockMarket="4">场外基金(混合型)</instItem>
+    </item>
+	<item type="343" ignore="0" busitype="4" desc="场外基金(债券型)"> 
+      <instItem marketid="126" stockMarket="8">场外基金(债券型)</instItem>
+    </item> 
+	<item type="344" ignore="0" busitype="4" desc="场外基金(指数型)"> 
+      <instItem marketid="126" stockMarket="16">场外基金(指数型)</instItem>
+    </item>	
+	<item type="345" ignore="0" busitype="4" desc="场外基金(QDII)"> 
+      <instItem marketid="126" stockMarket="32">场外基金(QDII)</instItem>
+    </item>	
+	<item type="346" ignore="0" busitype="4" desc="场外基金(LOF)"> 
+      <instItem marketid="126" stockMarket="64">场外基金(LOF)</instItem>
+    </item>	
+	<item type="347" ignore="0" busitype="4" desc="场外基金(FOF)"> 
+      <instItem marketid="126" stockMarket="128">场外基金(FOF)</instItem>
+    </item>	
+	<item type="348" ignore="0" busitype="4" desc="场外基金(货币型)"> 
+      <instItem marketid="126" stockMarket="256">场外基金(货币型)</instItem>
+    </item>	
+	<item type="349" ignore="0" busitype="4" desc="场外基金(净值型和货币型)"> 
+      <instItem marketid="126" stockMarket="512">场外基金(净值型和货币型)</instItem>
+    </item>	
+	<item type="385" ignore="0" desc="上证系列指数"> 
+      <instItem marketid="1" stockMarket="1">上证系列指数</instItem>
+      <instItem marketid="1" stockMarket="50">上证系列指数</instItem>
+    </item>	
+	<item type="386" ignore="0" desc="深证系列指数"> 
+      <instItem marketid="0" stockMarket="5">深证系列指数</instItem>
+      <instItem marketid="0" stockMarket="50">深证系列指数</instItem>
+	  <instItem marketid="8" >国证指数</instItem>
+    </item>	
+	<item type="390" ignore="0" desc="沪深京指数"> 
+	  <instItem marketid="1" stockMarket="1">上证系列指数</instItem>
+      <instItem marketid="1" stockMarket="50">上证系列指数</instItem>
+      <instItem marketid="0" stockMarket="5">深证系列指数</instItem>
+      <instItem marketid="0" stockMarket="50">深证系列指数</instItem>
+    </item>	
+	 <item type="501" ignore="0" desc="全部港股"> 
+      <instItem marketid="102" stockMarket="">全部港股</instItem> 
+    </item> 
+	<item type="502" ignore="0" desc="港股主板"> 
+      <instItem marketid="102" stockMarket="0">港股主板</instItem> 
+      <instItem marketid="102" stockMarket="2">港股ETF</instItem> 
+    </item> 
+	<item type="503" ignore="0" desc="港股创业板"> 
+      <instItem marketid="102" stockMarket="1">港股创业板</instItem> 
+    </item> 
+	<item type="509" ignore="0" desc="港股ETF"> 
+      <instItem marketid="102" stockMarket="2">港股ETF</instItem> 
+    </item> 
+	<item type="510" ignore="0" desc="涡轮牛熊证"> 
+      <instItem marketid="119" stockMarket="">涡轮牛熊证</instItem> 
+    </item>  
+	<item type="601" ignore="0" busitype="1" desc="港股全部板块"> 
+      <instItem marketid="104" stockMarket="12">行业板块</instItem> 
+      <instItem marketid="104" stockMarket="1">概念板块</instItem> 
+    </item> 
+    <item type="602" ignore="0" busitype="1" desc="行业板块"> 
+      <instItem marketid="104" stockMarket="12">行业板块</instItem> 
+    </item> 
+    <item type="603" ignore="0" busitype="1" desc="概念板块"> 
+       <instItem marketid="104" stockMarket="1">概念板块</instItem> 
+    </item>	
+	<item type="301" ignore="0" desc="全部美股"> 
+      <instItem marketid="106" stockMarket="">纳斯达克市场</instItem>
+      <instItem marketid="107" stockMarket="">纽约交易所</instItem> 
+      <instItem marketid="108" stockMarket="">美国交易所</instItem> 	  
+    </item> 
+	<item type="302" ignore="0" desc="NYSE市场"> 
+      <instItem marketid="107" stockMarket="">纽约交易所</instItem> 
+    </item> 
+	<item type="303" ignore="0" desc="NASDAQ市场"> 
+      <instItem marketid="106" stockMarket="">纳斯达克市场</instItem> 
+    </item> 
+	<item type="304" ignore="0" desc="AMEX市场"> 
+      <instItem marketid="108" stockMarket="">美国交易所</instItem> 
+    </item> 
+	<item type="401" ignore="0" busitype="1" desc="美股全部板块"> 
+      <instItem marketid="117" stockMarket="13">行业板块</instItem> 
+      <instItem marketid="117" stockMarket="2">概念板块</instItem> 
+    </item> 
+    <item type="402" ignore="0" busitype="1" desc="美股行业板块"> 
+      <instItem marketid="117" stockMarket="13">美股行业板块</instItem> 
+    </item> 
+    <item type="403" ignore="0" busitype="1" desc="美股概念板块"> 
+       <instItem marketid="117" stockMarket="2">美股概念板块</instItem> 
+    </item>	
+  </stockMarketList>  
+  <fileInfo notify="正在同步文件"> 
+    <login> 
+      <item type="1" fileid="1001" name="block.pb" sub="1" group="1" memory="1" ignore="0" desc="A股板块"/>  
+      <item type="1" fileid="1002" name="selfdefindex.pb" group="1" memory="1" ignore="0" desc="九方的三个自定义指数"/>  
+      <item type="1" fileid="1003" name="agmainindex.pb" group="1" memory="1" ignore="0" desc="条件选股沪深重要指数的样本股"/>  
+      <item type="1" fileid="1004" name="agspecial.pb" group="1" memory="1" ignore="0" desc="条件选股自定义映射的样本股"/> 
+	  <item type="1" fileid="1005" name="goldvl.pb" group="1" memory="1" ignore="0" desc="黄金虚拟列表"/> 
+	  <item type="1" fileid="1006" name="hkvl.pb" group="1" memory="1" ignore="0" desc="港股虚拟列表"/> 
+ 	  <item type="1" fileid="1007" name="hkbk.pb" group="1" memory="1" ignore="0" desc="港股板块列表"/> 
+	  <item type="1" fileid="1008" name="usvl.pb" group="1" memory="1" ignore="0" desc="美股虚拟列表"/> 
+  	  <item type="1" fileid="1009" name="usbk.pb" group="1" memory="1" ignore="0" desc="美股板块板块"/> 
+ 	  <item type="1" fileid="1010" name="glvl.pb" group="1" memory="1" ignore="0" desc="全球虚拟列表"/> 
+      <item type="1" fileid="1011" name="pcdefine.pb" group="1" memory="1" ignore="0" desc="客户端自定义列表"/>
+      <item type="1" fileid="1012" name="blockindex.pb" group="1" memory="1" ignore="0" desc="统计板块"/>
+	  <item type="1" fileid="1013" name="jjvl.pb" group="0" memory="1" ignore="0" desc="场内基金分类展示"/>
+	  <item type="1" fileid="1014" name="agindex.pb" group="0" memory="1" ignore="0" desc="指数成分股"/>
+	  <item type="1" fileid="1015" name="hsjindex.pb" group="0" memory="1" ignore="0" desc="沪深京等指数列表"/>
+      <item type="1" fileid="1017" name="hsjblock.pb" group="0" memory="1" ignore="0" desc="沪深京等指数列表"/>
+	  <item type="1" fileid="1016" name="qhindex.pb" group="0" memory="1" ignore="0" desc="期货指数列表"/>
+      <item type="2" fileid="1101" name="shfinance.pb" group="1" memory="1" ignore="0" desc="上证财务数据"/> 
+	  <item type="2" fileid="1102" name="szfinance.pb" group="0" memory="1" ignore="0" desc="深证财务数据"/> 
+	  <item type="2" fileid="1102" name="bjfinance.pb" group="3" memory="1" ignore="0" desc="北证财务数据"/> 
+   	  <item type="2" fileid="1103" name="bkfinance.pb" group="2" memory="1" ignore="0" desc="沪深板块财务数据"/>
+  	  <item type="2" fileid="1104" name="hksefinance.pb" group="102" memory="1" ignore="0" desc="港股财务数据"/> 
+	  <item type="2" fileid="1107" name="nasdaqfinance.pb" group="106" memory="1" ignore="0" desc="纳斯达克财务数据"/> 
+	  <item type="2" fileid="1106" name="nysefinance.pb" group="107" memory="1" ignore="0" desc="纽交所财务数据"/> 	
+	  <item type="2" fileid="1105" name="amexfinance.pb" group="108" memory="1" ignore="0" desc="美交所财务数据"/> 	
+	  <item type="2" fileid="1108" name="hkqzfinance.pb" group="119" memory="1" ignore="0" desc="涡轮牛熊证财务数据"/> 	  
+      <item type="2" fileid="1109" name="hkbkfinance.pb" group="104" memory="1" ignore="0" desc="港股板块财务数据"/> 	  
+      <item type="2" fileid="1110" name="usbkfinance.pb" group="117" memory="1" ignore="0" desc="美股板块财务数据"/> 	  
+ 	  <item type="3" fileid="1201" name="shipofinance.pb" group="1" memory="1" ignore="0" desc="上证IPO财务数据"/> 
+   	  <item type="3" fileid="1202" name="szipofinance.pb" group="0" memory="1" ignore="0" desc="深证IPO财务数据"/>
+	  <item type="3" fileid="1203" name="bjipofinance.pb" group="3" memory="1" ignore="0" desc="北证IPO财务数据"/>
+	  <item type="4" fileid="1301" name="oncenameshsz.pb" group="2" memory="1" ignore="0" desc="沪深曾用名列表"/>	  
+	  <item type="5" fileid="1401" name="qzralt.pb" group="2" memory="1" ignore="0" desc="涡轮牛熊证与正股对应关系"/>
+	  <item type="6" fileid="1501" name="pinyindy.pb" group="2" memory="1" ignore="0" desc="多音字字典"/>
+	  <item type="7" fileid="1111" name="fundinfo.pb" group="126" memory="1" ignore="1" desc="场外基金数据"/>	  
+    </login>  
+    <normal></normal> 
+  </fileInfo>  
+  <InstrumentListInfo notify="正在构建列表"> 
+    <item type="1" market="DEFMAP" instrument="AGINDEX" ignore="0" loadingtype="3" busitype="1">沪深指数</item>  
+    <item type="2" market="DEFMAP_DELAY" instrument="JFIMIN" ignore="0" loadingtype="3" >重要指数</item>  
+    <item type="3" market="DEFMAP_DELAY" instrument="JFUSIN" ignore="0" loadingtype="3" >美股指数</item>  
+    <item type="4" market="DEFMAP_DELAY" instrument="JFAI03" ignore="0" loadingtype="3" >亚太指数</item>  
+    <item type="5" market="DEFMAP_DELAY" instrument="EUIDX" ignore="0" loadingtype="3" >欧洲指数</item>  
+    <item type="6" market="DEFMAP_DELAY" instrument="JFAMIN" ignore="0" loadingtype="3">美洲指数</item>  
+    <item type="7" market="" instrument="" ignore="0" loadingtype="2">ETF基金</item>  
+    <item type="8" market="JFZT" instrument="JFCFIN" ignore="1" loadingtype="1">期货指数</item>  
+    <item type="9" market="sh" instrument="000016" ignore="0" loadingtype="3">上证50指数</item>  
+    <item type="10" market="DEFMAP" instrument="ETF002" ignore="0" loadingtype="3">沪深指数ETF</item>  
+    <item type="11" market="" instrument="" ignore="0" loadingtype="2">上证基金</item>  
+    <item type="12" market="" instrument="" ignore="0" loadingtype="2">深证基金</item>  
+    <item type="13" market="DEFMAP_DELAY" instrument="JFI002" ignore="0" loadingtype="3">全部指数</item>  
+    <item type="14" market="DEFMAP_DELAY" instrument="OTHIDX" ignore="0" loadingtype="3">其它指数</item>  
+    <item type="15" market="DEFMAP_DELAY" instrument="JFGLIN" ignore="0" loadingtype="3">全球商品</item>  
+    <item type="16" market="DEFMAP_DELAY" instrument="JFGLST" ignore="0" loadingtype="3">全球股指</item>  
+    <item type="17" market="" instrument="" ignore="0" loadingtype="2">上海指数</item>  
+    <item type="18" market="" instrument="" ignore="0" loadingtype="2">深圳指数</item>  
+  	<item type="19" market="DEFMAP" instrument="UDFE0001" ignore="0" loadingtype="3">重要指数扩展</item>  
+	<item type="20" market="" instrument="" ignore="0" loadingtype="2">国证指数</item>  
+
+    <item type="51" market="" instrument="" ignore="0" loadingtype="2">沪深A股</item>  
+    <item type="52" market="" instrument="" ignore="0" loadingtype="2">上证A股</item>  
+    <item type="53" market="" instrument="" ignore="0" loadingtype="2">深证A股</item>  
+    <item type="54" market="" instrument="" ignore="0" loadingtype="2">创业板</item>  
+    <item type="55" market="" instrument="" ignore="0" loadingtype="2">中小板</item>  
+    <item type="56" market="" instrument="" ignore="0" loadingtype="2">上证B股</item>  
+    <item type="57" market="" instrument="" ignore="0" loadingtype="2">深证B股</item>  
+    <item type="58" market="" instrument="" ignore="0" loadingtype="2">科创板</item>  
+    <item type="59" market="JFZT" instrument="JFHSGT" ignore="1" loadingtype="1">沪股通/深股通</item>  
+    <item type="60" market="JFZT" instrument="JFGTHS" ignore="1" loadingtype="1">港股通</item>  
+    <item type="61" market="JFZT" instrument="JFHKSE" ignore="1" loadingtype="1">所有港股</item>  
+    <item type="62" market="JFZT" instrument="JFCHUS" ignore="1" loadingtype="1">美股中概股</item>  
+    <item type="63" market="JFZT" instrument="JFKC50" ignore="1" loadingtype="1">科创50成分股</item>  
+    <item type="64" market="JFZT" instrument="JFCY50" ignore="1" loadingtype="1">创业50成分股</item>  
+    <item type="65" market="" instrument="" ignore="0" loadingtype="2">上证债券</item>  
+    <item type="66" market="" instrument="" ignore="0" loadingtype="2">深证债券</item>  
+    <item type="67" market="" instrument="" ignore="0" loadingtype="2">上证期权</item>  
+    <item type="68" market="" instrument="" ignore="0" loadingtype="2">深证期权</item>  
+    <item type="69" market="" instrument="" ignore="0" loadingtype="2">上证主板</item>  
+    <item type="70" market="" instrument="" ignore="0" loadingtype="2">深证主板</item> 
+	<item type="71" market="AHZSECTOR" instrument="GN500168" ignore="0" loadingtype="3">沪股通</item>  
+    <item type="72" market="AHZSECTOR" instrument="GN500091" ignore="0" loadingtype="3">深股通</item> 
+	<item type="73" market="sh" instrument="000010" ignore="0" loadingtype="3">上证180</item> 
+	<item type="74" market="sh" instrument="000300" ignore="0" loadingtype="3">沪深300</item> 
+	<item type="75" market="sz" instrument="399330" ignore="0" loadingtype="3">深证100</item> 
+	<item type="76" market="sh" instrument="000903" ignore="0" loadingtype="3">中证100</item>
+	<item type="77" market="" instrument="" ignore="0" loadingtype="2">沪深京A股</item>
+	<item type="78" market="" instrument="" ignore="0" loadingtype="2">北证A股</item>  	
+	<item type="79" market="" instrument="" ignore="0" loadingtype="2">全部转债</item>  
+	<item type="80" market="" instrument="" ignore="0" loadingtype="2">上证转债</item> 
+	<item type="81" market="" instrument="" ignore="0" loadingtype="2">深证转债</item> 
+	<item type="82" market="" instrument="" ignore="0" loadingtype="2">债券回购</item> 
+	<item type="83" market="" instrument="" ignore="0" loadingtype="2">沪深京AB</item> 
+        
+    <item type="101" market="" instrument="" ignore="0" loadingtype="2" >全部板块</item>  
+    <item type="102" market="" instrument="" ignore="0" loadingtype="2" >行业板块</item>  
+    <item type="103" market="" instrument="" ignore="0" loadingtype="2" >概念板块</item>  
+    <item type="104" market="" instrument="" ignore="0" loadingtype="2" >地区板块</item>  
+    <item type="105" market="" instrument="" ignore="0" loadingtype="2" >九方智投</item> 
+	<item type="106" market="DEFMAP" instrument="JFDL0001" ignore="0" loadingtype="3">昨日涨停</item> 
+	<item type="107" market="DEFMAP" instrument="JFDL0002" ignore="0" loadingtype="3">昨日连板</item> 
+	<item type="108" market="DEFMAP" instrument="JFN00001" ignore="0" loadingtype="3">新股</item> 
+	<item type="109" market="DEFMAP" instrument="JFN00002" ignore="0" loadingtype="3">次新股</item> 
+	<item type="110" market="DEFMAP" instrument="JFST0000" ignore="0" loadingtype="3">ST股</item> 
+	<item type="111" market="DEFMAP" instrument="JFSUS001" ignore="0" loadingtype="3">当日停牌</item> 
+	<item type="112" market="DEFMAP" instrument="JFSUS002" ignore="0" loadingtype="3">当年停牌</item>
+    <item type="113" market="" instrument="" ignore="0" loadingtype="2" >统计板块</item>
+
+    <item type="151" market="JFZT" instrument="JFCFHS" ignore="1" loadingtype="1">沪深300期货</item>  
+    <item type="152" market="JFZT" instrument="JFCFZZ" ignore="1" loadingtype="1">中证500期货</item>  
+    <item type="153" market="JFZT" instrument="JFCFSZ" ignore="1" loadingtype="1">上证50期货</item>  
+    <item type="154" market="JFZT" instrument="JFCFGZ" ignore="1" loadingtype="1">国债期货</item>  
+    <item type="155" market="SHFE" instrument="" ignore="1" loadingtype="1">上海期货</item>  
+    <item type="156" market="DCE" instrument="" ignore="1" loadingtype="1">大连商品</item>  
+    <item type="157" market="CZCE" instrument="" ignore="1" loadingtype="1">郑州商品</item>  
+    <item type="158" market="JFZT" instrument="JFNYCM" ignore="1" loadingtype="1">纽商所COMEX</item>  
+    <item type="159" market="DEFMAP" instrument="G00003" ignore="0" loadingtype="3">国际贵金属</item>  
+	
+    <item type="160" market="DEFMAP" instrument="GETF04" ignore="0" loadingtype="3">黄金ETF</item>  
+    <item type="161" market="" instrument="" ignore="0" loadingtype="2">国内黄金</item>  
+    <item type="173" market="" instrument="" ignore="0" loadingtype="2">中金所CFFEX</item>
+    <item type="175" market="" instrument="" ignore="0" loadingtype="2">上期所SHFE</item>
+    <item type="176" market="" instrument="" ignore="0" loadingtype="2">大商所DCE</item>
+    <item type="177" market="" instrument="" ignore="0" loadingtype="2">郑商所CZCE</item>
+    <item type="172" market="" instrument="" ignore="0" loadingtype="2">上期能源INE</item>
+    <item type="179" market="" instrument="" ignore="0" loadingtype="2">纽约NYMEX</item>
+    <item type="180" market="" instrument="" ignore="0" loadingtype="2">纽约COMEX</item>
+    <item type="181" market="" instrument="" ignore="0" loadingtype="2">芝加哥CME</item>
+    <item type="182" market="" instrument="" ignore="0" loadingtype="2">香港HKEX</item>
+    <item type="183" market="" instrument="" ignore="0" loadingtype="2">新加坡SGX</item>
+	
+    <item type="201" market="JFZT" instrument="JFMAFO" ignore="1" loadingtype="1">主要外汇</item>  
+	<item type="206" market="DEFMAP_DELAY" instrument="FOREX" ignore="0" loadingtype="3">全部外汇</item>
+	
+    <item type="301" market="" instrument="" ignore="0" loadingtype="2">全部美股</item>  
+    <item type="302" market="" instrument="" ignore="0" loadingtype="2">NYSE市场</item>  
+    <item type="303" market="" instrument="" ignore="0" loadingtype="2">NASDAQ市场</item>  
+    <item type="304" market="" instrument="" ignore="0" loadingtype="2">AMEX市场</item>  
+    <item type="305" market="DEFMAP" instrument="CSTOCK" ignore="0" loadingtype="3">中概股</item>  
+    <item type="306" market="DEFMAP" instrument="USTOCK" ignore="0" loadingtype="3">知名美股</item>  
+    <item type="307" market="DEFMAP" instrument="AUSETF" ignore="0" loadingtype="3">全部ETF</item>  
+    <item type="308" market="DEFMAP" instrument="USMETF" ignore="0" loadingtype="3">美股大盘指数ETF</item>  
+    <item type="309" market="DEFMAP" instrument="PNIETF" ignore="1" loadingtype="3">恐慌指数ETF</item>  
+    <item type="310" market="DEFMAP" instrument="DOWETF" ignore="1" loadingtype="3">道指ETF</item>  
+    <item type="311" market="DEFMAP" instrument="NASETF" ignore="1" loadingtype="3">纳斯达克ETF</item>  
+    <item type="312" market="DEFMAP" instrument="STPETF" ignore="1" loadingtype="3">标普ETF</item>  
+    <item type="313" market="DEFMAP" instrument="RUSETF" ignore="1" loadingtype="3">罗素ETF</item>  
+    <item type="314" market="DEFMAP" instrument="DAZETF" ignore="0" loadingtype="3">大宗商品ETF</item>  
+    <item type="315" market="DEFMAP" instrument="CRUETF" ignore="1" loadingtype="3">原油ETF</item>  
+    <item type="316" market="DEFMAP" instrument="SILETF" ignore="1" loadingtype="3">白银ETF</item>  
+    <item type="317" market="DEFMAP" instrument="ENEETF" ignore="1" loadingtype="3">能源ETF</item>  
+    <item type="318" market="DEFMAP" instrument="GOMETF" ignore="1" loadingtype="3">金矿ETF</item>  
+    <item type="319" market="DEFMAP" instrument="GOLETF" ignore="1" loadingtype="3">黄金ETF</item>  
+    <item type="320" market="DEFMAP" instrument="RAWETF" ignore="1" loadingtype="3">原物料ETF</item>  
+    <item type="321" market="DEFMAP" instrument="BONETF" ignore="0" loadingtype="3">债券ETF</item>  
+    <item type="322" market="DEFMAP" instrument="NATETF" ignore="1" loadingtype="3">国债ETF</item>  
+    <item type="323" market="DEFMAP" instrument="TOLETF" ignore="1" loadingtype="3">总体ETF</item>  
+    <item type="324" market="DEFMAP" instrument="CREETF" ignore="1" loadingtype="3">信用债ETF</item>  
+    <item type="325" market="DEFMAP" instrument="COMETF" ignore="1" loadingtype="3">公司债ETF</item>  
+    <item type="326" market="DEFMAP" instrument="CITETF" ignore="1" loadingtype="3">市政债ETF</item>  
+    <item type="327" market="DEFMAP" instrument="ANTETF" ignore="1" loadingtype="3">抗通胀债ETF</item>  
+    <item type="328" market="DEFMAP" instrument="HIGETF" ignore="1" loadingtype="3">高收益债ETF</item>  
+    <item type="329" market="DEFMAP" instrument="NEWETF" ignore="1" loadingtype="3">新兴市场债ETF</item>  
+    <item type="330" market="DEFMAP" instrument="FORETF" ignore="0" loadingtype="3">外汇ETF</item>  
+    <item type="331" market="DEFMAP" instrument="INDETF" ignore="0" loadingtype="3">行业ETF</item>  
+    <item type="332" market="DEFMAP" instrument="AREETF" ignore="0" loadingtype="3">区域ETF</item>  
+    <item type="333" market="DEFMAP" instrument="MEAETF" ignore="1" loadingtype="3">中东ETF</item>  
+    <item type="334" market="DEFMAP" instrument="CHIETF" ignore="1" loadingtype="3">中国ETF</item>  
+    <item type="335" market="DEFMAP" instrument="ASIETF" ignore="1" loadingtype="3">亚洲ETF</item>  
+    <item type="336" market="DEFMAP" instrument="GLOETF" ignore="1" loadingtype="3">全球ETF</item>  
+    <item type="337" market="DEFMAP" instrument="EURETF" ignore="1" loadingtype="3">欧洲ETF</item>  
+    <item type="338" market="DEFMAP" instrument="NAMETF" ignore="1" loadingtype="3">北美洲ETF</item>  
+    <item type="339" market="DEFMAP" instrument="LAMETF" ignore="1" loadingtype="3">拉丁美洲ETF</item>
+	
+	<item type="340" market="" instrument="" ignore="0" loadingtype="2">场外基金(全部开放式基金)</item>
+	<item type="341" market="" instrument="" ignore="0" loadingtype="2">场外基金(股票型)</item>
+	<item type="342" market="" instrument="" ignore="0" loadingtype="2">场外基金(混合型)</item>
+	<item type="343" market="" instrument="" ignore="0" loadingtype="2">场外基金(债券型)</item>
+	<item type="344" market="" instrument="" ignore="0" loadingtype="2">场外基金(指数型)</item>
+	<item type="345" market="" instrument="" ignore="0" loadingtype="2">场外基金(QDII)</item>
+	<item type="346" market="" instrument="" ignore="0" loadingtype="2">场外基金(LOF)</item>
+	<item type="347" market="" instrument="" ignore="0" loadingtype="2">场外基金(FOF)</item>
+	<item type="348" market="" instrument="" ignore="0" loadingtype="2">场外基金(货币型)</item>
+	<item type="349" market="" instrument="" ignore="0" loadingtype="2">场外基金(净值型和货币型)</item>
+	
+	<item type="360" market="DEFMAP" instrument="CnIndexEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(沪深指数ETF)</item>
+	<item type="361" market="DEFMAP" instrument="IndustryTopicEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(行业主题ETF)</item>
+	<item type="362" market="DEFMAP" instrument="WpEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(外盘ETF)</item>
+	<item type="363" market="DEFMAP" instrument="BondEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(债券ETF)</item>
+	<item type="364" market="DEFMAP" instrument="ProductEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(商品ETF)</item>
+	<item type="365" market="DEFMAP" instrument="MoneyEtf" ignore="0" loadingtype="3">场内基金ETF细分类别(货币ETF)</item>
+	<item type="366" market="DEFMAP" instrument="StockLof" ignore="0" loadingtype="3">场内基金ETF细分类别(股票型LOF)</item>
+	<item type="367" market="DEFMAP" instrument="BondLof" ignore="0" loadingtype="3">场内基金ETF细分类别(债券型LOF)</item>
+	<item type="368" market="DEFMAP" instrument="ProductLof" ignore="0" loadingtype="3">场内基金ETF细分类别(商品型LOF)</item>
+	<item type="369" market="DEFMAP" instrument="QDIILOF" ignore="0" loadingtype="3">场内基金ETF细分类别(QDII-LOF)</item>
+	
+	<item type="370" market="" instrument="" ignore="0" loadingtype="2">场内基金沪深基础设施REITs</item>
+	<item type="371" market="" instrument="" ignore="0" loadingtype="2">场内基金沪市基础设施REITs</item>
+	<item type="372" market="" instrument="" ignore="0" loadingtype="2">场内基金深市基础设施REITs</item>
+	
+	<item type="381" market="DEFMAP" instrument="AMajorIndex" ignore="0" loadingtype="3">A股重要指数</item>
+	<item type="382" market="DEFMAP" instrument="GlbMajorIndex" ignore="0" loadingtype="3">全球重要指数</item>
+	<item type="383" market="DEFMAP" instrument="MajorExchRate" ignore="0" loadingtype="3">重要汇率</item>
+	<item type="384" market="DEFMAP" instrument="MajorProd" ignore="0" loadingtype="3">重要商品</item>
+	
+	<item type="385" market="" instrument="" ignore="0" loadingtype="2">上证系列指数</item> 
+	<item type="386" market="" instrument="" ignore="0" loadingtype="2">深证系列指数</item> 
+	<item type="387" market="DEFMAP" instrument="ZzSeriIndex" ignore="0" loadingtype="3">中证系列指数</item>
+	<item type="388" market="DEFMAP" instrument="BzSeriIndex" ignore="0" loadingtype="3">北证系列指数</item>
+	<item type="389" market="DEFMAP" instrument="ZzHwSeriIndex" ignore="0" loadingtype="3">中证海外指数</item>
+	<item type="390" market="" instrument="" ignore="0" loadingtype="2">沪深京指数</item>
+	
+	<item type="391" market="DEFMAP_DELAY" instrument="DELAY_FinanQh" ignore="0" loadingtype="3">金融期货</item>
+	<item type="392" market="DEFMAP_DELAY" instrument="DELAY_Metal" ignore="0" loadingtype="3">金属</item>
+	<item type="393" market="DEFMAP_DELAY" instrument="DELAY_EnergyChemi" ignore="0" loadingtype="3">能源&amp;化工</item>
+	<item type="394" market="DEFMAP_DELAY" instrument="DELAY_CerealsAgri" ignore="0" loadingtype="3">谷物&amp;农副产品</item>	
+	
+    <item type="401" market="USSECTOR" instrument="" ignore="0" loadingtype="1">美股全部板块</item>  
+    <item type="402" market="USSECTOR" instrument="SECTORFDUSHY" ignore="0" loadingtype="1">美股行业板块</item>  
+    <item type="403" market="USSECTOR" instrument="SECTORFDUS" ignore="0" loadingtype="1">美股概念板块</item> 
+	
+    <item type="501" market="" instrument="" ignore="0" loadingtype="1">全部港股</item>  
+    <item type="502" market="" instrument="" ignore="0" loadingtype="1">港股主板</item>  
+    <item type="503" market="" instrument="" ignore="0" loadingtype="1">港股创业板</item>  
+    <item type="504" market="DEFMAP" instrument="BKHSI" ignore="0" loadingtype="3">恒指成分股</item>  
+    <item type="505" market="DEFMAP" instrument="BKHSCE" ignore="0" loadingtype="3">国指成分股</item>  
+    <item type="506" market="DEFMAP" instrument="BKHSCC" ignore="0" loadingtype="3">红筹成分股</item>  
+    <item type="507" market="HKSECTOR" instrument="TEC00004" ignore="0" loadingtype="3">港股通（沪）</item>  
+    <item type="508" market="HKSECTOR" instrument="TEC00005" ignore="0" loadingtype="3">港股通（深）</item>  
+	<item type="509" market="HKSECTOR" instrument="" ignore="0" loadingtype="1">港股ETF</item>  
+	<item type="510" market="HKQZ" instrument="" ignore="0" loadingtype="1">涡轮牛熊证</item>  
+	
+    <item type="601" market="HKSECTOR" instrument="" ignore="0" loadingtype="1">港股全部板块</item>  
+    <item type="602" market="HKSECTOR" instrument="SECTORFDHKHY" ignore="0" loadingtype="1">港股行业板块</item>  
+    <item type="603" market="HKSECTOR" instrument="SECTORFDHK" ignore="0" loadingtype="1">港股概念板块</item>  
+    <item type="604" market="HKSECTOR" instrument="SECTORFZDY" ignore="1" loadingtype="1">港股自定义板块</item> 
+  </InstrumentListInfo>  
+</root>

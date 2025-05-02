@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<event_list>
+	<!-- 个股style event相关 start -->
+	<magic_event style_name="全景图;沪深AB股_K线">
+		<event name="switch_rtline" sender_name="沪深涨跌排行_上海;沪深涨跌排行_深圳;自选股_TAB栏模式;自选股列表" change_style="个股分时" />
+	</magic_event>
+
+	<style_event style_name="全景图">
+		<!-- common start -->
+		<!-- 单击个股 -->
+		<event name="click_focusstock" sender_name="沪深涨跌排行_上海;沪深涨跌排行_深圳;自选股_TAB栏模式;zc_rankwnd;EC_TabBkListMin;EC_29081753" dispatch="KillFocusLine()" />
+		<event name="switch_rtline" sender_name="板块TAB集合;沪深涨跌排行_上海;沪深涨跌排行_深圳;自选股_TAB栏模式;自选股列表;全部板块;地域板块;概念板块;行业板块;板块个股列表;九方指数;个股异动;大盘异动" change_style="个股分时" />
+		<event name="dbclick_stock_sh_a;dbclick_stock_sz_a" sender_name="zc_rankwnd" change_style="magic|个股分时" />
+		<event name="switch_rtline" sender_name="mini_sh_000001;mini_sh_000300;mini_sh_000050;mini_sz_399001;mini_sz_399006;mini_sz_399106;mini_sz_399005" change_style="个股分时" />
+		<event name="open_list" sender_name="沪深涨跌排行" change_style="个股列表" />
+		<event name="OnDBClick" sender_name="沪深涨跌排行" change_style="个股分时" />
+
+		<event name="自选股" sender_name="首页自选股列表标签栏"  dispatch="(!*)首页自选股单TAB:SetSubStyle(TabMainZXG);全景图自选列表substyle:SetSubStyle(全景图自选列表.substyle);全景图自选列表:SetParam();" />
+		<event name="自选标签_自选股" sender_name="首页自选股列表标签栏"  dispatch="(!*)首页自选股单TAB:SetSubStyle(TabMainZXG);全景图自选列表substyle:SetSubStyle(全景图自选列表.substyle);全景图自选列表:SetParam();" />
+		<event name="自选标签_自选相关" sender_name="首页自选股列表标签栏" dispatch="(!*)首页自选股单TAB:SetSubStyle(tab_home_zxg_news);tab_home_zxg_news:SetParam();" />
+		<event name="自选标签_自选研报" sender_name="首页自选股列表标签栏" dispatch="(!*)首页自选股单TAB:SetSubStyle(tab_home_zxgyb_news);tab_home_zxgyb_news:SetParam();" />
+		<event name="自选标签_条件选股" sender_name="首页自选股列表标签栏"  dispatch="(!*)首页自选股单TAB:SetSubStyle(TabMainZXG);全景图自选列表substyle:SetSubStyle(条件选股列表.substyle);条件选股列表:SetParam();" />
+		<event name="自选标签_最近浏览" sender_name="首页自选股列表标签栏"  dispatch="(!*)首页自选股单TAB:SetSubStyle(TabMainZXG);全景图自选列表substyle:SetSubStyle(最近浏览列表.substyle);最近浏览列表:SetParam();" />
+		<!-- common end -->
+	</style_event>
+
+	<style_event style_name="个股分时">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时" dispatch="#:SetParam(style=FSZS)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.L1.分价表" change_style="分价表"/>
+		<event name="OnDBClick" sender_name="个股L1.逐笔小" change_style="分时成交" />
+		<event name="click_bk" sender_name="所属板块" dispatch="#:SetStockParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="#:SetStockName();" />
+		<event name="自选股" sender_name="个股资讯TAB集合" dispatch="(!*)个股资讯TAB集合:OnSetActiveTab(我的自选TAB);自选股列表_分时:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股行情页面">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时" dispatch="#:SetParam(style=FSZS)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.L1.分价表" change_style="magic|分价表"/>
+		<event name="OnDBClick" sender_name="个股L1.逐笔小" change_style="magic|分时成交" />
+		<event name="OnDBClick" sender_name="指数右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />
+		<event name="OnDBClick" sender_name="qhxh右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />
+		<event name="OnDBClick" sender_name="板块右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />		
+		<event name="OnDBClick" sender_name="个股L2.逐笔;" change_style="magic|分时成交" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分时成交TAB)"/>
+		<event name="click_bk" sender_name="所属板块" dispatch="(!*)所属板块成份股:SetStockParam();" />
+		<event name="TradeJump" sender_name="盘口_买卖盘;盘口_买卖盘.L2;" change_style="融资融券详情页" />
+		<event name="HsgtJump" sender_name="盘口_买卖盘;盘口_买卖盘.L2;" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(行情报价);板块列表左上.substyle:SetSubStyle(板块分类.substyle);板块列表标签栏:SetParam(Type=Both);板块分类列表:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);"/>
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="(!*)所属板块成份股:SetStockName();" />
+		<event name="自选股" sender_name="个股资讯TAB集合;板块资讯TAB集合;板块港股资讯TAB集合;板块美股资讯TAB集合;个股资讯TAB集合.wp_stock;个股资讯TAB集合.mg_stock;个股涡轮资讯TAB集合.wp_stock" dispatch="(!*)个股资讯TAB集合:OnSetActiveTab(我的自选TAB);个股资讯TAB集合.wp_stock:OnSetActiveTab(我的自选TAB);个股涡轮资讯TAB集合.wp_stock:OnSetActiveTab(我的自选TAB);个股资讯TAB集合.mg_stock:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="成分股" sender_name="板块资讯TAB集合;板块港股资讯TAB集合" dispatch="成分股列表:SetParam();港股成分股列表:SetParam();" />
+		<event name="OnDBClick" sender_name="委托队列;个股盘口_买卖盘.L2;基金盘口_买卖盘.L2;债券盘口_买卖盘.L2;盘口_买卖盘.L2;" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_全景队列TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+		<!-- 下面从L2拷贝过来-->
+		<event name="逐笔表双击" sender_name="逐笔表_1" change_style="L2详情" dispatch="个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);"/>
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔明细TAB.逐笔明细" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_L2逐笔明细TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClickSH" sender_name="个股右侧_盘口TAB_逐笔明细TAB.逐笔明细" change_style="L2详情_SH" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB.SH:OnSetActiveTab(L2详情左侧_L2逐笔明细TAB);上证A股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.分价表" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分价TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClickSH" sender_name="个股右侧_盘口TAB_分价TAB.分价表" change_style="L2详情_SH" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB.SH:OnSetActiveTab(L2详情左侧_分价TAB);上证A股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+		
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔委托TAB.逐笔委托小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_逐笔委托TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClickSH" sender_name="个股右侧_盘口TAB_逐笔委托TAB.逐笔委托小" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB.SH:OnSetActiveTab(L2详情左侧_逐笔委托TAB);上证A股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_逐笔还原TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClickSH" sender_name="个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB.SH:OnSetActiveTab(L2详情左侧_逐笔还原TAB);上证A股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+
+		<event name="OnDBClick" sender_name="个股中间TAB.L2.分时成交小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分时成交TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+		<event name="OnDBClick" sender_name="委托队列;个股盘口_买卖盘.L2;" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_全景队列TAB);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=L2详情);" />
+		<event name="check_big_order" sender_name="个股资讯TAB集合.L2:SendToSelf;个股B股资讯TAB集合.L2:SendToSelf;个股基金资讯TAB集合.L2:SendToSelf;个股债券资讯TAB集合.L2:SendToSelf;" dispatch="委托队列:check_big_order()" />
+
+		<event name="send_data" sender_name="L2详情左侧_分时成交TAB.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+		<event name="send_data" sender_name="个股中间TAB.L2.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+
+		<event name="相关轮证" sender_name="个股资讯TAB集合" dispatch="(!*)相关轮证列表:SetParam();" />
+		<event name="相关正股" sender_name="个股涡轮资讯TAB集合.wp_stock" dispatch="(!*)相关正股列表:SetParam();" />
+		
+		<event name="自选股" sender_name="个股资讯TAB集合.L2" dispatch="(!*)个股资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="自选股" sender_name="个股B股资讯TAB集合.L2" dispatch="(!*)个股B股资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="自选股" sender_name="个股基金资讯TAB集合.L2" dispatch="(!*)个股基金资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="自选股" sender_name="北证个股资讯TAB集合;个股资讯TAB集合.index;个股债券资讯TAB集合.L2;" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+
+		<event name="选股结果" sender_name="个股B股资讯TAB集合.L2;个股资讯TAB集合.index;个股资讯TAB集合;板块资讯TAB集合;板块港股资讯TAB集合;板块美股资讯TAB集合;个股资讯TAB集合.L2;个股债券资讯TAB集合.L2;个股基金资讯TAB集合.L2;个股债券资讯TAB集合.L2;个股资讯TAB集合.mg_stock;个股资讯TAB集合.wp_stock;个股涡轮资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(条件选股列表.substyle);条件选股列表:SetParam();" />
+		<event name="最近浏览" sender_name="北证个股资讯TAB集合;个股B股资讯TAB集合.L2;个股B股资讯TAB集合;个股资讯TAB集合.index;个股资讯TAB集合;板块资讯TAB集合;板块港股资讯TAB集合;板块美股资讯TAB集合;个股资讯TAB集合.L2;个股债券资讯TAB集合.L2;个股基金资讯TAB集合.L2;个股债券资讯TAB集合.L2;个股资讯TAB集合.mg_stock;个股资讯TAB集合.wp_stock;个股涡轮资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(最近浏览列表.substyle);最近浏览列表:SetParam();" />
+		<event name="SetBigOrderShow" sender_name="委托队列;委托队列TAB" dispatch="(!*)个股资讯TAB集合.L2:SetBigOrderShow()"/>
+		<event name="check_big_order_fs" sender_name="L2详情分时成交TAB集合:SendToSelf" dispatch="L2详情左侧_分时成交TAB.分时成交小:check_big_order()" />
+		<event name="LHBDetail" change_style="龙虎榜详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt);个股_左侧导航_toolbar.pt:SetParam(TabName=龙虎榜)" />
+		<event name="switch_chart" sender_name="实时估值;"   dispatch="(!*)走势图tab:SetSubStyle(开放基金.净值走势.substyle);" />
+		<event name="switch_gg" sender_name="分红配送;"   dispatch="(!*)新闻tab:SetSubStyle(开放基金.基金公告.substyle);" />
+		<event name="自选股" sender_name="个股左侧.自选标签栏"  dispatch="(!*)个股行情页面.左侧.自选股:SetParam();" />
+		<!-- 模拟交易 -->
+		<event name="账户信息" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(账户信息.substyle);" />
+		<event name="委托买入" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(委托买入.substyle);" />
+		<event name="委托卖出" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(委托卖出.substyle);" />
+		<event name="委托撤单" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(委托撤单.substyle);" />
+		<event name="查询" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(查询.substyle);" />
+		<event name="其他" sender_name="账户信息.导航;委托买入.导航;委托卖出.导航;委托撤单.导航;查询.导航;其他.导航;"  dispatch="(!*)模拟交易.substyle:SetSubStyle(其他.substyle);" />
+		<event name="moneydata" sender_name="账户信息.列表;"  dispatch="(!*)账户信息.详情:SetMoney();" />
+		<event name="holddata_buy" sender_name="委托买入.下单;"  dispatch="(!*)委托买入.列表:SetParam();" />
+		<event name="holddata_sell" sender_name="委托卖出.下单;"  dispatch="(!*)委托卖出.列表:SetParam();" />
+		<event name="changebuy" sender_name="委托买入.列表;委托卖出.列表;账户信息.列表;"  dispatch="模拟交易.substyle:SetSubStyle(委托买入.substyle);" />
+		<event name="changesell" sender_name="委托买入.列表;委托卖出.列表;账户信息.列表;"  dispatch="模拟交易.substyle:SetSubStyle(委托卖出.substyle);" />
+
+		<event name="check_Broker" sender_name="个股资讯TAB集合.wp_stock.L2:SendToSelf"  dispatch="经纪队列:check_Broker()" />
+		<event name="set_focus_group" sender_name="个股底部.相关题材"  dispatch="(!*)排名趋势:SetParam()" />
+	</style_event>
+
+	<style_event style_name="个股分时.L2">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时" dispatch="#:SetParam(style=FSZS)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="SetBigOrderShow" sender_name="委托队列;委托队列TAB" dispatch="个股资讯TAB集合.L2:Show(ShowType=1)"/>
+	</style_event>
+
+	<style_event style_name="个股分时.index">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="指数右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />
+		<event name="open_list" sender_name="沪深A3分钟涨跌幅;沪深A今日涨跌幅;" change_style="个股列表" dispatch="个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(个股列表.substyle));沪深列表1:SetParam(Type=Both);"/>
+	
+		<event name="自选股" sender_name="个股资讯TAB集合.index" dispatch="(!*)个股资讯TAB集合.index:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股分时.qhxh">
+		<event name="change_sotck" sender_name="个股分时.qhxh" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股分时.qhxh:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="qhxh右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />
+		
+		<event name="自选股" sender_name="个股资讯TAB集合.index" dispatch="(!*)个股资讯TAB集合.index:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+	
+	<style_event style_name="个股分时.wp_stock">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时" dispatch="#:SetParam(style=FSZS)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<!-- <event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.L1.分价表" change_style="分价表"/> -->
+		<!-- <event name="OnDBClick" sender_name="个股L1.逐笔小" change_style="分时成交" /> -->
+		<event name="click_bk" sender_name="所属板块" dispatch="#:SetStockParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="#:SetStockName();" />
+		<event name="自选股" sender_name="个股资讯TAB集合.wp_stock;个股资讯TAB集合.mg_stock" dispatch="(!*)个股资讯TAB集合.wp_stock:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="选股结果" sender_name="个股资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(条件选股列表.substyle);条件选股列表:SetParam();" />
+		<event name="最近浏览" sender_name="个股资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(最近浏览列表.substyle);最近浏览列表:SetParam();" />
+	</style_event>
+	
+	<style_event style_name="个股K线.wp_stock">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线" dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="自选股" sender_name="个股资讯TAB集合.wp_stock;个股资讯TAB集合.mg_stock" dispatch="(!*)个股资讯TAB集合.wp_stock:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		<event name="选股结果" sender_name="个股资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(条件选股列表.substyle);条件选股列表:SetParam();" />
+		<event name="最近浏览" sender_name="个股资讯TAB集合.wp_stock" dispatch="(!*)个股债券资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(最近浏览列表.substyle);最近浏览列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股K线.qhxh">
+		<event name="change_sotck" sender_name="个股分时.qhxh" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线.qhxh:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="qhxh右侧_分时成交TAB.逐笔表" change_style="magic|分时成交" />
+	</style_event>
+
+	<style_event style_name="分时成交.qhxh">
+		<event name="change_sotck" sender_name="个股分时.qhxh" change_style="个股分时.qhxh" />
+		<event name="keydown_f8" sender_name="个股分时.qhxh:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="qhxh右侧_分时成交TAB.逐笔表" change_style="分时成交.qhxh" />
+	</style_event>
+
+	<style_event style_name="分价表.qhxh">
+		<event name="change_sotck" sender_name="个股分时.qhxh" change_style="个股分时.qhxh" />
+		<event name="keydown_f8" sender_name="个股分时.qhxh:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时.qhxh" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="qhxh右侧_分时成交TAB.逐笔表" change_style="分时成交.qhxh" />
+	</style_event>
+
+	
+	<style_event style_name="个股分时.group">
+		<event name="change_sotck" sender_name="个股K线" change_style="个股分时" />
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股分时" dispatch="#:SetParam(style=FSZS)" />
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股分时" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="成分股" sender_name="板块资讯TAB集合" dispatch="成分股列表:SetParam();港股成分股列表:SetParam();" />
+		<event name="自选股" sender_name="板块资讯TAB集合" dispatch="(!*)板块资讯TAB集合:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+	<!-- 板块列表单击切换板块成份股列表跟随切换联动 -->
+	<!-- 双击板块列表跳转到分时界面 -->
+	<!-- 双击板块成份股列表跳转到分时界面 -->
+	<!-- 单击板块列表刷新右边分时界面 -->
+	<!-- 单击板块成份股列表刷新右边分时界面 -->
+	<style_event style_name="板块列表">
+		<!-- 单击个股 -->
+		<event name="click_bk" sender_name="全部板块" dispatch="(!*)板块个股列表:SetParam(Type=Both);板块列表_板块分时图:SetParam(Type=Both);板块列表_板块K线图:SetParam(Type=Both);板块列表标签栏:SetParam(Type=Both);" />
+		<event name="click_bk" sender_name="板块个股列表" dispatch="(!*)板块列表_个股分时图:SetParam(Type=Both);板块列表_个股K线图:SetParam(Type=Both);" />
+		
+		<event name="click_bkfx" sender_name="板块热力图" dispatch="(!*)板块列表_板块分析分时图:SetParam(Type=Both);板块列表_板块分析K线图:SetParam(Type=Both);" />
+		<event name="click_bkggfx" sender_name="个股热力图" dispatch="(!*)板块列表_个股分析分时图:SetParam(Type=Both);板块列表_个股分析K线图:SetParam(Type=Both);" />
+		<event name="SetBkfxParam" sender_name="板块热力图" dispatch="(!*)个股热力图:SetBkfxParam()" />
+		<!-- 单击刷新分时，列表联动 -->
+		<event name="switch_rtline" sender_name="全部板块;地域板块;概念板块;行业板块;板块个股列表;板块列表_板块分时图;板块列表_个股分时图;" change_style="个股分时" />
+		<event name="板块分时图" sender_name="板块列表.板块分时_toolbar;" dispatch="(!*)SetSubStyle(板块列表.板块分时_substyle)" />
+		<event name="板块K线图"  sender_name="板块列表.板块分时_toolbar;" dispatch="(!*)SetSubStyle(板块列表.板块K线_substyle)" />
+
+		<event name="个股分时图" sender_name="板块列表.个股分时_toolbar;" dispatch="(!*)SetSubStyle(板块列表.个股分时_substyle)" />
+		<event name="个股K线图"  sender_name="板块列表.个股分时_toolbar;" dispatch="(!*)SetSubStyle(板块列表.个股K线_substyle)" />
+		<event name="OnDropListChange"    sender_name="板块星空图XKT" dispatch="(!*)板块星空列表:SetXYData(Type=Both);" />
+		<event name="OnDropListChange"    sender_name="板块分类星空图XKT" dispatch="(!*)板块分类星空列表:SetXYData(Type=Both);" />
+		<event name="OnSetStockPosition"    sender_name="板块星空图XKT" dispatch="(!*)板块星空列表:SetXYData(Type=Both);" />
+		<event name="OnSetStockPosition"    sender_name="板块分类星空图XKT" dispatch="(!*)板块分类星空列表:SetXYData(Type=Both);" />
+		
+		<event name="板块分析分时图" sender_name="板块列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(板块列表.板块分析分时_substyle)" />
+		<event name="板块分析K线图"  sender_name="板块列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(板块列表.板块分析K线_substyle)" />
+
+		<event name="板块个股分析分时图" sender_name="板块列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(板块列表.个股分析分时_substyle)" />
+		<event name="板块个股分析K线图"  sender_name="板块列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(板块列表.个股分析K线_substyle)" />
+		<!-- 双击跳转到分时页面 -->
+		<!-- common end -->
+		
+		<event name="板块分类" sender_name="板块列表标签栏" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:SetParam(Type=Both);" />
+		<event name="板块"    sender_name="板块列表标签栏" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:SetParam(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="美股列表">
+		<!-- 单击个股 -->
+		<event name="click_bk" sender_name="美股板块列表" dispatch="(!*)美股列表_板块分时图:SetParam(Type=Both);美股列表_板块K线图:SetParam(Type=Both);美股_分时:SetParam(Type=Both);美股_K线:SetParam(Type=Both);美股个股列表:SetParam(BANKUAI_TYPE=CFG);" />
+		<event name="set_focus_stock" sender_name="美股指数列表" dispatch="(!*)美股列表_板块分时图:SetParam(Type=Both);美股列表_板块K线图:SetParam(Type=Both);美股_分时:SetParam(Type=Both);美股_K线:SetParam(Type=Both);" />
+		<event name="cfg_click_bk" sender_name="美股个股列表" dispatch="(!*)美股列表_个股分时图:SetParam(Type=Both);美股列表_个股K线图:SetParam(Type=Both);" />
+		
+		<event name="click_bkfx" sender_name="美股板块热力图" dispatch="(!*)美股列表_板块分析分时图:SetParam(Type=Both);美股列表_板块分析K线图:SetParam(Type=Both);" />
+		<event name="click_bkggfx" sender_name="美股个股热力图" dispatch="(!*)美股列表_个股分析分时图:SetParam(Type=Both);美股列表_个股分析K线图:SetParam(Type=Both);" />
+		<event name="SetBkfxParam" sender_name="美股板块热力图" dispatch="(!*)美股个股热力图:SetBkfxParam()" />
+		<!-- 单击刷新分时，列表联动 -->
+		<event name="switch_rtline" sender_name="美股板块列表;美股个股列表;美股列表_板块分时图;美股列表_个股分时图;" change_style="个股分时" />
+		<event name="美股分时图" sender_name="美股列表.板块分时_toolbar;" dispatch="SetSubStyle(美股列表.板块分时_substyle)" />
+		<event name="美股K线图"  sender_name="美股列表.板块分时_toolbar;" dispatch="SetSubStyle(美股列表.板块K线_substyle)" />
+
+		<event name="美股个股分时图" sender_name="美股列表.个股分时_toolbar;" dispatch="SetSubStyle(美股列表.个股分时_substyle)" />
+		<event name="美股个股K线图"  sender_name="美股列表.个股分时_toolbar;" dispatch="SetSubStyle(美股列表.个股K线_substyle)" />
+		
+		<event name="美股分析分时图" sender_name="美股列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(美股列表.板块分析分时_substyle)" />
+		<event name="美股分析K线图"  sender_name="美股列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(美股列表.板块分析K线_substyle)" />
+
+		<event name="美股个股分析分时图" sender_name="美股列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(美股列表.个股分析分时_substyle)" />
+		<event name="美股个股分析K线图"  sender_name="美股列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(美股列表.个股分析K线_substyle)" />
+		<!-- 双击跳转到分时页面 -->
+		<!-- common end -->
+		
+		<!-- <event name="板块"    sender_name="板块列表标签栏" change_style="板块列表" dispatch="板块列表_左侧toolbar:SetParam(Type=Both);" /> -->
+	</style_event>
+	<style_event style_name="港股列表">
+		<event name="click_bk" sender_name="港股板块列表" dispatch="(!*)港股个股列表:SetParam(Type=Both);港股列表_板块分时图:SetParam(Type=Both);港股列表_板块K线图:SetParam(Type=Both);" />
+		<event name="cfg_click_bk" sender_name="港股个股列表" dispatch="(!*)港股列表_个股K线图:SetParam(Type=Both);港股列表_个股K线图:SetParam(Type=Both);" />
+		
+		<event name="click_bkfx" sender_name="港股板块热力图" dispatch="(!*)港股列表_板块分析分时图:SetParam(Type=Both);港股列表_板块分析K线图:SetParam(Type=Both);" />
+		<event name="click_bkggfx" sender_name="港股个股热力图" dispatch="(!*)港股列表_个股分析分时图:SetParam(Type=Both);港股列表_个股分析K线图:SetParam(Type=Both);" />
+		<event name="SetBkfxParam" sender_name="港股板块热力图" dispatch="(!*)港股个股热力图:SetBkfxParam()" />
+		<!-- 单击刷新分时，列表联动 -->
+		<event name="港股分时图" sender_name="港股列表.板块分时_toolbar;" dispatch="(!*)SetSubStyle(港股列表.板块分时_substyle)" />
+		<event name="港股K线图"  sender_name="港股列表.板块分时_toolbar;" dispatch="(!*)SetSubStyle(港股列表.板块K线_substyle)" />
+
+		<event name="港股个股分时图" sender_name="港股列表.个股分时_toolbar;" dispatch="(!*)SetSubStyle(港股列表.个股分时_substyle)" />
+		<event name="港股个股K线图"  sender_name="港股列表.个股分时_toolbar;" dispatch="(!*)SetSubStyle(港股列表.个股K线_substyle)" />
+		
+		<event name="港股分析分时图" sender_name="港股列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(港股列表.板块分析分时_substyle)" />
+		<event name="港股分析K线图"  sender_name="港股列表.板块分析分时_toolbar;"  dispatch="SetSubStyle(港股列表.板块分析K线_substyle)" />
+
+		<event name="港股个股分析分时图" sender_name="港股列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(港股列表.个股分析分时_substyle)" />
+		<event name="港股个股分析K线图"  sender_name="港股列表.个股分析分时_toolbar;"  dispatch="SetSubStyle(港股列表.个股分析K线_substyle)" />
+		
+		<event name="行情报价" sender_name="港股列表_左侧toolbar" dispatch="(!*)港股列表左上.substyle:SetSubStyle(港股列表.substyle);"  />
+		<event name="多股同列" sender_name="港股列表_左侧toolbar" dispatch="(!*)港股列表左上.substyle:SetSubStyle(港股列表.多股同列.substyle)"  />
+		<event name="多股同列.menu" sender_name="港股列表_左侧toolbar" dispatch="港股列表左上.substyle:SetSubStyle(港股列表.多股同列.substyle)"  />
+	
+		<event name="轮证个数" sender_name="轮证股票列表" dispatch="(!*)轮证股票数目:SetParam()" />
+		<event name="刷新列表" sender_name="轮证筛选" dispatch="(!*)轮证股票列表:SetParam()" />
+		<event name="刷新发行人" sender_name="轮证股票列表" dispatch="(!*)轮证筛选:SetParam()" />
+	</style_event>
+	
+	<style_event style_name="全部自选_行情列表">
+		<!-- 单击自选股刷新和K线分时页面 -->
+		<event name="switch_rtlinenew" sender_name="tab自选股列表;tab条件选股列表;tab最近浏览列表" change_style1="全部自选_行情列表" dispatch="(!*)全部自选_分时:SetParam();全部自选_K线:SetParam();自选股资讯TAB集合:OnSetActiveTab(公告看点);" />
+		<event name="clear_news" sender_name="tab自选股列表;tab条件选股列表;tab最近浏览列表" dispatch="(!*)tab_home_zxgyb_news:SetParam();自选资讯:SetParam();自选公告:SetParam();" />
+		<!-- 双击自选股跳转到分时页面 -->
+		<event name="switch_rtline" sender_name="tab自选股列表;tab条件选股列表" change_style="个股分时" />
+		<event name="switch_rtline" sender_name="全部自选_K线" change_style="个股K线" />
+		<event name="自选股" change_style="全部自选_行情列表" sender_name="自选标签栏" dispatch="(!*)全部自选.substyle:SetSubStyle(全部自选.列表.substyle);全部自选_行情列表_左侧tab:SetParam();自选股资讯TAB集合:SetParam();"  />
+		<event name="选股结果" sender_name="自选标签栏" dispatch="(!*)全部自选.substyle:SetSubStyle(全部自选.条件列表.substyle);全部自选_行情列表_左侧tab:SetParam();"  />
+		<event name="行情报价" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(行情报价);全部自选.substyle:SetSubStyle(全部自选.列表.substyle);自选标签栏:SetParam();tab自选股列表:SetParam(Type=Both);"  />
+		<event name="多股同列" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(多股同列);全部自选.substyle:SetSubStyle(全部自选.多股同列.substyle);多周期同列:SetParam(Type=Both);"  />
+		<event name="资金流向" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(资金流向);全部自选.substyle:SetSubStyle(全部自选.资金流向.substyle);全部自选.资金流向:SetParam();"  />
+		<event name="增仓排行" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(增仓排行);全部自选.substyle:SetSubStyle(全部自选.增仓排行.substyle);全部自选.增仓排行:SetParam();"  />
+		<event name="DDE决策" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(DDE决策);全部自选.substyle:SetSubStyle(全部自选.DDE决策.substyle);全部自选.DDE决策:SetParam();"  />
+		<event name="股本数据" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(股本数据);全部自选.substyle:SetSubStyle(全部自选.股本数据.substyle);全部自选.股本数据:SetParam();"  />
+		<event name="财务数据" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(财务数据);全部自选.substyle:SetSubStyle(全部自选.财务数据.substyle);全部自选.财务数据:SetParam();"  />
+		<event name="阶段统计" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(阶段统计);全部自选.substyle:SetSubStyle(全部自选.阶段统计.substyle);全部自选.阶段统计:SetParam();"  />
+		<event name="多股同列.menu" sender_name="tab自选股列表" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(多股同列);全部自选.substyle:SetSubStyle(全部自选.多股同列.substyle);多周期同列:SetParam(Type=Both);"  />
+
+		<event name="行情报价.TJXG" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(行情报价);全部自选.substyle:SetSubStyle(全部自选.条件列表.substyle);tab条件选股列表:SetParam(Type=Both);"  />
+		<event name="多股同列.TJXG" sender_name="全部自选_行情列表_左侧tab;tab条件选股列表" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(多股同列);全部自选.substyle:SetSubStyle(全部自选.多股同列.substyle);多周期同列:SetParam(Type=Both);"  />
+
+		<event name="行情报价.ZJLL" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(行情报价);全部自选.substyle:SetSubStyle(全部自选.最近浏览.substyle);tab最近浏览列表:SetParam(Type=Both);"  />
+		<event name="多股同列.ZJLL" sender_name="全部自选_行情列表_左侧tab;tab最近浏览列表" dispatch="(!*)全部自选_行情列表_左侧tab:OnSetActiveTab(多股同列);全部自选.substyle:SetSubStyle(全部自选.多股同列.substyle);多周期同列:SetParam(Type=Both);"  />
+		<event name="场外基金" change_style="全部自选_行情列表" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选.substyle:SetSubStyle(全部自选.场外基金.substyle);自选股资讯TAB集合:SetParam();tab自选股列表:SetParam(Type=Both);"  />
+	</style_event>
+	<style_event style_name="个股列表">
+		<!-- 双击个股 -->
+		<event name="switch_rtline" sender_name="沪深列表1" change_style="个股分时" />
+		<event name="个股列表" sender_name="个股列表标签栏"  dispatch="个股列表_左侧toolbar:SetParam(Type=Both);" />
+		<event name="set_stock_hs" sender_name="沪深列表1"  dispatch="(!*)个股列表_分时:SetParam(Type=Both);个股列表_K线:SetParam(Type=Both);" />
+		<event name="set_stock_dde" sender_name="DDE"  dispatch="(!*)个股列表DDE_分时:SetParam(Type=Both);个股列表DDE_K线:SetParam(Type=Both);" />
+		<event name="set_stock_zjlx" sender_name="ZJLX"  dispatch="(!*)个股列表ZJLX_分时:SetParam(Type=Both);个股列表ZJLX_K线:SetParam(Type=Both);" />
+		<event name="set_stock_zcph" sender_name="ZJLX"  dispatch="(!*)个股列表ZCPH_分时:SetParam(Type=Both);个股列表ZCPH_K线:SetParam(Type=Both);" />
+		<event name="set_stock_gbsj" sender_name="GBSJ"  dispatch="(!*)个股列表GBSJ_分时:SetParam(Type=Both);个股列表GBSJ_K线:SetParam(Type=Both);" />
+		<event name="set_stock_cwsj" sender_name="CWSJ"  dispatch="(!*)个股列表CWSJ_分时:SetParam(Type=Both);个股列表CWSJ_K线:SetParam(Type=Both);" />
+		<event name="set_stock_jdtj" sender_name="ZCPH"  dispatch="(!*)个股列表JDTJ_分时:SetParam(Type=Both);个股列表JDTJ_K线:SetParam(Type=Both);" />
+		<!-- 双击跳转到分时页面 -->
+		<!-- common end -->
+	</style_event>
+	<style_event style_name="个股列表.HQBJ">
+		<event name="set_stock_hs" sender_name="沪深列表1"  dispatch="(!*)个股列表.HQBJ_分时:SetParam(Type=Both);个股列表.HQBJ_K线:SetParam(Type=Both);" />
+		<event name="switch_headerfilter" sender_name="沪深列表1" dispatch="(!*)表头筛选:ActiveFilter();" />
+		<event name="refreshStockFilterRes" sender_name="沪深列表1" dispatch="(!*)表头筛选:RefreshStockFilterRes();" />
+		<event name="addColToList" sender_name="表头筛选" dispatch="(!*)沪深列表1:AddColToList();" />
+		<event name="setSelectRange" sender_name="表头筛选" dispatch="(!*)沪深列表1:SetSelectRange();" />
+		<event name="stockFilter" sender_name="表头筛选" dispatch="(!*)沪深列表1:StockFilter();" />
+	</style_event>
+	<style_event style_name="个股列表.ZJLX">
+		<event name="set_stock_zjlx" sender_name="ZJLX"  dispatch="(!*)个股列表.ZJLX_分时:SetParam(Type=Both);个股列表.ZJLX_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.ZCPH">
+		<event name="set_stock_zcph" sender_name="ZCPH"  dispatch="(!*)个股列表.ZCPH_分时:SetParam(Type=Both);个股列表.ZCPH_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.DDE">
+		<event name="set_stock_dde" sender_name="DDE"  dispatch="(!*)个股列表.DDE_分时:SetParam(Type=Both);个股列表.DDE_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.GBSJ">
+		<event name="set_stock_gbsj" sender_name="GBSJ"  dispatch="(!*)个股列表.GBSJ_分时:SetParam(Type=Both);个股列表.GBSJ_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.CWSJ">
+		<event name="set_stock_cwsj" sender_name="CWSJ"  dispatch="(!*)个股列表.CWSJ_分时:SetParam(Type=Both);个股列表.CWSJ_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.JDTJ">
+		<event name="set_stock_jdtj" sender_name="JDTJ"  dispatch="(!*)个股列表.JDTJ_分时:SetParam(Type=Both);个股列表.JDTJ_K线:SetParam(Type=Both);" />
+	</style_event>
+
+	<style_event style_name="个股列表.ETF">
+		<event name="set_stock_etf" sender_name="沪深指数ETF"  dispatch="(!*)沪深指数ETF_分时:SetParam(Type=Both);沪深指数ETF_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.ETF.SH">
+		<event name="set_stock_etfsh" sender_name="上证列表_基金"  dispatch="(!*)上证列表_分时:SetParam(Type=Both);上证列表_K线:SetParam(Type=Both);" />
+	</style_event>
+	<style_event style_name="个股列表.ETF.SZ">
+		<event name="set_stock_etfsz" sender_name="深证列表_基金"  dispatch="(!*)深证列表_分时:SetParam(Type=Both);深证列表_K线:SetParam(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="个股列表.XKT">
+		<!-- 双击个股 -->
+		<event name="OnDropListChange"    sender_name="个股星空图XKT" dispatch="(!*)个股星空列表:SetXYData(Type=Both);" />
+		<event name="OnSetStockPosition"    sender_name="个股星空图XKT" dispatch="(!*)个股星空列表:SetXYData(Type=Both);" />
+		<!-- 双击跳转到分时页面 -->
+		<!-- common end -->
+	</style_event>
+		
+	<style_event style_name="个股K线">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线"  dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.L1.分价表" change_style="分价表"/>
+		<event name="OnDBClick" sender_name="个股L1.逐笔小" change_style="分时成交" />
+
+		<event name="click_bk" sender_name="所属板块" dispatch="#:SetStockParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="#:SetStockName();" />
+		<event name="自选股" sender_name="个股资讯TAB集合" dispatch="(!*)个股资讯TAB集合:OnSetActiveTab(我的自选TAB);自选股列表_分时:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股K线.L2">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线"  dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔明细TAB.逐笔明细" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_L2逐笔明细TAB)" />
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_分价TAB.分价表" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分价TAB)" />
+		
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔委托TAB.逐笔委托小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_逐笔委托TAB)" />
+
+		<event name="OnDBClick" sender_name="个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_逐笔还原TAB)" />
+
+		<event name="OnDBClick" sender_name="个股中间TAB.L2.分时成交小" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分时成交TAB)" />
+		<event name="OnDBClick" sender_name="委托队列;个股盘口_买卖盘.L2;" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情);L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_全景队列TAB)" />
+		<event name="check_big_order" sender_name="个股资讯TAB集合.L2:SendToSelf" dispatch="委托队列:check_big_order()" />
+
+    	<event name="send_data" sender_name="L2详情左侧_分时成交TAB.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+		<event name="send_data" sender_name="个股中间TAB.L2.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+
+		<event name="click_bk" sender_name="所属板块" dispatch="#:SetStockParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="#:SetStockName();" />
+
+		<event name="自选股" sender_name="个股资讯TAB集合.L2" dispatch="(!*)个股资讯TAB集合.L2:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+		
+		<event name="SetBigOrderShow" sender_name="委托队列TAB" dispatch="个股资讯TAB集合.L2:Show(ShowType=1)"/>
+	</style_event>
+
+	<style_event style_name="个股K线.index">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线" dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="open_list" sender_name="沪深A3分钟涨跌幅;沪深A今日涨跌幅;" change_style="个股列表" dispatch="个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(个股列表.substyle));沪深列表1:SetParam(Type=Both);"/>
+		<event name="自选股" sender_name="个股资讯TAB集合.index" dispatch="(!*)个股资讯TAB集合.index:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股K线.group">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线" dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="自选股" sender_name="板块资讯TAB集合" dispatch="(!*)板块资讯TAB集合:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股K线.global_index">
+		<event name="自选股" sender_name="个股资讯TAB集合.index" dispatch="(!*)个股资讯TAB集合.index:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="个股K线.wp_stock">
+		<event name="keydown_f8" sender_name="个股K线:SendToSelf" dispatch="KeyDown(Type=VKF8)" />
+		<event name="change_sotck" sender_name="个股K线" change_style="个股K线" />
+		<event name="switch_rtline" sender_name="自选股列表_分时;简易成份股" change_style="个股K线" dispatch="#:SetParam(style=JSFX)"/>
+		<event name="SetFocus" sender_name="自选股列表_分时" change_style="个股K线" dispatch="自选股列表_分时:OnSetFocus()"/>
+		<event name="自选股" sender_name="个股资讯TAB集合.global_index" dispatch="(!*)个股资讯TAB集合.global_index:OnSetActiveTab(我的自选TAB);全部自选列表substyle:SetSubStyle(全部自选列表.substyle);自选股列表:SetParam();" />
+	</style_event>
+
+	<style_event style_name="多图组合">
+		<event name="switch_rtline" sender_name="多周期同列;多股同列;" change_style="个股分时" />
+		<event name="switch_kline" sender_name="多周期同列;多股同列;" change_style="个股K线" />
+	</style_event>
+	<style_event style_name="全部自选_多图组合">
+		<event name="switch_rtline" sender_name="多周期同列;多股同列;" change_style="个股分时" />
+		<event name="switch_kline" sender_name="多周期同列;多股同列;" change_style="个股K线" />
+	</style_event>
+	
+	<style_event style_name="涨跌分布_详情页">
+		<event name="SetDstbMaket" sender_name="涨跌分布_HSJAG;涨跌趋势_HSAG;涨跌趋势_SHZAG;涨跌趋势_SZAG;涨跌趋势_BZAG;涨跌趋势_KCB;涨跌趋势_CYB;涨跌趋势_ZXB;" dispatch="(!*)涨跌列表:onSetDstbMaket()" />
+		<event name="SetDstbRange" sender_name="涨跌区间;涨跌分布_HSJAG;涨跌分布_HSAG;涨跌分布_SHZAG;涨跌分布_SZAG;涨跌分布_BZAG;涨跌分布_KCB;涨跌分布_CYB;涨跌分布_ZXB" dispatch="(!*)涨跌列表:onSetDstbRange();涨跌区间:onSetDstbRange()" />
+		<event name="SetDstbRange" sender_name="涨跌区间;涨跌分布_HSJAG;涨跌趋势_HSAG;涨跌趋势_SHZAG;涨跌趋势_SZAG;涨跌趋势_BZAG;涨跌趋势_KCB;涨跌趋势_CYB;涨跌趋势_ZXB" dispatch="(!*)涨跌列表:onSetDstbRange()" />
+
+		<event name="SetDstbChange" sender_name="涨跌列表" dispatch="(!*)涨跌分布_HSAG:onSetDstbChange();涨跌趋势_HSAG:onSetDstbChange();涨跌分布_SHZAG:onSetDstbChange();涨跌趋势_SHZAG:onSetDstbChange();涨跌分布_SZAG:onSetDstbChange();涨跌趋势_SZAG:onSetDstbChange();涨跌分布_KCB:onSetDstbChange();涨跌趋势_KCB:onSetDstbChange();涨跌分布_CYB:onSetDstbChange();涨跌趋势_CYB:onSetDstbChange();涨跌分布_ZXB:onSetDstbChange();涨跌趋势_ZXB:onSetDstbChange();" />
+		
+	</style_event>
+
+	<style_event style_name="黄金列表">
+		<event name="set_focus_stock" sender_name="国内黄金;国际黄金;ETF基金" dispatch="(!*)黄金列表_分时:SetParam(Type=Both);黄金列表_K线:SetParam(Type=Both);" />
+	</style_event>
+
+	<style_event style_name="ETF列表">
+		<event name="set_focus_stock" sender_name="沪深指数ETF;ETF列表_基金;上证列表_基金;深证列表_基金;" dispatch="(!*)ETF列表_分时:SetParam(Type=Both);ETF列表_K线:SetParam(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="全球指数列表">
+		<event name="set_focus_stock" sender_name="全球指数表单;" dispatch="(!*)全球指数列表_分时:SetParam(Type=Both);全球指数列表_K线:SetParam(Type=Both);" />
+		<event name="全部指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=GlobalIndex);" />
+		<event name="重要指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=ImportantIndex);" />
+		<event name="亚洲指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=AsiaIndex);" />
+		<event name="欧洲指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=EuropeIndex);" />
+		<event name="美洲指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=AmericaIndex);" />
+		<event name="其他指数" sender_name="全球指数TAB集合;" dispatch="全球指数表单:SetGlobalIndexType(TYPE=OtherIndex);" />
+	</style_event>
+
+	<style_event style_name="擒龙榜单">
+		<event name="set_focus_stock" sender_name="榜单列表;" dispatch="(!*)擒龙榜单_分时:SetParam(Type=Both);擒龙榜单_K线:SetParam(Type=Both);" />
+		<event name="set_market_hs" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=HS);" />
+		<event name="set_market_sh" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=SH);" />
+		<event name="set_market_sz" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=SZ);" />
+		<event name="set_market_kcb" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=KCB);" />
+		<event name="set_market_cyb" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=CYB);" />
+		<event name="set_market_zxb" sender_name="擒龙榜单_板块tab;" dispatch="榜单列表:SetMarket(market_code=ZXB);" />
+		<event name="set_market_qlb" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetMarket();" />
+
+		<event name="set_year_2020" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetYear(YEAR=CURRENT);" />
+		<event name="set_year_2019" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetYear(YEAR=LAST);" />
+		<event name="set_year_2018" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetYear(YEAR=BEFLAST);" />
+		<event name="set_year_all" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetYear(YEAR=ALL);" />
+		<event name="set_year_qlb" sender_name="擒龙榜单_年tab;" dispatch="榜单列表:SetYear();" />
+	</style_event>
+
+	<style_event style_name="L2详情">
+		<event name="OnDBClick" sender_name="L2详情左侧_分时成交TAB.分时成交小;"  dispatch="L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_分时成交TAB)" />
+		<event name="OnDBClick" sender_name="L2详情_买卖盘;" change_style="L2详情" dispatch="L2详情_上部_TAB:OnSetActiveTab(L2详情左侧_全景队列TAB)" />
+		<event name="check_big_order" sender_name="L2详情_上部_TAB:SendToSelf" dispatch="L2详情左侧_全景队列TAB.全景队列:check_big_order()" />
+		<event name="send_data" sender_name="L2详情左侧_分时成交TAB.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+		<event name="send_data" sender_name="个股中间TAB.L2.分时成交小" dispatch="(!*)个股右侧_盘口TAB_逐笔明细TAB.逐笔明细:GetData();L2详情左侧_L2逐笔明细TAB.L2逐笔明细:GetData();个股右侧_盘口TAB_逐笔还原TAB.逐笔还原小:GetData();L2详情左侧_逐笔还原TAB.逐笔还原:GetData()" />
+		<event name="check_big_order_fs" sender_name="L2详情分时成交TAB集合:SendToSelf" dispatch="L2详情左侧_分时成交TAB.分时成交小:check_big_order()" />
+		<event name="SetBigOrderShow" sender_name="委托队列TAB" dispatch="个股资讯TAB集合.L2:Show(ShowType=1)"/>
+	</style_event>
+	
+	<style_event style_name="L2详情_SH">
+		<event name="SetBigOrderShow" sender_name="委托队列TAB" dispatch="个股资讯TAB集合.L2:Show(ShowType=1)"/>
+		<event name="check_big_order_fs" sender_name="L2详情分时成交TAB集合:SendToSelf" dispatch="L2详情左侧_分时成交TAB.分时成交小:check_big_order()" />
+		<event name="check_big_order" sender_name="L2详情_上部_TAB.SH:SendToSelf" dispatch="L2详情左侧_全景队列TAB.全景队列:check_big_order()" />
+	</style_event>
+	
+	<style_event style_name="条件选股">
+		<event name="SetDstbMaket" sender_name="筛选条件;" dispatch="条件选股列表:onSetDstbMaket()" />
+		<event name="OnDBClick" sender_name="条件选股列表" change_style="个股分时" />
+	</style_event>
+	<style_event style_name="技术选股">
+		<event name="SetTabDay" sender_name="技术选股标题" dispatch="技术选股列表:SetTabDay()" />
+		<event name="click_bk" sender_name="所属板块" dispatch="(!*)#:SetStockParam();" />
+		<event name="click_bk" sender_name="技术选股列表" dispatch="行情走势列表:SetParam();技术选股资讯TAB集合:SetParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块" dispatch="#:SetStockName();" />
+	</style_event>
+	<style_event style_name="板块风向标">
+		<event name="SetTabPeriod" sender_name="板块热度;" dispatch="(!*)*:SetTabPeriod()" />
+	</style_event>
+	
+	<style_event style_name="停复牌">
+		<event name="OnDBClick" sender_name="停复牌列表" change_style="个股分时" />
+	</style_event>
+
+	<style_event style_name="龙虎榜首页">
+		<event name="LHBChangeStyle" sender_name="龙虎榜首页标题;龙虎榜首页主列表;"  change_style="龙虎榜详情" />
+		<event name="LHBSetParam" sender_name="龙虎榜首页主列表;"  change_style1="龙虎榜首页" dispatch="#:SetMarketCode();龙虎榜_个股分时图:SetParam(Type=Both);龙虎榜_个股K线图:SetParam(Type=Both);"/>
+		<event name="LHBSetParam" sender_name="龙虎榜首页标的;"  change_style1="龙虎榜首页" dispatch="#:SetDepartment();"/>
+		<event name="LHBSetDate" sender_name="龙虎榜首页标题;"  change_style1="龙虎榜首页" dispatch="#:SetDate();龙虎榜_个股分时图:SetParam(Type=Both);龙虎榜_个股K线图:SetParam(Type=Both);"/>
+		<event name="LHBSetSelectMarket" sender_name="龙虎榜首页标题;"  change_style1="龙虎榜首页" dispatch="#:SetLHBSelectMarket();"/>
+		<event name="龙虎榜分时图" sender_name="龙虎榜.个股分时_toolbar;"  dispatch="SetSubStyle(龙虎榜.个股分时_substyle)" />
+		<event name="龙虎榜K线图"  sender_name="龙虎榜.个股分时_toolbar;"  dispatch="SetSubStyle(龙虎榜.个股K线_substyle)" />
+		<event name="set_LHB_Main" sender_name="龙虎榜标签栏;"  change_style1="龙虎榜首页" dispatch="(!*)龙虎榜首页主列表:SetParam();"/>
+		<event name="set_LHB_Department" sender_name="龙虎榜标签栏;"  change_style="龙虎榜席位统计" />
+		<event name="set_LHB_Statistics" sender_name="龙虎榜标签栏;"  change_style="龙虎榜个股统计" />
+	</style_event>
+	<style_event style_name="龙虎榜席位统计">
+		<event name="LHBChangeStyle" sender_name="龙虎榜首页标题;龙虎榜席位统计主列表;"  change_style="龙虎榜详情" />
+		<event name="LHBDepartmentSetParam" sender_name="龙虎榜席位统计主列表;"  change_style1="龙虎榜席位统计" dispatch="#:SetDepartmentParam();"/>
+		<event name="set_LHB_Main" sender_name="龙虎榜标签栏;"  change_style="龙虎榜首页" dispatch="(!*)龙虎榜首页主列表:SetParam();"/>
+		<event name="set_LHB_Department" sender_name="龙虎榜标签栏;"  change_style1="龙虎榜席位统计" />
+		<event name="set_LHB_Statistics" sender_name="龙虎榜标签栏;"  change_style="龙虎榜个股统计" />
+	</style_event>
+	<style_event style_name="龙虎榜个股统计">
+		<event name="LHBChangeStyle" sender_name="龙虎榜首页标题;龙虎榜首页主列表;"  change_style="龙虎榜详情" />
+		<event name="LHBStatisticsSetParam" sender_name="龙虎榜个股统计主列表;"  change_style1="龙虎榜个股统计" dispatch="#:SetStatisticsParam();龙虎榜_个股分时图2:SetParam(Type=Both);龙虎榜_个股K线图2:SetParam(Type=Both);"/>
+		<event name="LHBStatisticsSetMarketCode" sender_name="龙虎榜个股统计历史记录;"  change_style1="龙虎榜个股统计" dispatch="#:SetMarketCode();"/>
+		<event name="龙虎榜分时图" sender_name="龙虎榜.个股统计分时_toolbar;"  dispatch="(!*)龙虎榜_个股统计图形::SetSubStyle(龙虎榜.个股分时2_substyle)" />
+		<event name="龙虎榜K线图"  sender_name="龙虎榜.个股统计分时_toolbar;"  dispatch="(!*)龙虎榜_个股统计图形::SetSubStyle(龙虎榜.个股K线2_substyle)" />
+		<event name="set_LHB_Main" sender_name="龙虎榜标签栏;"  change_style="龙虎榜首页" dispatch="(!*)龙虎榜首页主列表:SetParam();"/>
+		<event name="set_LHB_Department" sender_name="龙虎榜标签栏;"  change_style="龙虎榜席位统计" />
+		<event name="set_LHB_Statistics" sender_name="龙虎榜标签栏;"  change_style1="龙虎榜个股统计" />
+	</style_event>
+	<style_event style_name="龙虎榜详情_每日龙虎榜">
+		<event name="LHBChangeStyle" sender_name="每日龙虎榜列表;"  change_style="龙虎榜详情" />
+		<event name="set_LHB_Department" sender_name="每日龙虎榜列表;"  change_style="龙虎榜详情_营业部上榜统计" />
+	</style_event>
+	<style_event style_name="龙虎榜详情_营业部上榜统计">
+		<event name="LHBChangeStyle" sender_name="营业部上榜统计列表;"  change_style="龙虎榜详情" />
+		<event name="set_LHB_Detail" sender_name="营业部上榜统计列表;"  change_style="龙虎榜详情_每日龙虎榜" />
+	</style_event>
+	<style_event style_name="龙虎榜详情">
+		<event name="LHBChangeStyle" sender_name="龙虎榜详情标题;"  change_style="龙虎榜详情" />
+		<event name="LHBGotoDetail" sender_name="龙虎榜详情标题;"  change_style="龙虎榜首页" />
+	</style_event>
+
+	<style_event style_name="条件选股器">
+		<event name="setid" sender_name="选股器;"  dispatch="*(!*):SetId(Type=Both)" />
+	</style_event>
+	
+	<style_event style_name="条件选股器交并集">
+		<event name="setparam" sender_name="选股器交并集;"  dispatch="*:SetParam(Type=Both)" />
+	</style_event>
+
+	<style_event style_name="dlg.pkyd">
+		<event name="click_bk" sender_name="dlg.pkyd.个股异动;dlg.pkyd.大盘异动;dlg.pkyd.自选异动;"  dispatch="(!*)异动_分时图:SetParam(Type=Both);异动_K线图:SetParam(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="所属板块.dlgstyle">
+		<event name="setparam" sender_name="所属板块.dlgstyle;"  dispatch="*:SetParam(Type=Both)" />
+		<event name="click_bk" sender_name="所属板块.dlgstyle;"  dispatch="#:SetStockParam();" />
+		<event name="set_bkstk_name" sender_name="所属板块.dlgstyle;" dispatch="#:SetStockName();" />
+	</style_event>
+
+	<style_event style_name="x">
+		<event name="RefreshControl" sender_name="异动设置.tittle;"  dispatch="event.异动设置.element:RefreshControl(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="涨跌全景图">
+		<event name="UnSelectRow" sender_name="自然涨停;自然跌停;打开涨停;打开跌停;涨停风口;跌停风口;一字涨停;一字跌停;" dispatch="(!*)*:UnSelectRow()" />
+		<event name="SelectRow" sender_name="板块涨停数据;板块跌停数据;涨跌停雷达;" dispatch="(!*)*:SelectRow()" />
+	</style_event>
+	
+    <style_event style_name="涨跌停明细">
+
+	</style_event>
+	
+    <style_event style_name="融资融券">
+		<event name="RZRQ_SetMarket" sender_name="融资融券_首页标题;"  dispatch="(!*)融资融券_数据:SetMarket();个股交易明细列表:SetMarket();历史交易明细列表:SetMarket()" />
+        <event name="RZRQ_SetDate" sender_name="融资融券_数据;"  dispatch="(!*)个股交易明细列表:SetDate();历史交易明细列表:SetDate()" />
+	</style_event>
+	<style_event style_name="融资融券详情页">
+		<event name="RZRQSingleGotoMain" sender_name="融资融券_个股;"  change_style="融资融券" />
+		<event name="RZRQ_SetMarket" sender_name="融资融券_首页标题;"  dispatch="融资融券_面板:SetMarket();" />
+	</style_event>
+	<style_event style_name="九方擒龙">
+        <event name="clickJfqlTab" sender_name="九方擒龙左侧TAB;" dispatch="(!*)*:SetJfqlParam()" />
+    </style_event>
+    <style_event style_name="狙击机构">
+        <event name="clickJJJGTab" sender_name="组合列表;" dispatch="狙击机构个股信息TAB:SetSubStyle(狙击机构当前持仓TAB);*:SetParam();" />
+		<event name="SetJJJGCode" sender_name="狙击机构当前持仓列表;狙击机构股票池列表;狙击机构个股战绩列表;狙击机构调仓记录列表;" dispatch="(!*)个股详情标题:SetJJJGCode();主力持仓列表:SetJJJGCode();个股主力信息图表:SetJJJGCode();个股主力分布图表:SetJJJGCode()" />		
+		<event name="SetTipCode" sender_name="狙击机构当前持仓列表" dispatch="(!*)狙击机构标题:SetParam()" />
+		<event name="SetJJJGFilterStatus" sender_name="主力持仓列表Title;" dispatch="(!*)主力持仓列表:SetJJJGFilterStatus()" />
+    </style_event>
+    <style_event style_name="智能调仓.dlgstyle">
+        <event name="setparam" sender_name="智能调仓.dlgstyle;"  dispatch="*:SetParam(Type=Both)" />
+    </style_event>
+	<style_event style_name="信号池.dlgstyle">
+        <event name="setparam" sender_name="信号池.dlgstyle;"  dispatch="*:SetParam(Type=Both)" />
+    </style_event>
+	<style_event style_name="多维选股_v1">
+        <event name="DWXG_AdddStrategy" sender_name="多维收益;"  dispatch="策略信息:AddStrategy();" />
+		<event name="DWXGSetParam" sender_name="多维列表;"  dispatch="多维选股_个股K线图:SetParam();多维选股_个股分时图:SetParam();" />		
+		<event name="多维分时图" sender_name="多维选股.个股分时_toolbar;"  dispatch="SetSubStyle(多维选股.个股分时_substyle)" />
+		<event name="多维K线图"  sender_name="多维选股.个股分时_toolbar;"  dispatch="SetSubStyle(多维选股.个股K线_substyle)" />
+		<event name="DWXG_AdjustWarehouse" sender_name="多维选股标题;"  dispatch="策略信息:AdjustWarehouse();多维列表:AdjustWarehouse();多维收益:AdjustWarehouse()" />
+        <event name="DWXG_NewStockPool" sender_name="多维列表;"  dispatch="多维选股标题:NewStockPool()" />
+		<event name="DWXG_SynUpdate" sender_name="策略信息;"  dispatch="(!*)多维收益:SynUpdate();" />
+	</style_event>
+	<style_event style_name="多维选股_v2">
+		<event name="DWXGSetParam" sender_name="多维列表;"  dispatch="多维选股_个股K线图:SetParam();多维选股_个股分时图:SetParam();" />		
+	</style_event>
+	<style_event style_name="多维选股_v3">
+		<event name="DWXGSetParam" sender_name="多维列表_v3;"  dispatch="多维选股_个股K线图:SetParam();多维选股_个股分时图:SetParam();" />		
+	</style_event>
+	<style_event style_name="财经日历View">
+		<event name="CJRL_SendParam" sender_name="财经日历;"  dispatch="财经版面:RecvParam();" />
+	</style_event>
+	<style_event style_name="dlg.hsph">
+		<event name="沪深综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="上证A股综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="深证A股综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="北证A股综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="科创版综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="创业板综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="上证B股综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="深证B股综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="上证债券综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="深证债券综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="上证基金综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="深证基金综合" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="综合菜单" sender_name="沪深综合"  dispatch="*:SetParam();" />
+		<event name="UnSelectRow" sender_name="涨幅排名;跌幅排名;跌幅排名;打开跌停;3分钟涨速排名;3分钟跌速排名;量比排名;委比正排名;委比负排名;成交额排名;" dispatch="(!*)*:UnSelectRow()" />
+	</style_event>
+	<style_event style_name="牛点狙击">                
+        <event name="NXZJ_SwitchTab" sender_name="牛点狙击tab;"  dispatch="(!*)牛点狙击列表:SwitchTab();" /> 
+		<event name="NXZJ_ChangeDay" sender_name="牛点狙击tab;"  dispatch="(!*)牛点狙击列表:ChangeDay();牛点狙击资讯TAB集合:SetParam();" />
+		<event name="click_bk0" sender_name="牛点狙击列表;" dispatch="(!*)牛点狙击_个股分时图:SetParam(Type=Both);牛点狙击_个股K线图:SetParam(Type=Both);牛点狙击资讯TAB集合:SetParam(Type=Both);" />	
+		<event name="click_bk" sender_name="所属板块" dispatch="(!*)#:SetStockParam();" />
+	</style_event>
+	<style_event style_name="龙虎掘金">                
+        <event name="click_bk0" sender_name="龙虎掘金当前持仓列表;龙虎掘金最新预选列表;龙虎掘金个股战绩列表;龙虎掘金调仓记录列表;" dispatch="(!*)个股分时图:SetParam();个股K线图:SetParam();龙虎掘金资讯TAB集合:SetParam(Type=Both);" />	
+		<event name="click_bk" sender_name="所属板块;" dispatch="(!*)#:SetStockParam();" />
+		<event name="分时图" sender_name="龙虎掘金.个股分时_toolbar;"  dispatch="SetSubStyle(个股分时_substyle)" />
+		<event name="K线图"  sender_name="龙虎掘金.个股分时_toolbar;"  dispatch="SetSubStyle(个股K线_substyle)" />
+		<event name="LHJJ_SwitchTab"  sender_name="组合列表.龙虎掘金;"  dispatch="(!*)龙虎掘金当前持仓列表:SetParam();龙虎掘金最新预选列表:SetParam();龙虎掘金个股战绩列表:SetParam();龙虎掘金调仓记录列表:SetParam();龙虎掘金标题信息:SetParam();" />
+	</style_event>
+	<style_event style_name="龙虎掘金.首页">                
+		<event name="changeLHJJ" sender_name="龙虎掘金首页;" change_style="龙虎掘金" dispatch="(!*)龙虎掘金:SetParam(Type=Both);"/>
+	</style_event>
+	<style_event style_name="北向资金分析">
+		<event name="datetimefilter" sender_name="个股增减持统计列表;"  dispatch="个股增减持图表:SetParam();" />	
+		<event name="click_stock" sender_name="行业流入估算列表;个股增减持统计列表;"  dispatch="(!*)个股增减持图表:SetParam();行业资金统计:SetParam();" />
+	</style_event>
+	<style_event style_name="选股器">
+		<event name="XGQList" sender_name="选股器股票列表;"  dispatch="选股器标题:SetParam();" />		
+	</style_event>
+	<style_event style_name="业绩速递">
+		<event name="SwitchTab" sender_name="业绩标题;"  dispatch="(!*)业绩速递面板:SetParam();" />		
+	</style_event>
+	<style_event style_name="研报掘金">   
+      <event name="SetAnalystName" sender_name="分析师榜单列表;" dispatch="分析师榜单图表:SetAnalystName();最新跟踪成分股列表:SetAnalystName();历史跟踪成分股列表:SetAnalystName()" />
+      <event name="YBJJ_Click" sender_name="一致预期榜单;金牌推荐榜单;机构关注榜单;" dispatch="(!*)一致预期最新研报列表:SetParam();金牌推荐历史研报列表:SetParam();机构关注研报列表:SetParam();机构关注调研明细列表:SetParam();一致预期趋势:SetParam();目标价趋势:SetParam();" />
+      <event name="切换周期" sender_name="一致预期筛选框;金牌推荐筛选框;机构关注筛选框;" 
+        	dispatch="(!*)一致预期榜单:SetParam();金牌推荐榜单:SetParam();机构关注榜单:SetParam();" />
+      <event name="YBJJ_DATE" sender_name="一致预期榜单;金牌推荐榜单;机构关注榜单;" dispatch="(!*)一致预期筛选框:SetParam();金牌推荐筛选框:SetParam();机构关注筛选框:SetParam();" />
+	</style_event>
+		
+	<style_event style_name="大宗交易">   
+      <event name="clickDZJYSingle" sender_name="大宗交易_首页;" change_style="大宗交易详情页" />
+	</style_event>
+	<style_event style_name="新股IPO">
+		<event name="SwitchIPOXGSG" sender_name="新股综合屏_已上市新股;新股综合屏_待上市新股;" dispatch="(!*)新股IPO集合:SetSubStyle(TabXGIPO_XGSG)"/>
+		<event name="SwitchIPOSSBX" sender_name="新股综合屏_已上市新股;新股综合屏_待上市新股;" dispatch="(!*)新股IPO集合:SetSubStyle(TabXGIPO_SSBX)"/>
+		<event name="click_bk" sender_name="新股综合屏_已上市新股;新股综合屏_待上市新股;" dispatch="(!*)新股综合屏_分时:SetParam(Type=Both);新股综合屏_K线:SetParam(Type=Both);" />
+		<event name="新股综合屏分时图" sender_name="新股综合屏.个股分时_toolbar;"  dispatch="SetSubStyle(新股综合屏.个股分时_substyle)" />
+		<event name="新股综合屏K线图"  sender_name="新股综合屏.个股分时_toolbar;"  dispatch="SetSubStyle(新股综合屏.个股K线_substyle)" />
+		<event name="click_bk"  sender_name="新股统计_新股统计列表;"  dispatch="(!*)新股统计_新股统计历史趋势:SetParam(Type=Both)" />
+	</style_event>
+	<style_event style_name="基金重仓">   
+      <event name="基金重仓" sender_name="基金重仓_左侧toolbar;" dispatch="(!*)基金重仓列表.substyle:SetSubStyle(基金数据.substyle)"/>
+	  <event name="行情报价" sender_name="基金重仓_左侧toolbar;" dispatch="(!*)基金重仓列表.substyle:SetSubStyle(重仓行情.substyle);(!*)重仓行情列表:SetParam(Type=ZCtoHQ)"/>
+
+		<event name="SetAll" sender_name="基金数据表头;" dispatch="(!*)基金数据列表:SetParam(Type=All)"/>
+		<event name="SetIncrease" sender_name="基金数据表头;" dispatch="(!*)基金数据列表:SetParam(Type=Increase)"/>
+		<event name="SetDecrease" sender_name="基金数据表头;" dispatch="(!*)基金数据列表:SetParam(Type=Decrease)"/>
+	</style_event>
+	<style_event style_name="限售解禁详情页">   
+      <event name="XSJJ_Click" sender_name="解禁个股详情图形;" dispatch="(!*)解禁个股详情页面:SetParam(Type=Decrease)"/>
+	</style_event>
+
+	<style_event style_name="高管增持">   
+      <event name="DataChange" sender_name="增持金额标题;" dispatch="(!*)增持详情列表:SetParam()"/>
+	</style_event>
+	
+	<style_event style_name="停牌复牌">   
+      <event name="SwitchTab" sender_name="停牌复牌标题;"  dispatch="(!*)停牌复牌面板:SetParam();" />		
+	</style_event>
+	
+	<style_event style_name="外汇列表">
+		<event name="click_bk" sender_name="tab外汇列表;"  dispatch="(!*)外汇列表_分时:SetParam(Type=Both);外汇列表_K线:SetParam(Type=Both);外汇要闻资讯:SetParam(Type=Both);" />
+	</style_event>
+	 <style_event style_name="持仓动态">
+        <event name="setparam" sender_name="持仓动态列表;"  dispatch="*:SetParam(Type=Both)" />
+    </style_event>
+	<style_event style_name="大股东持股">
+		<event name="click_bk" sender_name="大股东持股详情页面;" dispatch="(!*)大股东增持详情页面:SetParam(type=both);大股东减持详情页面:SetParam(type=both)"; />
+		<event name="setDate" sender_name="大股东增持排行title;" dispatch="大股东持股详情页面:SetDate();大股东增持详情页面:SetDate();大股东减持详情页面:SetDate()"/>
+	</style_event>
+	<style_event style_name="高管增持">
+		<event name="DataChange" sender_name="增持金额标题;" dispatch="增持详情列表:SetParam();"/>
+	</style_event>
+	
+	<style_event style_name="九转榜单">                
+        <event name="JZBD_Switch" sender_name="九转榜单tab;"  dispatch="(!*)九转榜单列表:SetParam();" /> 
+		<event name="click_bk0" sender_name="九转榜单列表;" dispatch="(!*)九转榜单_个股分时图:SetParam(Type=Both);九转榜单_个股K线图:SetParam(Type=Both);九转榜单资讯TAB集合:SetParam(Type=Both);" />	
+		<event name="click_bk" sender_name="所属板块" dispatch="(!*)#:SetStockParam();" />
+	</style_event>
+	
+	<style_event style_name="债券列表">      
+		<event name="click_bk_zz" sender_name="股债联动;"  dispatch="(!*)转债分时_个股分时图:SetParam(Type=Both);转债标题栏:SetGzParam();转债盘口_买卖盘:SetParam();转债盘口_财务数据:SetParam();转债分时成交:SetParam();转债分价表:SetParam();" />
+		<event name="click_bk_zg" sender_name="股债联动;"  dispatch="(!*)正股分时_个股分时图:SetParam(Type=Both);正股标题栏:SetGzParam();正股盘口_买卖盘:SetParam();转债正股_财务数据:SetParam();正股分时成交:SetParam();正股分价表:SetParam();" />
+		<event name="OnDBClick" sender_name="正股分时成交" change_style="magic|分时成交" />
+		<event name="OnDBClick" sender_name="转债分时成交" change_style="magic|分时成交" />
+		<event name="OnDBClick" sender_name="转债分价表" change_style="magic|分价表" />
+		<event name="OnDBClick" sender_name="正股分价表" change_style="magic|分价表" />
+		<event name="set_stock_zq" sender_name="债券列表"  dispatch="(!*)债券列表_分时:SetParam(Type=Both);债券列表_K线:SetParam(Type=Both);" />
+		<event name="set_stock_zqzz" sender_name="可转债"  dispatch="(!*)可转债_分时:SetParam(Type=Both);可转债_K线:SetParam(Type=Both);" />
+		<event name="set_stock_zqhg" sender_name="债券回购"  dispatch="(!*)债券回购_分时:SetParam(Type=Both);债券回购_K线:SetParam(Type=Both);" />
+	</style_event>
+	
+	<style_event style_name="迷你弹窗">
+		<event name="click_bk" sender_name="迷你弹窗_TAB;"  dispatch="(!*)dlg.mini.自选股:SetParam(Type=Both);dlg.mini.异动数据:SetParam(Type=Both);dlg.mini.综合排行;7x24全球资讯mini:SetParam(Type=Both);" />
+		<event name="自选股" sender_name="迷你窗口标签栏" dispatch="(!*)dlg.mini.自选股:SetParam();"  />
+	</style_event>
+
+	<style_event style_name="自定义面板_默认">
+		<event name="setstyle" sender_name="mylayout" />
+	</style_event>
+	
+	<style_event style_name="基金选股">
+		<event name="JJXGFundList" sender_name="基金选股结果列表;"  dispatch="(!*)基金选股结果标题栏:SetParam();" />		
+		<event name="JJXGStockList" sender_name="基金选股结果持股列表;"  dispatch="(!*)基金选股结果持股标题栏:SetParam();" />		
+		<event name="JJXGStockListFilter" sender_name="基金选股结果持股标题栏;"  dispatch="(!*)基金选股结果持股列表:SetParam();" />		
+		<event name="JJXGFilterEvent" sender_name="基金选股结果标题栏"  dispatch="(!*)基金选股结果持股列表:SetParam();基金选股结果列表:SetParam();" />		
+	</style_event>
+
+	<style_event style_name="个股列表.FUND">
+		<event name="switch_rtline" sender_name="列表_FUND;"  change_style="magic|个股走势" dispatch="*:SetParam();" />	
+	</style_event>
+	
+	<style_event style_name="期货综合屏">
+		<event name="set_stock" sender_name="金融期货列表;金属列表;能源化工列表;谷物农副产品列表;"  dispatch="(!*)期货综合屏_分时:SetParam(Type=Both);期货综合屏_K线:SetParam(Type=Both);" />
+		<event name="set_refresh" sender_name="金融期货列表;" dispatch="(!*)金属列表:SetRefresh();能源化工列表:SetRefresh();谷物农副产品列表:SetRefresh()" />
+		<event name="set_refresh" sender_name="金属列表;" dispatch="(!*)金融期货列表:SetRefresh();能源化工列表:SetRefresh();谷物农副产品列表:SetRefresh()" />
+		<event name="set_refresh" sender_name="能源化工列表;" dispatch="(!*)金属列表:SetRefresh();金融期货列表:SetRefresh();谷物农副产品列表:SetRefresh()" />
+		<event name="set_refresh" sender_name="谷物农副产品列表;" dispatch="(!*)金属列表:SetRefresh();金融期货列表:SetRefresh();能源化工列表:SetRefresh()" />
+	</style_event>
+	<style_event style_name="沪深京指数详情">
+		<event name="set_stock_hszs" sender_name="沪深京指数列表"  dispatch="(!*)沪深京指数_分时:SetParam(Type=Both);沪深京指数_K线:SetParam(Type=Both);" />
+		<event name="set_stock_zyzs" sender_name="A股重要指数列表;全球重要指数列表;重要汇率列表;重要商品列表;"  dispatch="(!*)重要指数综合屏_分时:SetParam(Type=Both);重要指数综合屏_K线:SetParam(Type=Both);" />
+	</style_event>
+</event_list>

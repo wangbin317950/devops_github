@@ -1,0 +1,775 @@
+<root> 
+  <marketdef> 
+    <market id="0" code="sz" stktype="0" name="深圳市场"> 
+      <typelist> 
+        <type id="5" stktype="1">深圳指数</type>  
+        <type id="6">深圳Ａ股</type>  
+        <type id="7">深圳Ｂ股</type>  
+        <type id="8">深圳其他债券</type>  
+        <type id="12">深圳权证</type>  
+        <type id="13">深圳中小企业板</type>  
+        <type id="21">深圳退市整理股票</type>  
+        <type id="29">深圳债券回购</type>  
+        <type id="32">深圳可转债</type>  
+        <type id="35">深圳证券申购</type>
+        <type id="50" stktype="1">债券指数</type>
+        <type id="52">港股通，深证</type>  
+        <type id="53">港股通，上证深证共有</type>  
+        <type id="80">创业板</type>  
+        <type id="81">三板</type>  
+        <type id="101">etf</type>  
+        <type id="102">LOF</type>  
+        <type id="103">分级基金</type>  
+        <type id="104">封闭基金</type>  
+        <type id="105">仅申赎</type> 
+        <type id="111">深交所基础设施基金</type> 
+      </typelist> 
+    </market>  
+    <market id="1" code="sh" stktype="0" name="上海市场"> 
+      <typelist> 
+        <type id="1" stktype="1">上海指数</type>  
+        <type id="2">上海Ａ股</type>  
+        <type id="3">上海Ｂ股</type>  
+        <type id="4">上海其他债券</type>  
+        <type id="11">上海权证</type>  
+        <type id="18">上海退市整理股票</type>  
+        <type id="19">上海风险警示板</type>  
+        <type id="25">沪伦通CDR</type>  
+        <type id="26">其他CDR</type>  
+        <type id="27">科创版</type>  
+        <type id="28">上海债券回购</type>  
+        <type id="30">上海证券申购</type>  
+        <type id="31">上海可转债</type>  
+        <type id="34">上海指标指数</type>
+		<type id="50" stktype="1">债券指数</type>   
+        <type id="51">港股通，上证</type>  
+        <type id="53">港股通，上证深证共有</type>  
+        <type id="81">三板</type>  
+        <type id="106">开放式基金</type>  
+        <type id="107">ETF</type>  
+        <type id="108">LOF</type>  
+        <type id="109">封闭基金</type> 
+        <type id="110">上交所基础设施基金</type> 
+        <type id="112">上交所其他基金</type> 
+      </typelist> 
+    </market>  
+    <market id="2" code="AHZSECTOR" stktype="2" name="沪深板块"> 
+      <typelist> 
+        <type id="2">自定义指数</type>  
+        <type id="22">行业板块</type>  
+        <type id="23">地区板块</type>  
+        <type id="24">概念板块</type>
+        <type id="36">统计板块</type>
+      </typelist> 
+    </market>
+    <market id="3" code="bj" stktype="0" name="北京市场"> 
+      <typelist> 
+        <type id="49" stktype="1">北证指数</type>  
+		<type id="42">普通股票</type>
+      </typelist> 
+    </market>	
+	<market id="7" code="zzidx" stktype="0" name="中证指数"/>
+	<market id="8" code="gzidx" stktype="0" name="国证指数"/>
+    <market id="12" code="AHZBSECTOR" stktype="2" name="沪深京板块"> 
+      <typelist> 
+        <type id="2">自定义指数</type>  
+        <type id="22">行业板块</type>
+        <type id="23">地区板块</type>
+        <type id="24">概念板块</type>
+        <type id="70">白马指数</type>
+      </typelist> 
+    </market>	
+    <market id="126" code="FUND" stktype="0" name="场外基金"> 
+      <typelist> 
+        <type id="2">股票型</type>  
+		<type id="4">混合型</type>
+		<type id="8">债券型</type>
+		<type id="16">指数型</type>
+		<type id="32">QDII</type>
+		<type id="64">LOF</type>
+		<type id="128">FOF</type>
+		<type id="256">货币型</type>
+		<type id="512">净值型和货币型</type>
+      </typelist> 
+    </market>	
+    <market id="100" code="GOLD" stktype="0" name="国际金"/>  
+    <market id="101" delayid="151" code="SSGE" stktype="0" name="上金所"/>  
+    <market id="102" delayid="152" stktype="0" code="HKSE" name="香港交易所"> 
+      <typelist> 
+        <type id="0">主板</type>  
+        <type id="1">创业板</type> 
+        <type id="2">ETF</type> 
+		<type id="3">债券</type> 
+		<type id="4">其他</type> 
+      </typelist> 
+    </market>  
+    <market id="103" delayid="153" stktype="0" code="COMEX" name="纽约金属交易所"/>  
+    <market id="104" delayid="154" stktype="2" code="HKSECTOR" name="港股板块"/>  
+    <market id="105" delayid="155" stktype="0" code="CME" name="芝加哥商品交易所-CM"/>  
+    <market id="106" delayid="156" stktype="3" code="NASDAQ" name="纳斯达克"/>  
+    <market id="107" delayid="157" stktype="3" code="NYSE" name="纽交所"/>  
+    <market id="108" delayid="158" stktype="3" code="AMEX" name="美交所"/>  
+    <market id="109" code="FOREX" stktype="0" name="外汇"/>
+    <market id="122" code="FOREXCN" stktype="0" name="外汇中国市场"/>  
+    <market id="123" code="FOREXGL" stktype="0" name="外汇全球市场"/>  		
+    <market id="110" delayid="160" code="SGX" stktype="0" name="新加坡交易所"/>  
+    <market id="111" delayid="161" code="NYMEX" stktype="0" name="纽约能源交易所"/>  
+    <market id="112" delayid="162" code="DCE" stktype="0" name="大商所"/>  
+    <market id="113" delayid="163" code="INE" stktype="0" name="上期能源交易所-I"/>  
+    <market id="114" delayid="164" code="SHFE" stktype="0" name="上期所"/>  
+    <market id="115" delayid="165" code="CZCE" stktype="0" name="郑商所"/>  
+    <market id="116" delayid="166" code="CFFEX" stktype="0" name="中金所"/>  
+    <market id="117" delayid="167" code="USSECTOR" stktype="2" name="美股板块"/>  
+    <market id="118" delayid="168" code="HKIDX" stktype="1" name="香港指数"/>  
+    <market id="119" delayid="169" code="HKQZ" stktype="4" name="香港窝轮牛熊证"/>  
+    <market id="120" delayid="170" code="FHSI" stktype="0" name="FHSI"/>  
+    <market id="121" code="HKDD" stktype="0" name="暗盘"/>   
+	<market id="124" delayid="174" code="HKCF" stktype="0" name="HKCF"/>
+	<market id="127" delayid="177" code="CMEOTHER" stktype="0" name="CMEOTHER"/>  
+	<market id="128" delayid="178" code="IMM" stktype="0" name="IMM市场"/>  
+	<market id="129" delayid="179" code="CBOT" stktype="0" name="CBOT市场"/>  
+    <market id="150" code="QQZS" stktype="1" name="全球指数"/>  
+    <market id="200" code=".TRCCRB" stktype="1" name="路透CRB商品指数"/>  
+    <market id="201" code="AEX" stktype="1" name="荷兰指数"/>  
+    <market id="202" code="ASX200" stktype="1" name="澳ASX指数"/>  
+    <market id="203" code="BFX" stktype="1" name="比BEL20"/>  
+    <market id="204" code="BVSP" stktype="1" name="巴西指数"/>  
+    <market id="205" code="DFMGI" stktype="1" name="迪拜指数"/>  
+    <market id="206" code="DJIA" stktype="1" name="道琼斯指数"/>  
+    <market id="207" code="FCHI" stktype="1" name="法国CAC"/>  
+    <market id="208" code="FTSE" stktype="1" name="英国富时100"/>  
+    <market id="209" code="GDAXI" stktype="1" name="德国DAX"/>  
+    <market id="210" code="HEX" stktype="1" name="芬兰指数"/>  
+    <market id="211" code="IXIC" stktype="1" name="纳斯达克综指"/>  
+    <market id="212" code="JKSE" stktype="1" name="印尼综指"/>  
+    <market id="213" code="KLSE" stktype="1" name="马来西亚"/>  
+    <market id="214" code="KS11200" stktype="1" name="韩国综指"/>  
+    <market id="215" code="KSE100" stktype="1" name="卡拉奇指"/>  
+    <market id="216" code="MIB" stktype="1" name="意大利指"/>  
+    <market id="217" code="N225" stktype="1" name="日经指数"/>  
+    <market id="218" code="OIL" stktype="1" name="布伦特原油指数"/>  
+    <market id="219" code="OMXC20" stktype="1" name="丹麦指数"/>  
+    <market id="220" code="OMXSPI" stktype="1" name="瑞典SX指"/>  
+    <market id="221" code="PSI" stktype="1" name="菲律宾指"/>  
+    <market id="222" code="RTS" stktype="1" name="俄RTS指"/>  
+    <market id="223" code="RUT" stktype="1" name="罗素2000"/>  
+    <market id="224" code="SENSEX" stktype="1" name="印度指数"/>  
+    <market id="225" code="SET" stktype="1" name="泰国指数"/>  
+    <market id="226" code="SOX" stktype="1" name="费城指数"/>  
+    <market id="227" code="SPX" stktype="1" name="标普500"/>  
+    <market id="228" code="SSMI" stktype="1" name="瑞士指数"/>  
+    <market id="229" code="STI" stktype="1" name="新加坡海峡指数"/>  
+    <market id="230" code="TOP40" stktype="1" name="南非指数"/>  
+    <market id="231" code="TOPIX" stktype="1" name="东证指数"/>  
+    <market id="232" code="TSX" stktype="1" name="TSX"/>  
+    <market id="233" code="TWII" stktype="1" name="台湾加权"/>  
+    <market id="234" code="UTYI" stktype="1" name="费城公用"/>  
+    <market id="235" code="VNINDEX" stktype="1" name="越南指数"/>  
+    <market id="236" code="XAXI" stktype="1" name="美证指数"/>  
+    <market id="238" code="SXO" stktype="1" name="欧洲斯托克600"/>  
+    <market id="239" code="SXED" stktype="1" name="欧洲斯托克50"/>
+	<market id="249" code="JP" stktype="1" name="日本证券市场"/> 
+	<market id="251" code="JFZT" stktype="0" name="九方智投自定义市场"/> 
+    <market id="253" code="DEFMAP_DELAY" stktype="0" name="自定义市场(延时)"/> 
+    <market id="254" code="DEFMAP" stktype="0" name="自定义市场"/> 
+  </marketdef>  
+  <funcdefs> 
+    <biztype desc="通用"> 
+      <IS_HS desc="是否是沪深市场"> 
+        <market id="0"/>  
+        <market id="1"/>		
+      </IS_HS>
+      <IS_HSJA desc="是否是沪深京A股"> 
+        <market id="0" type="6,13,80,52,53"/>  
+        <market id="1" type="2,27,51,53"/>
+		<market id="3" type="42"/> 		
+      </IS_HSJA>  	  
+      <IS_HSA desc="是否是沪深A股"> 
+        <market id="0" type="6,13,80,52,53"/>  
+        <market id="1" type="2,27,51,53"/>		
+      </IS_HSA>  
+      <IS_HSB desc="是否是沪深B股"> 
+        <market id="0" type="7"/>  
+        <market id="1" type="3"/> 
+      </IS_HSB>  
+	  <IS_HSGT desc="是否是沪深股通"> 
+        <custom id="71,72" /> 
+      </IS_HSGT>
+	  <IS_L2 desc="是否是沪深L2"> 
+        <market id="0" type="6,7,13,29,80,52"/>  
+        <market id="1" type="2,3,27,28,51,53"/>	
+		<market id="102"/> 
+      </IS_L2>  
+
+	  <IS_AMOUNT desc="是否显示金额"> 
+        <market id="0" type="6,7,13,80,101,102,103,104,111,8,32"/>  
+        <market id="1" type="2,3,27,106,107,108,109,110,112,4,31"/>	
+		<market id="3" type="42"/>
+      </IS_AMOUNT>  
+	  <IS_NOVISIBLE>
+		<market id="0" type="6,7,8,12,13,21,29,32,35,52,53,80,81,101,102,103,104,105,111"/>
+		<market id="1" type="2,3,4,11,18,19,25,26,27,28,30,31,51,53,81,106,107,108,109,110,112"/>
+		<market id="3" type="42"/>	
+		<market id="102,121,119"/> 
+		<market id="106,107,108"/> 
+	  </IS_NOVISIBLE>
+
+	   <IS_HSJL1 desc="是否是沪深京L1"> 
+        <market id="0"/>  
+        <market id="1"/>
+		<market id="3"/>
+		<market id="7"/>	
+		<market id="20"/>
+		<market id="21"/>
+      </IS_HSJL1>  
+
+	  <IS_GN desc="是否是国内市场"> 
+        <market id="0"/>  
+        <market id="1"/>	
+		<market id="3"/>
+      </IS_GN>  
+
+      <IS_HSINDEX desc="是否是沪深指数"> 
+        <market id="0" type="5,50"/>  
+        <market id="1" type="1,50"/> 
+      </IS_HSINDEX>  
+      <IS_HSSECTOR desc="是否是沪深板块"> 
+        <market id="2"/> 
+      </IS_HSSECTOR>
+      <IS_HSJJ desc="是否是沪深基金"> 
+        <market id="0" type="101,102,103,104,111"/>  
+        <market id="1" type="106,107,108,109,110,112"/> 
+      </IS_HSJJ>
+      <IS_SHAG desc="是否上证A股"> 
+        <market id="1" type="2,27,51,53"/> 
+      </IS_SHAG> 
+       <IS_SZAG desc="是否深证A股"> 
+        <market id="0" type="6,13,80,52,53"/> 
+      </IS_SZAG>
+      <IS_BJAG desc="是否是北证A股"> 
+        <market id="3" type="42"/> 
+      </IS_BJAG>	  
+      <IS_CHUANGYEBAN desc="是否创业板"> 
+        <market id="0" type="80"/> 
+      </IS_CHUANGYEBAN>	  
+      <IS_KECHUANGBAN desc="是否是科创版"> 
+        <market id="1" type="27"/> 
+      </IS_KECHUANGBAN>  
+      <IS_SECTOR desc="是否是板块"> 
+        <market id="2,12"/> 
+      </IS_SECTOR>  
+	  <IS_HSHYSECTOR desc="是否是行业板块">
+        <market id="2" type="22"/>
+      </IS_HSHYSECTOR>
+	  <IS_HSDQSECTOR desc="是否是地区板块">
+        <market id="2" type="23"/>
+      </IS_HSDQSECTOR>
+	  <IS_HSGNSECTOR desc="是否是概念板块">
+        <market id="2" type="24"/>
+      </IS_HSGNSECTOR>
+      <IS_HSTJSECTOR desc="是否是统计板块">
+        <market id="2" type="36"/>
+      </IS_HSTJSECTOR>
+      <IS_INDEX desc="是否是指数"> 
+        <market id="200-239"/>  
+        <market id="100"/>  
+        <market id="118"/>  
+        <market id="0" type="5,50"/>  
+        <market id="1" type="1,50"/>
+        <market id="7"/>
+        <market id="8"/> 
+      </IS_INDEX>
+      <IS_MAINBOARD desc="是否是A股"> 
+        <market id="0" type="6,13,80,52,53"/>  
+        <market id="1" type="2,27,51,53"/>
+		<market id="3" type="42"/>		
+        <market id="102"/> 
+        <market id="106,107,108"/> 
+      </IS_MAINBOARD>
+      <IS_B desc="是否是B股"> 
+        <market id="0" type="7"/>  
+        <market id="1" type="3"/> 
+      </IS_B>
+      <IS_JJ desc="是否是基金"> 
+        <market id="0" type="101,102,103,104,111"/>  
+        <market id="1" type="106,107,108,109,110,112"/> 
+      </IS_JJ>
+      <IS_SHJJ desc="是否是上证基金">
+        <market id="1" type="106,107,108,109,110,112"/> 
+	  </IS_SHJJ>
+	   <IS_SZJJ desc="是否是深证基金">
+		<market id="0" type="101,102,103,104,111"/>  
+	  </IS_SZJJ>
+      <IS_ZQ desc="是否是债券"> 
+        <market id="0" type="8,29,32"/>  
+        <market id="1" type="4,28,31"/> 
+      </IS_ZQ>
+	   <IS_ZQNOKZZ desc="是否是债券不含可转债">
+        <market id="0" type="8,29"/>  
+        <market id="1" type="4,28"/> 
+      </IS_ZQNOKZZ>
+      <IS_KZZ desc="是否是可转债">
+        <market id="0" type="32"/>  
+        <market id="1" type="31"/> 
+      </IS_KZZ>
+	  <IS_SHZQ desc="是否是上证债券">
+        <market id="1" type="4,28,31"/> 
+	  </IS_SHZQ>
+   	  <IS_SZZQ desc="是否是深证债券">
+		<market id="0" type="8,29,32"/>  
+	  </IS_SZZQ>
+      <IS_QZ desc="是否是权证"> 
+        <market id="0" type="12"/>  
+        <market id="1" type="11"/> 
+      </IS_QZ>
+      <IS_NQZ desc="是否是牛熊证"> 
+		<market id="119"/> 
+      </IS_NQZ>
+      <IS_QH desc="是否是期货"> 
+        <market id="101,103,105,110,111,120"/> 
+        <market id="112,113,114,115,116,124,127,128,129"/>  		
+      </IS_QH>
+      <IS_QQ desc="是否是期权"> 
+      </IS_QQ>
+      <IS_WH desc="是否是外汇"> 
+        <market id="109,122,123"/> 
+      </IS_WH >
+      <IS_XH desc="是否是现货">
+        <market id="100,101"/>  	  
+      </IS_XH >
+      <IS_USSTOCK desc="是否是美股"> 
+        <market id="106,107,108"/> 
+      </IS_USSTOCK>
+	  <IS_HKSTOCK desc="是否是港股"> 
+        <market id="102,121"/> 
+      </IS_HKSTOCK> 	
+	  <IS_HKSTK desc="是否是港股个股"> 
+        <market id="102"/> 
+      </IS_HKSTK> 	
+      <IS_XH desc="是否是现货"> 
+        <market id="100"/>  
+        <market id="101"/>
+      </IS_XH> 
+	    <IS_OVERFUND desc="是否是场外基金"> 
+        <market id="126"/> 
+      </IS_OVERFUND>
+      <IS_OVERFUND.OPEN desc="是否是场外基金.开放式"> 
+         <market id="126" type="2,4,8,16,32,64,128"/>
+      </IS_OVERFUND.OPEN>
+      <IS_OVERFUND.MONEY desc="是否是场外基金.货币型"> 
+          <market id="126" type="256"/>
+      </IS_OVERFUND.MONEY>
+      <IS_US_SECTOR desc="是否是美股板块"> 
+        <market id="117"/> 
+      </IS_US_SECTOR> 
+	  <IS_HK_SECTOR desc="是否是港股板块"> 
+        <market id="104"/> 
+      </IS_HK_SECTOR>
+      <IS_QUANQIUINDEX desc="是否是全球指数"> 
+        <market id="200-239"/>
+        <market id="150"/> 
+        <market id="118"/>
+      </IS_QUANQIUINDEX>
+	  <IS_QQZS desc="是否是全球指数"> 
+        <market id="150"/> 
+      </IS_QQZS>
+      <IS_DELAY_QUANQIUINDEX desc="是否是延迟全球指数"> 
+        <market id="201,203,204,205,207,208,209"/>
+        <market id="210,212,215,216,219"/> 
+        <market id="220,221,223,225,226,228"/>
+        <market id="232,233,235,236"/>
+      </IS_DELAY_QUANQIUINDEX> 
+	  <IS_GNHJ desc="是否是国内黄金"> 
+        <market id="101"/>
+      </IS_GNHJ> 
+	  <IS_HKSE desc="是否港股"> 
+		<market id="102,121"/>
+	  </IS_HKSE> 
+	  <IS_HKSE_DELAY desc="是否港股延时市场">
+		<market id="152"/>
+	  </IS_HKSE_DELAY> 
+	  <IS_COMEX desc="是否纽约金属交易所"> 
+		<market id="103"/>
+	  </IS_COMEX> 
+	  <IS_HKSECTOR desc="是否港股板块"> 
+		<market id="104"/>
+	  </IS_HKSECTOR> 
+      <IS_CME desc="是否芝加哥商品交易所"> 
+		<market id="105,127,177,128,178,129,179"/>
+	  </IS_CME> 
+      <IS_NASDAQ desc="是否纳斯达克市场"> 
+		<market id="106"/>
+	  </IS_NASDAQ> 
+	  <IS_NYSE desc="是否纽约交易所"> 
+		<market id="107"/>
+	  </IS_NYSE> 
+	  <IS_AMEX desc="是否美国交易所"> 
+		<market id="108"/>
+	  </IS_AMEX> 
+	  <IS_NYMEX desc="是否纽约能源交易所"> 
+		<market id="111"/>
+	  </IS_NYMEX> 
+	  <IS_USSECTOR desc="是否美股板块"> 
+		<market id="117"/>
+	  </IS_USSECTOR> 
+	  <IS_HKIDX desc="是否香港指数"> 
+		<market id="118"/>
+	  </IS_HKIDX>  
+      <IS_HKQZ desc="是否是窝轮牛熊证"> 
+        <market id="119"/> 
+      </IS_HKQZ> 
+      <IS_HKQZ_DELAY desc="是否是窝轮牛熊证延时市场"> 
+        <market id="169"/> 
+      </IS_HKQZ_DELAY> 
+	  <IS_FHSI desc="是否香港恒指期货"> 
+        <market id="120"/> 
+      </IS_FHSI>	  
+	  <IS_HKDD desc="是否是暗盘"> 
+		<market id="121"/> 
+	  </IS_HKDD>
+	  <IS_FILE_HKLV desc="是否港股虚拟列表"> 
+		<market id="1006"/> 
+	  </IS_FILE_HKLV>
+	  <IS_FILE_HKBK desc="是否港股板块列表"> 
+		<market id="1007"/> 
+	  </IS_FILE_HKBK>
+	  <IS_FILE_USVL desc="是否美股虚拟列表"> 
+		<market id="1008"/> 
+	  </IS_FILE_USVL>
+	  <IS_FILE_USBK desc="是否美股板块板块"> 
+		<market id="1009"/> 
+	  </IS_FILE_USBK>
+	  <IS_FILE_HKSEFINANCE desc="是否港股财务数据"> 
+		<market id="1104"/> 
+	  </IS_FILE_HKSEFINANCE>
+	  <IS_FILE_AMEXFINANCE desc="是否美交所务数据"> 
+		<market id="1105"/> 
+	  </IS_FILE_AMEXFINANCE>
+	  <IS_FILE_NYSEFINANCE desc="是否纽交所财务数据"> 
+		<market id="1106"/> 
+	  </IS_FILE_NYSEFINANCE>
+	  <IS_FILE_NASDAFINANCE desc="是否纳斯达克财务数据"> 
+		<market id="1107"/> 
+	  </IS_FILE_NASDAFINANCE>
+	  <IS_FILE_HKQZFINANCE desc="是否窝轮牛熊证财务数据"> 
+		<market id="1108"/> 
+	  </IS_FILE_HKQZFINANCE>
+	  <IS_FILE_QZRALT desc="是否窝轮牛熊证与正股对应关系"> 
+		<market id="1401"/> 
+	  </IS_FILE_QZRALT>	  
+	  <IS_DELAY desc="是否是延时市场"> 
+		<market id="151-158"/>
+		<market id="160-179"/>
+	  </IS_DELAY>
+	  <IS_SZ desc="是否深圳市场"> 
+		<market id="0"/> 
+	  </IS_SZ>
+	  <IS_SH desc="是否上海市场"> 
+		<market id="1"/> 
+	  </IS_SH>
+	  <IS_BJ desc="是否北京市场"> 
+		<market id="3"/> 
+	  </IS_BJ>
+      <IS_US_ZG desc="是否是美股正股"> 
+        <market id="106,107,108,117"/> 
+       </IS_US_ZG>
+	   <IS_HK_ZG desc="是否是香港正股"> 
+          <market id="102,104,118,119"/> 
+       </IS_HK_ZG>
+	   <IS_HK_ALL desc="是否是香港市场"> 
+          <market id="102,104,118,119,120,121"/> 
+       </IS_HK_ALL>
+       <IS_US_ALL desc="是否是美股市场，含延时市场"> 
+          <market id="106,107,108,156,157,158"/> 
+       </IS_US_ALL>
+	   <IS_SUPPORT_NEWMARKET desc="是否已支持资讯市场">
+		  <market id="0,1,3,102,107,106,108,152,157,156,158"/>	
+	   </IS_SUPPORT_NEWMARKET>
+	   <IS_SUPPORT_HSCQCX desc="是否支持沪深除权除息">
+		  <market id="0,1,3"/>	
+	   </IS_SUPPORT_HSCQCX>
+	   <IS_SUPPORT_GLOBALCQCX desc="是否支持港美股除权除息">
+		  <market id="102,107,106,108,152,157,156,158"/>
+	   </IS_SUPPORT_GLOBALCQCX>
+	   <IS_SUPPORT_CQCX desc="是否支持除权除息">
+		  <market id="0,1,102,107,106,108,152,157,156,158"/>
+	   </IS_SUPPORT_CQCX>
+	   <IS_FS_DETAILS desc="MINI分时是否显示详情"> 
+        <market id="0" type="6,13,80,52,53,8,29,32"/>  
+        <market id="1" type="2,27,51,53,4,28,31"/>
+		<market id="3" type="42"/> 		
+      </IS_FS_DETAILS>  	  
+    </biztype> 
+    <biztype desc="数据层业务判断">
+      <IS_DTM_FLTSECTOR desc="是否是用于筛选的成分股（用于合约找板块）">
+        <market id="2" type="22,23,24"/>
+      </IS_DTM_FLTSECTOR>
+      <IS_DTM_HSHYSECTOR desc="是否是行业板块">
+        <market id="2" type="22"/>
+      </IS_DTM_HSHYSECTOR>
+	  <IS_DTM_HSDQSECTOR desc="是否是地区板块">
+        <market id="2" type="23"/>
+      </IS_DTM_HSDQSECTOR>
+	  <IS_DTM_HSGNSECTOR desc="是否是概念板块">
+        <market id="2" type="24"/>
+      </IS_DTM_HSGNSECTOR>
+      <IS_DTM_HSTJSECTOR desc="是否是统计板块">
+        <market id="2" type="36"/>
+      </IS_DTM_HSTJSECTOR>
+      <IS_DTM_KLINECMB desc="是否支持合并K线">
+        <market id="0,1,2,3,7,8"/>
+      </IS_DTM_KLINECMB>
+      <IS_DTM_DITCFILTER desc="是否需要过滤码表">
+        <market id="206,227,211"/>
+        <market id="105" type="1,3,4,5,18,24,25,26"/>
+        <market id="12" type="2,22,23,24,36,37,71,1"/>
+	  </IS_DTM_DITCFILTER>
+      <IS_DTM_TCGFILTER desc="是否过滤交易日切换请求"> 
+        <market id="200-239"/>
+        <market id="150"/> 
+      </IS_DTM_TCGFILTER>
+	   <IS_DTM_SELFHSJ desc="自选沪深京"> 
+        <market id="0" type="5,6,7,13,50,80,81"/>
+        <market id="1" type="1,2,3,27,34,50"/>
+        <market id="3" type="42"/>
+      </IS_DTM_SELFHSJ>
+	  <IS_DTM_SELFHK desc="自选港股"> 
+        <market id="102,118,119,121,104"/>
+      </IS_DTM_SELFHK>
+	  <IS_DTM_SELFUS desc="自选美股"> 
+        <market id="106,107,108"/>
+      </IS_DTM_SELFUS>
+  	  <IS_DTM_SELFJJ desc="自选基金"> 
+        <market id="0" type="101,102,103,104,105"/>
+        <market id="1" type="106,107,108,109"/>
+      </IS_DTM_SELFJJ>
+	  <IS_DTM_SELFZQ desc="自选债券"> 
+        <market id="0" type="8,29,32,35"/>
+        <market id="1" type="4,28,30,31"/>
+      </IS_DTM_SELFZQ>
+	  <IS_DTM_SELFQH desc="自选期货"> 
+        <market id="114,110,111,100,113,112,115,103,105,116,120,101,127,128,129,124"/>
+      </IS_DTM_SELFQH>
+	  <IS_DTM_OVERFUND desc="场外基金"> 
+        <market id="126"/>
+      </IS_DTM_OVERFUND>
+	  <IS_HASVOLUM desc="是否使用成交量比"> 
+        <market id="0"/>  
+        <market id="1"/>
+        <market id="2"/> 
+        <market id="3"/> 
+        <market id="7"/> 
+        <market id="8"/> 		
+      </IS_HASVOLUM>
+    </biztype>
+	<biztype desc="交易业务">
+      <IS_TRADE_HK desc="是否香港市场">
+		<market id="102,104,118,119,121"/> 
+      </IS_TRADE_HK>
+	  <IS_TRADE_US desc="是否美股市场">
+        <market id="106,107,108"/>
+      </IS_TRADE_US>
+	  <IS_TRADE_FU desc="是否期货市场">
+        <market id="103,105,111,120,124,127,128,129"/>
+      </IS_TRADE_FU>
+	  <IS_TRADE_HKD desc="是否是港元市场">
+        <market id="102,119,121"/>
+      </IS_TRADE_HKD>
+	  <IS_TRADE_USD desc="是否是美元市场">
+        <market id="106,107,108,103,105,111,120"/>
+      </IS_TRADE_USD>
+	  <IS_TRADE_CNY desc="是否是人民币市场">
+        <market id="0,1"/>
+      </IS_TRADE_CNY>
+	  <IS_TRADE_JPY desc="是否是日元市场">
+        <market id="249"/>
+      </IS_TRADE_JPY>
+	  <IS_TRADE_ZHENGJUAN desc="是否是证券市场">
+        <market id="0,1,106,107,108,102,104,249,121"/>
+      </IS_TRADE_ZHENGJUAN>
+	  <IS_TRADE_QIHUO desc="是否是期货市场">
+        <market id="103,105,111,120,124,127,128,129"/>
+      </IS_TRADE_QIHUO>
+	  <IS_TRADE_FL desc="是否是富利交易市场">
+        <market id="102,119,106,107,108"/>
+      </IS_TRADE_FL>
+	  <IS_TRADE_FL_ZQ desc="是否是富利交易证券市场">
+        <market id="102,119,106,107,108"/>
+      </IS_TRADE_FL_ZQ>
+	  <IS_TRADE_FD desc="是否是方德交易市场">
+        <market id="102,119,106,107,108,249,0,1,103,105,111,120"/>
+      </IS_TRADE_FD>
+	  <IS_TRADE_FD_ZQ desc="是否方德证券交易市场">
+        <market id="102,119,106,107,108,249,0,1"/>
+      </IS_TRADE_FD_ZQ>
+     <KBD.IS_MG_GG desc="是否美股个股">
+        <market id="106,107,108"/>
+      </KBD.IS_MG_GG>
+      <KBD.IS_MG_ZS desc="是否美股指数">
+        <market id="117"/>
+      </KBD.IS_MG_ZS>
+      <STOCK_0_TAP desc="股票盘口0档">
+        <market id="200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239"/>
+        <market id="150"/> 
+        <market id="118"/>
+        <market id="1" type="1,50"/>
+        <market id="0" type="5,50"/>
+        <market id="2"/>	
+        <market id="3" type="49"/>
+        <market id="109,122,123"/> 
+	      <market id="117"/> 
+	      <market id="104"/> 
+      </STOCK_0_TAP>
+      <STOCK_1_TAP desc="股票盘口1档">
+        <market id="100,101"/>
+        <market id="103,105,110,111,120,112,113,114,115,116"/> 
+	      <market id="102,119,121"/>
+	      <market id="106,107,108"/>
+		  <market id="124,127,128,129"/>
+      </STOCK_1_TAP>
+      <STOCK_5_TAP desc="股票盘口5档">
+        <market id="1" type="2,27,51,53,3,4,28,31,30,106,107,108,109,110,112"/>
+        <market id="0" type="6,13,80,52,53,7,8,29,32,101,102,103,104,105,111"/>	
+        <market id="3" type="42"/>	 
+      </STOCK_5_TAP>
+    </biztype>
+    <biztype desc="键盘精灵类别">
+      <KBD.IS_JJ desc="是否是基金">
+        <market id="0" type="101,111,105"/>
+        <market id="1" type="110"/>
+        <market id="126" /> 
+      </KBD.IS_JJ>
+      <KBD.IS_ZQ desc="是否是债券">
+        <market id="0" type="4,29,32"/>
+        <market id="1" type="28,30,31"/>
+      </KBD.IS_ZQ>
+	  <KBD.IS_KZQ desc="是否是债券">
+        <market id="0" type="32"/>
+        <market id="1" type="31"/>
+      </KBD.IS_KZQ>
+       <KBD.IS_WPINDEX desc="是否外盘指数">
+        <market id="200-236,238-239"/>
+      </KBD.IS_WPINDEX>
+      <KBD.IS_JFZS desc="是否九方指数">
+        <market id="2" type="1"/>
+        <market id="7"/>
+        <market id="12"/>
+      </KBD.IS_JFZS>
+      <KBD.IS_BJ desc="是否北证A股">
+        <market id="3"/>
+      </KBD.IS_BJ>
+      <KBD.IS_QH desc="是否期货">
+        <market id="101,103,105,120,124,127,128,129"/>
+      </KBD.IS_QH>
+      <KBD.IS_HK_GG desc="是否香港个股">
+        <market id="102"/>
+      </KBD.IS_HK_GG>
+      <KBD.IS_HK_NXZ desc="是否香港牛熊证">
+        <market id="119"/>
+      </KBD.IS_HK_NXZ>
+      <KBD.IS_HK_AP desc="是否香港暗盘">
+        <market id="121"/>
+      </KBD.IS_HK_AP>
+      <KBD.IS_HK_ZS desc="是否香港指数">
+        <market id="104,118"/>
+      </KBD.IS_HK_ZS>
+      <KBD.IS_MG_GG desc="是否美股个股">
+        <market id="106,107,108"/>
+      </KBD.IS_MG_GG>
+      <KBD.IS_MG_ZS desc="是否美股指数">
+        <market id="117"/>
+      </KBD.IS_MG_ZS>
+    </biztype>
+    <biztype desc="键盘精灵查找范围控制">
+      <KBDRANGE.INLHB desc="龙虎榜中查找范围">
+		  <market id="1" type="2,3,11,19,25,26,27,28,30,31,51,53,81,"/>
+          <market id="0" type="6,7,52,53,80,81"/>	
+		   <market id="3" type="42"/>
+      </KBDRANGE.INLHB>
+	   <KBDRANGE.YUJING desc="预警查找范围">
+		  <market id="1" type="2,3,27"/>
+          <market id="0" type="6,7,80"/>
+		  <market id="2" type="22,23,24"/>
+		  <market id="102"/>
+		  <market id="106"/>
+		  <market id="107"/>
+		  <market id="108"/>
+      </KBDRANGE.YUJING>
+    <KBDRANGE.INDEXBLOCK desc="指数和板块">
+      <market id="1" type="1,50"/>
+      <market id="0" type="5,50"/>
+      <market id="2" type="22,23,24"/>
+    </KBDRANGE.INDEXBLOCK>
+	  <KBDRANGE.LUNZHENG desc="港股论证查找范围">
+          <market id="102"/>
+      </KBDRANGE.LUNZHENG>
+	  <KBDRANGE.GANGMEI desc="港美股查找范围"> 
+      <market id="102"/>
+      <market id="119"/>
+		  <market id="106"/>
+		  <market id="107"/>
+		  <market id="108"/>
+      </KBDRANGE.GANGMEI>
+	   <KBDRANGE.INDZJY desc="大宗交易中查找范围">
+		  <market id="1" type="2,3,11,19,25,26,27,31,51,53,81"/>
+          <market id="0" type="6,7,52,53,32,80,81"/>		  
+      </KBDRANGE.INDZJY>
+      <KBDRANGE.INXSJJ desc="限售解禁查找范围">
+       <market id="0" type="6,13,80,52,53"/>  
+        <market id="1" type="2,27,51,53"/>
+      </KBDRANGE.INXSJJ>
+      <KBDRANGE.INYJSD desc="业绩速递查找范围">
+        <market id="1" type="2,3,11,19,25,26,27,28,30,31,51,53,81,"/>
+        <market id="0" type="6,7,52,53,80,81"/>	
+        <market id="3" type="42"/>	
+      </KBDRANGE.INYJSD>
+      <KBDRANGE.INGGZC desc="高管增持沪深AB股">
+        <market id="1" type="2,3,11,19,25,26,27,28,30,31,51,53,81,"/>
+          <market id="0" type="6,7,52,53,80,81"/>	
+      </KBDRANGE.INGGZC>
+      <KBDRANGE.HSJAG desc="键盘宝沪深京A股">
+        <market id="0" type="6,13,80,52,53"/>
+        <market id="1" type="2,27,51,53"/>
+        <market id="3" type="42"/>
+      </KBDRANGE.HSJAG>
+    </biztype>
+	
+	<biztype desc="magic_style类型判断">
+		<MAGIC_IS_L2_STOCK desc="判断当前市场及品种是否支持lv2">
+			<market id="0" type="6,13,80,52,53,101,102,103,104,111,8,29,32,7"/>  
+		</MAGIC_IS_L2_STOCK>
+	</biztype>
+  <biztype desc="个股左侧功能">
+    <STOCKFUN.F10 desc="f10资料">
+        <market id="0" type="5,6,7,13,80,50,52,53"/>  
+        <market id="1" type="1,2,3,27,50,51,53"/>
+        <market id="3" type="42"/>	
+    </STOCKFUN.F10>
+    <STOCKFUN.FJB desc="分价表">
+        <market id="1" type="2,27,51,53,3,4,28,31,30,106,107,108,109,110,112"/>
+        <market id="0" type="6,13,80,52,53,7,8,29,32,101,102,103,104,105,111"/>	
+        <market id="3" type="42"/>	
+        <market id="100"/>
+        <market id="106"/>	
+        <market id="107"/>	
+        <market id="108"/>
+        <market id="101,102,103,105,110,111,120,124,127,128,129"/> 
+        <market id="112,113,114,115,116"/>  	
+    </STOCKFUN.FJB>
+  </biztype>
+	<biztype desc="沪市level2权限">
+		<IS_SH_GZJ desc="是否上海市场股债基">
+			<market id="1" type="2,3,27,51,53,106,107,108,109,110,112,4,28,31,30"/>
+		</IS_SH_GZJ>
+	</biztype>
+	<biztype desc="深市level2权限">
+		<IS_SZ_GZJ desc="是否深圳市场股债基">
+			<market id="0" type="6,13,80,52,53,8,29,32,101,102,103,104,111,7,105"/>
+		</IS_SZ_GZJ>
+	</biztype>
+  </funcdefs>
+  <instdefs desc="合约定义">
+    <DEF_HGT marketid="2" inst="GN500168" desc="沪股通"/>
+    <DEF_SGT marketid="2" inst="GN500091" desc="深股通"/>
+  </instdefs>
+</root>

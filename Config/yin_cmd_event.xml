@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<event_list>
+	<!-- 命令事件 -->
+	<command_event>
+		<command name="mainpage" change_style="全景图" dispatch="LNavigation_container:SetSync(全景);"/>
+		<command name="qjt" change_style="全景图" dispatch="LNavigation_container:SetSync(全景);"/>
+		<command name="keydown_f1" change_style="逐笔表" />
+		<command name="keydown_f2" change_style="分价表" />
+		<command name="keydown_f8" change_style="" dispatch="个股K线:KeyDown(Type=VKF8);多周期同列:KeyDown(Type=VKF8)" />
+		<command name="keydown_space" change_style="" dispatch="个股K线:KeyDown(Type=VKSPACE)" />
+		<command name="fszs" change_style="magic|个股走势"/>
+		<command name="fszs.index" change_style="magic|个股走势" />
+		<command name="fszs.global_index" change_style="magic|个股走势" />
+		<command name="fszs.group" change_style="magic|个股走势"/>
+		<command name="fszs.qhxh" change_style="magic|个股走势" />
+		<command name="fszs.hkgroup" change_style="magic|个股走势" />
+		<command name="fszs.wp_stock" change_style="magic|个股走势" />
+		<command name="fszs.mg_stock" change_style="magic|个股走势" />
+		<command name="fszs.jjzq" change_style="magic|个股走势" />
+		<command name="fszs.HSB" change_style="magic|个股走势" />
+		
+		<command name="fszs.L2" change_style="magic|个股走势"/>
+		<command name="fszs.HSB.L2" change_style="magic|个股走势"/>
+		<command name="fszs.jjzq.L2" change_style="magic|个股走势" />
+		<!-- <command name="个股.HSB.L2" change_style="magic|个股走势" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(分时图);个股右侧.pt.L2:SetSubStyle(个股右侧TAB集合.substyle.pt.L2);个股右侧TAB集合.substyle.pt.L2:SetActiveTab(个股右侧_盘口TAB.pt.L2);"/> -->
+		
+		<command name="fszs.index.L2" change_style="magic|个股走势" />
+		<command name="fszs.group.L2" change_style="magic|个股走势" />
+
+		<command name="cjmx" change_style="magic|分时成交"/>
+		<command name="cjmx.index" change_style="magic|分时成交" />
+		<command name="cjmx.global_index" change_style="magic|分时成交" />
+		<command name="cjmx.group" change_style="magic|分时成交"/>
+		<command name="cjmx.qhxh" change_style="magic|分时成交" />
+		<command name="cjmx.jjzq" change_style="magic|分时成交" />
+		<command name="cjmx.wp_stock" change_style="magic|分时成交" />
+		<command name="cjmx.mg_stock" change_style="magic|分时成交" />
+		<command name="cjmx.HSB" change_style="magic|分时成交"/>
+		
+		<command name="cjmx.L2" change_style="magic|分时成交"/>
+		<command name="cjmx.index.L2" change_style="magic|分时成交" />
+		<command name="cjmx.group.L2" change_style="magic|分时成交" />
+		<command name="cjmx.jjzq.L2" change_style="magic|分时成交"/>
+		<command name="cjmx.HSB.L2" change_style="magic|分时成交"/>
+		
+		<command name="fjb" change_style="magic|分价表" />
+		<command name="fjb.HSB" change_style="magic|分价表"/>
+		<command name="fjb.qhxh" change_style="magic|分价表"/>
+		<command name="fjb.jjzq" change_style="magic|分价表"/>
+		<command name="fjb.mg_stock" change_style="magic|分价表"/>
+		<command name="fjb.L2" change_style="magic|分价表"/>
+		
+		<command name="stock_list_pt" 	change_style="个股列表.HQBJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(个股列表.substyle);个股列表标签栏:SetParam(Type=Both);沪深列表1:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);"   />
+		<command name="stock_list_pt.etf" change_style="个股列表.HQBJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(个股列表.ETF基金.substyle);个股列表标签栏:SetParam(Type=Both);沪深列表1:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);" />
+		<command name="stock_list_pt_kcb" change_style="个股列表.HQBJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(个股列表.substyle);个股列表标签栏:SetParam(Type=Both);沪深列表1:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);"/>
+		
+		<command name="STKLIST.PreCmd" change_style="个股列表.HQBJ" dispatch="(!*)个股列表_左侧toolbar:SetParam(Type=Both);"/>
+		<command name="STKLIST_QUOT" change_style="个股列表.HQBJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表标签栏:SetParam(Type=Both);沪深列表1:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);" />
+
+		<command name="STKLIST_QUOT.ETF" change_style="个股列表.ETF" dispatch="(!*)基金列表_左侧toolbar:OnSetActiveTab(行情报价);沪深指数ETF:SetParam(Type=Both);ETF列表_基金:SetParam(Type=Both);个股列表标签栏:SetParam(Type=Both);基金列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_QUOT.ETF.SH" change_style="个股列表.ETF.SH" dispatch="(!*)基金列表_左侧toolbar:OnSetActiveTab(行情报价);上证列表_基金:SetParam(Type=Both);个股列表标签栏:SetParam(Type=Both);基金列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_QUOT.ETF.SZ" change_style="个股列表.ETF.SZ" dispatch="(!*)基金列表_左侧toolbar:OnSetActiveTab(行情报价);深证列表_基金:SetParam(Type=Both);个股列表标签栏:SetParam(Type=Both);基金列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_QUOT.FUND" change_style="个股列表.FUND" dispatch="(!*)基金列表_左侧toolbar:OnSetActiveTab(行情报价);列表_FUND:SetParam(Type=Both);个股列表标签栏:SetParam(Type=Both);基金列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+
+		<command name="STKLIST_DDE" change_style="个股列表.DDE" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(DDE决策);个股列表标签栏:SetParam(Type=Both);DDE:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_ZJLX" change_style="个股列表.ZJLX" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(资金流向);个股列表标签栏:SetParam(Type=Both);ZJLX:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_ZCPH" change_style="个股列表.ZCPH" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(增仓排行);个股列表标签栏:SetParam(Type=Both);ZCPH:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		
+		<command name="STKLIST_DGTL" change_style="个股列表.DGTL" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(多股同列);个股列表标签栏:SetParam(Type=Both);多周期同列:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_DGTL.menu" change_style="个股列表.DGTL" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(多股同列);个股列表标签栏:SetParam(Type=Both);多周期同列:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+
+		<command name="STKLIST_DDE.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);DDE:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(DDE决策);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_ZCPH.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);ZJLX:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(增仓排行);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_ZJLX.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);ZCPH:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(资金流向);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_XKT.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);个股星空图XKT:SetParam(Type=Both);个股星空列表:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(星空图);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_GBSJ.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);GBSJ:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(股本数据);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_CWSJ.ONE" change_style="个股列表" dispatch="个股列表标签栏:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);CWSJ:SetParam(Type=Both);个股列表_左侧toolbar:OnSetActiveTab(财务数据);LNavigation_container:SetSync(沪深京)" />
+		<command name="STKLIST_JDSJ.ONE" change_style="个股列表.JDTJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(阶段统计);个股列表标签栏:SetParam(Type=Both);JDTJ:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京)" />
+
+		<command name="STKLIST_XKT" change_style="个股列表.XKT" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(星空图);个股列表标签栏:SetParam(Type=Both);个股星空图XKT:SetParam(Type=Both);个股星空列表:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_GBSJ" change_style="个股列表.GBSJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(股本数据);个股列表标签栏:SetParam(Type=Both);GBSJ:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_CWSJ" change_style="个股列表.CWSJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(财务数据);个股列表标签栏:SetParam(Type=Both);CWSJ:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+		<command name="STKLIST_JDTJ" change_style="个股列表.JDTJ" dispatch="(!*)个股列表_左侧toolbar:OnSetActiveTab(阶段统计);个股列表标签栏:SetParam(Type=Both);JDTJ:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(沪深京);" />
+
+		<command name="stock_list_bk" change_style="板块列表" />
+		<command name="stock_list_bk_gg" change_style="板块个股列表" />
+		<command name="stock_list_zxg" change_style="自选股列表" />
+		<command name="stock_list_zjmx" change_style="资金明细列表" />
+		<command name="stock_list_zjpm" change_style="资金排名列表" />
+		<command name="zxlb" change_style="资讯列表" />
+		<command name="f10_no_tab" change_style="F10" />
+
+		<command name="kline" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.HSB" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.group" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.hkgroup" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.index" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.global_index" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.qhxh" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.wp_stock" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.mg_stock" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.jjzq" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+
+		<command name="kline.L2" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.HSB.L2" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.jjzq.L2" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.group.L2" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="kline.index.L2" change_style="magic|个股K线" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="aidiag_pt" change_style="F10" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt);个股_左侧导航_toolbar.pt:OnSetActiveTab(AI诊股)" />
+		
+
+		<command name="f10_pt" change_style="F10" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt);个股_左侧导航_toolbar.pt:OnSetActiveTab(F10资料)" />
+		<command name="f10_pt.HSB" change_style="F10" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB);沪深B股_左侧导航_toolbar.pt:OnSetActiveTab(F10资料)" />
+		<command name="f10_pt.index" change_style="F10.index" />
+		<command name="f10_pt.jjzq" change_style="F10.index" />
+		<command name="f10_pt.wp_stock" change_style="F10.index" />
+		<command name="f10_pt.mg_stock" change_style="F10.index" />
+		<command name="f10_pt.L2" change_style="F10.L2" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(F10资料)"/>
+		<command name="f10_pt.HSB.L2" change_style="F10" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB.L2);沪深B股_左侧导航_toolbar.pt.L2:OnSetActiveTab(F10资料)" />
+		<command name="f10_pt.index.L2" change_style="F10.index.L2" />
+
+		<command name="multi_trend" change_style="多图组合" dispatch="个股列表_左侧toolbar:OnSetActiveTab(多股同列);" />
+		<command name="multi_period" change_style="magic|多周期同列" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt);个股_左侧导航_toolbar.pt:OnSetActiveTab(多周期)"/>
+		<command name="multi_period.HSB" change_style="多周期同列" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB);沪深B股_左侧导航_toolbar.pt:OnSetActiveTab(多周期)"/>
+		<command name="multi_period.index" change_style="多周期同列.index" />
+		<command name="multi_period.group" change_style="多周期同列.group" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.group);个股_左侧导航_toolbar.group:OnSetActiveTab(多周期);" />
+		<command name="multi_period.hkgroup" change_style="多周期同列.hkgroup" dispatch="个股分时.hkgroup.个股左侧Tab:OnSetActiveTab(多周期);" />
+		<command name="multi_period.qhxh" change_style="多周期同列.qhxh" />
+		<command name="multi_period.global_index" change_style="多周期同列.global_index" />
+		<command name="multi_period.jjzq" change_style="多周期同列.jjzq" />
+		<command name="multi_period.wp_stock" change_style="多周期同列.wp_stock" />
+		<command name="multi_period.mg_stock" change_style="多周期同列.wp_stock" />
+		<command name="multi_period.L2" change_style="magic|多周期同列" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:OnSetActiveTab(多周期)" />
+		<command name="multi_period.HSB.L2" change_style="多周期同列" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB.L2);沪深B股_左侧导航_toolbar.pt.L2:OnSetActiveTab(多周期)"/>
+		<command name="multi_period.jjzq.L2" change_style="多周期同列" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.ZQ.L2);多周期_左侧导航_toolbar.pt.L2:OnSetActiveTab(多周期)" />
+		
+		<command name="multi_trend.mg" change_style="多图组合" dispatch="美股_左侧导航_toolbar.pt:OnSetActiveTab(多股同列);" />
+		<!--板块监测-->	
+
+		<command name="BK.PreCmd" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:SetParam(Type=Both);"/>
+		<command name="BKJCV2" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(行情报价);板块列表左上.substyle:SetSubStyle(板块和成份股.substyle);板块列表标签栏:SetParam(Type=Both);板块分类列表:SetParam(Type=Both);全部板块:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BK.ZJLX" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(资金流向);板块列表左上.substyle:SetSubStyle(板块.板块ZJLX.substyle);板块列表标签栏:SetParam(Type=Both);板块ZJLX:SetParam(Type=Both);板块分类ZJLX:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BK.ZCPH" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(增仓排行);板块列表左上.substyle:SetSubStyle(板块.板块ZCPH.substyle);板块列表标签栏:SetParam(Type=Both);板块ZCPH:SetParam(Type=Both);板块分类ZCPH:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BK.XKT" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(星空图);板块列表左上.substyle:SetSubStyle(板块.板块XKT.substyle);板块列表标签栏:SetParam(Type=Both);板块星空列表:SetParam(Type=Both);板块星空图XKT:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFL.XKT" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(星空图);板块列表左上.substyle:SetSubStyle(板块.板块分类XKT.substyle);板块列表标签栏:SetParam(Type=Both);板块分类星空列表:SetParam(Type=Both);板块分类星空图XKT:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);" />
+
+		<command name="BKFL.PreCmd" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFL.QUOT.ALL" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(行情报价);板块列表左上.substyle:SetSubStyle(板块分类.substyle);板块列表标签栏:SetParam(Type=Both);板块分类列表:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFL.QUOT" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(行情报价);板块列表左上.substyle:SetSubStyle(板块分类.substyle);板块分类列表:SetParam(Type=Both);板块列表标签栏:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFL.ZJLX" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(资金流向);板块列表左上.substyle:SetSubStyle(板块.板块分类ZJLX.substyle);板块分类ZJLX:SetParam(Type=Both);板块列表标签栏:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFL.ZCPH" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(增仓排行);板块列表左上.substyle:SetSubStyle(板块.板块分类ZCPH.substyle);板块分类ZCPH:SetParam(Type=Both);板块列表标签栏:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);"/>
+		<command name="BKFXSTKLIST_QUOT" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(板块分析);板块列表左上.substyle:SetSubStyle(板块分析.substyle);*:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);" />
+		<command name="BKFXSTKLIST_DGTL" change_style="板块列表" dispatch="(!*)板块列表_左侧toolbar:OnSetActiveTab(多股同列);板块列表左上.substyle:SetSubStyle(板块.多股同列.substyle);板块列表标签栏:SetParam(Type=Both);多周期同列:SetParam(Type=Both);板块列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(板块);" />
+
+		<!--内嵌Web页面-->	
+		<command name="WebInner" change_style="WebInnerStyle" dispatch="*:SetParam(Type=Both);LNavigation_container:SetSync(直播);" addtion_data=""/>
+		<command name="WebInnerTC" change_style="WebInnerStyleTC" dispatch="*:SetParam(Type=Both);" addtion_data=""/>
+		<command name="WebInnerInside" change_style="WebInnerStyleInside" dispatch="*:SetParam(Type=Both);" addtion_data=""/>
+
+		<!--全部自选股-->
+		<command name="StyleZXG" change_style="全部自选_行情列表" dispatch="(!*)全部自选_行情列表_左侧tab:SetParam();全部自选.substyle:SetSubStyle(全部自选.列表.substyle);tab自选股列表:SetParam(Type=Both);自选标签栏::SetParam(Type=Both);全部自选_行情列表_左侧tab:OnSetActiveTab(行情报价);LNavigation_container:SetSync(自选);" addtion_data=""/>
+		<command name="multi_trend_zxg" change_style="全部自选_多图组合"  />
+
+		<command name="CmdStyleStockSelect" change_style="全部自选_行情列表" dispatch="(!*)全部自选_行情列表_左侧tab:SetParam();全部自选.substyle:SetSubStyle(全部自选.条件列表.substyle);自选标签栏::SetParam(Type=Both);tab条件选股列表:SetParam(Type=Both);LNavigation_container:SetSync(自选);" addtion_data=""/>
+		<command name="CmdStyleStockLatelySelect" change_style="全部自选_行情列表" dispatch="(!*)全部自选_行情列表_左侧tab:SetParam();全部自选.substyle:SetSubStyle(全部自选.最近浏览.substyle);自选标签栏::SetParam(Type=Both);tab最近浏览列表:SetParam(Type=Both);LNavigation_container:SetSync(自选);" addtion_data=""/>
+
+		<!--资讯中心-->
+		<command name="CmdStyleZXZZ" change_style="资讯中心v2020"  />
+		<!--查看详情-->
+		<command name="CmdStyleZDFB" change_style="涨跌分布_详情页" dispatch="LNavigation_container:SetSync(数据);" />
+		<!-- <command name="CmdStyleZDFB" change_style="数据.带导航" dispatch="数据导航列表.substyle:SetSubStyle(涨跌分布.substyle)" /> -->
+
+		<command name="CmdStyleHJLIST" change_style="黄金列表" dispatch="LNavigation_container:SetSync(全球);" />
+		<!--基金跳转-->
+		<command name="CmdStyleETFLIST" change_style="个股列表" dispatch="个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(ETF基金TAB);个股列表标签栏:SetParam(Type=Both);ETF列表_基金:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);" />
+		<command name="CmdStyleETFLIST.SH" change_style="个股列表" dispatch="个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(上证基金TAB);个股列表标签栏:SetParam(Type=Both);上证列表_基金:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);" />
+		<command name="CmdStyleETFLIST.SZ" change_style="个股列表" dispatch="个股列表_左侧toolbar:OnSetActiveTab(行情报价);个股列表左侧.substyle:SetSubStyle(深证基金TAB);个股列表标签栏:SetParam(Type=Both);深证列表_基金:SetParam(Type=Both);个股列表_左侧toolbar:SetParam(Type=Both);"  />
+		
+		<!--基金跳转-->
+
+		<!--九方指数跳转-->
+		<command name="CmdStyle.JF.KJ" change_style="magic|个股走势" dispatch1="*:SetParam(Type=Both)" />
+		<command name="CmdStyle.JF.ZQ" change_style="magic|个股走势" dispatch1="*:SetParam(Type=Both)"  />
+		<command name="CmdStyle.JF.DXF" change_style="magic|个股走势" dispatch1="*:SetParam(Type=Both)"  />
+		<!--九方指数跳转-->
+
+		<command name="CmdStyleL2Detail" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.HSB" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB.L2);沪深B股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.JJ" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.ZQ.L2);多周期_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.ZQ" change_style="L2详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.ZQ.L2);多周期_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		
+		<command name="CmdStyleL2Detail.SH" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.HSB.SH" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB.SH.L2);上证B股_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.JJ.SH" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.ZQ.SH.L2);多周期_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		<command name="CmdStyleL2Detail.ZQ.SH" change_style="L2详情_SH" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.ZQ.SH.L2);多周期_左侧导航_toolbar.pt.L2:OnSetActiveTab(L2详情)"  />
+		
+		<!-- <command name="CmdStyleqinlonglist" change_style="数据.带导航" dispatch="数据导航列表.substyle:SetSubStyle(擒龙榜单.substyle)"  /> -->
+		<command name="CmdStyleqinlonglist" change_style="擒龙榜单" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyQqzslist" change_style="全球指数列表"  dispatch="LNavigation_container:SetSync(全球);"/>
+
+		<command name="CmdStyle24qq"  change_style="资讯中心v2020_24" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.24QQ);LNavigation_container:SetSync(看点);"  />
+		
+		<command name="SetActive.JFTY" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.JFTY);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.JFJX" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.JFJX);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.JFSD" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.JFSD);LNavigation_container:SetSync(看点);"  />
+		<command name="CmdStyleCjrl"  change_style="财经日历View" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.CJRL);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.TZJH" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.TZJH);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.GSJJ" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.GSJJ);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.SCTT" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.SCTT);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.CJYW" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.CJYW);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.HYDT" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.HYDT);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.QQDT" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.QQDT);LNavigation_container:SetSync(看点);"  />
+		<command name="SetActive.YBDQ" change_style="资讯中心v2020" dispatch="资讯TAB集合:OnSetActiveTab(TabZX.YBDQ);LNavigation_container:SetSync(看点);"  />
+		
+		<command name="CmdStyleRZRQ" change_style="融资融券" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleRZRQList" change_style="融资融券详情页" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleDZJY" change_style="大宗交易" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleDZJYList" change_style="大宗交易详情页" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="SetActive.HSGT" change_style="WebInner_DataStyle" />
+		
+		<command name="SetActive.BJSJ" change_style="WebInner_DataStyle" />
+		
+		<command name="LoadData" change_style="dlgstyle" dispatch="选股器:SetParam(frominner)"  />
+		<command name="SetDstbMaket" change_style="条件选股" dispatch="条件选股列表:onSetDstbMaket(frominner);LNavigation_container:SetSync(选股);"  />
+
+		<command name="CmdStyle.DQFL" change_style="板块列表" dispatch="板块列表左上.substyle:SetSubStyle(板块分类.substyle);" />
+		<command name="CmdStyle.HYFL" change_style="板块列表" dispatch="板块列表左上.substyle:SetSubStyle(板块分类.substyle);" />
+		<command name="CmdStyle.GNFL" change_style="板块列表" dispatch="板块列表左上.substyle:SetSubStyle(板块分类.substyle);"  />
+
+		<command name="CmdStyleDWXG" change_style="多维选股_v0" dispatch="LNavigation_container:SetSync(智投);"/>
+        <command name="CmdStyleDWXG_v1" change_style="多维选股_v1" dispatch="LNavigation_container:SetSync(智投);"/>
+        <command name="CmdStyleDWXG_v2" change_style="多维选股_v2" dispatch="LNavigation_container:SetSync(智投);"/>
+        <command name="CmdStyleDWXG_v3" change_style="多维选股_v3" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleDWXG.NoRights" change_style="多维选股.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleDWXG9W.NoRights" change_style="多维选股.无权限.9维" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleJFQL" change_style="九方擒龙" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleJFQL.NoRights" change_style="九方擒龙权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleJFQL.NoData" change_style="九方擒龙.无数据" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.FXSZS" change_style="分析师榜单"/>
+		<command name="CmdStyle.YBJJ" change_style="研报掘金" dispatch="研报掘金_TAB:SetSubStyle(ybjj.homepage);数据.导航标签栏:SetParam();"/>
+		<command name="CmdStyle.TJXG" change_style="成份选股" dispatch="(!*)选股.选股标签:SetParam();LNavigation_container:SetSync(选股);" />
+		<command name="CmdStyle.BKFXB" change_style="板块风向标" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.BKFXB.NoRights" change_style="板块风向标.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.JSXG" change_style="技术选股" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.JSXG.NoRights" change_style="技术选股.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.JZBD" change_style="九转榜单" dispatch="九转榜单列表:SetParam(Type=Both);九转榜单标题:SetParam();LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.JZBD.NoRights" change_style="九转榜单.无权限" dispatch="九转榜单列表:SetParam(Type=Both);九转榜单标题:SetParam();LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyle.TFP" change_style="停复牌" />
+		<command name="CmdStyleYJSD" change_style="业绩速递" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleYJSD_STOCKPT" change_style="业绩速递" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleHGSJ" change_style="宏观数据" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.LHBD" change_style="龙虎榜首页" dispatch="龙虎榜标签栏:SetParam();LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.LHBDXQ" change_style="龙虎榜详情_每日龙虎榜" />
+		<command name="CmdStyleAiDiag" change_style="VIPWebInner_DataStyle" />
+		<command name="CmdStyleAiDiag.NoRights" change_style="AI诊股.无权限" />
+		<command name="cmdAITest.NoRights" change_style="AI诊股.无权限.个股" dispatch="LNavigation_container:SetSync(智投);"/>
+		
+		<command name="CmdStyle.LHBDXQ_STOCK.pt" change_style="龙虎榜详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt);个股_左侧导航_toolbar.pt:SetParam(TabName=龙虎榜)" />
+		<command name="CmdStyle.LHBDXQ_STOCK.pt.L2" change_style="龙虎榜详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.L2);个股_左侧导航_toolbar.pt.L2:SetParam(TabName=龙虎榜)" />
+		<command name="CmdStyle.LHBDXQ_STOCK.pt.SH.L2" change_style="龙虎榜详情" dispatch="上证个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.pt.SH.L2);上证A股_左侧导航_toolbar.pt.L2:OnSetActiveTab(龙虎榜)" />
+		
+		<command name="CmdStyle.LHBDXQ_STOCK.pt.HSB" change_style="龙虎榜详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB);沪深B股_左侧导航_toolbar.pt:SetParam(TabName=龙虎榜)" />
+		<command name="CmdStyle.LHBDXQ_STOCK.pt.HSB.L2" change_style="龙虎榜详情" dispatch="个股导航栏所有.substyle:SetSubStyle(个股导航栏.substyle.HSB.L2);沪深B股_左侧导航_toolbar.pt.L2:SetParam(TabName=龙虎榜)" />
+		
+		<command name="CmdStyle.FXSXLLB" change_style="分析师下拉列表详情" dispatch="分析师下拉列表:SetDownListParam();" />
+		<command name="CmdStyle.FXSSEL" change_style1="分析师榜单" dispatch="分析师榜单列表:SetSelAnalyst();" />
+		<command name="CmdStyle.FXSDEL" change_style="分析师榜单" dispatch="分析师榜单列表:DeleteHisRecord();" />
+		<command name="CmdStyle.FXSSS" change_style="分析师下拉列表详情" dispatch="分析师下拉列表:EnterSearch();" />
+		<command name="CmdStyle.FXSKEYDOWN" dispatch="分析师下拉列表:KeyDown();" />
+		<command name="CmdStyle.FXSHIDELIST" change_style="分析师榜单" dispatch="分析师榜单列表:HideList();" />
+
+		<command name="switch_period"  dispatch="*:KeyDown(Type=VKF8);" />
+
+		<command name="show_dlg_pkyd"  dispatch="*:SetParam(Type=Both)" />
+		<command name="refresh_dlg_data"  dispatch="*:SetRefresh(Type=Both)" />
+		
+		<command name="CmdStyleZDQJT" change_style="涨跌全景图" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleZDTMX" change_style="涨跌停明细" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleGGJJ" change_style="公告掘金" dispatch="LNavigation_container:SetSync(数据);"/>
+
+		<command name="MGSTOCKLIST.PreCmd" change_style="美股列表" dispatch="(!*)美股列表_左侧toolbar:SetParam(Type=Both);"/>
+		<command name="MGZSSTKLIST_QUOT" change_style="美股列表" dispatch="美股列表_左侧toolbar:OnSetActiveTab(行情报价);美股列表左上.substyle:SetSubStyle(美股指数.substyle);美股指数列表:SetParam(Type=Both);美股导航栏.substyle:SetSubStyle(美股导航栏.substyle.pt);美股_左侧导航_toolbar.pt:OnSetActiveTab(行情列表);美股行情标签栏:SetParam(Type=Both);LNavigation_container:SetSync(全球);" />
+		<command name="MGSTKLIST_QUOT" change_style="美股列表" dispatch="美股列表_左侧toolbar:OnSetActiveTab(行情报价);美股列表左上.substyle:SetSubStyle(美股列表.substyle);美股其他列表:SetParam(Type=Both);美股导航栏.substyle:SetSubStyle(美股导航栏.substyle.pt);美股_左侧导航_toolbar.pt:OnSetActiveTab(行情列表);美股行情标签栏:SetParam();LNavigation_container:SetSync(全球);" />
+		<command name="MGBKSTKLIST_QUOT" change_style="美股列表" dispatch="美股列表_左侧toolbar:OnSetActiveTab(行情报价);美股列表左上.substyle:SetSubStyle(美股和成份股.substyle);*:SetParam(Type=Both);美股列表_左侧toolbar:SetParam(Type=Both);美股个股列表:SetParam(Type=CFG);美股行情标签栏:SetParam(Type=Both);LNavigation_container:SetSync(全球);" />
+		<command name="MGBKFXSTKLIST_QUOT" change_style="美股列表" dispatch="美股列表左上.substyle:SetSubStyle(美股板块分析.substyle);美股板块列表:SetParam(Type=Both);*:SetParam(Type=Both);美股列表_左侧toolbar:OnSetActiveTab(板块分析);LNavigation_container:SetSync(全球);" />
+		<command name="MGSTKLIST_DGTL" change_style="美股列表" dispatch="美股列表左上.substyle:SetSubStyle(美股列表.多股同列.substyle);*:SetParam(Type=Both);美股列表_左侧toolbar:OnSetActiveTab(多股同列);多周期同列:SetParam(Type=Both);美股行情标签栏:SetParam(Type=Both);LNavigation_container:SetSync(全球);" />
+		<command name="CmdStyleMGLIST" change_style="美股列表" dispatch="美股指数列表:SetParam(Type=Both);美股列表左上.substyle:SetSubStyle(美股列表.substyle);*:SetParam(Type=Both);美股行情标签栏:SetParam(Type=Both);美股列表_左侧toolbar:OnSetActiveTab(行情报价);美股列表_左侧toolbar:SetParam();美股列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(全球);" />
+		
+		<command name="CmdStyleGGLIST" change_style="港股列表" dispatch="港股列表左上.substyle:SetSubStyle(港股列表.substyle);港股行情标签栏:SetParam(Type=Both);港股列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(全球);" />
+		<command name="GGSTKLIST_DGTL" change_style="港股列表" dispatch="港股列表左上.substyle:SetSubStyle(港股列表.多股同列.substyle);多周期同列:SetParam(Type=Both);港股列表_左侧toolbar:OnSetActiveTab(多股同列);LNavigation_container:SetSync(全球);" />
+		<command name="GGSTOCKLIST.PreCmd" change_style="港股列表" dispatch="(!*)港股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(全球);"/>
+		<command name="GGSTKLIST_QUOT" change_style="港股列表" dispatch="港股列表左上.substyle:SetSubStyle(港股列表.substyle);港股行情标签栏:SetParam();港股列表_左侧toolbar:SetParam(Type=Both);*:SetParam(Type=Both);港股列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(全球);" />
+		<command name="GGSTKLIST_HKQZ" change_style="港股列表" dispatch="港股列表左上.substyle:SetSubStyle(港股轮证.substyle);港股行情标签栏:SetParam();港股列表_左侧toolbar:SetParam(Type=Both);*:SetParam(Type=Both);港股列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(全球);" />
+		<command name="GGBKSTKLIST_QUOT" change_style="港股列表" dispatch="港股列表_左侧toolbar:OnSetActiveTab(行情报价);港股列表左上.substyle:SetSubStyle(港股和成份股.substyle);*:SetParam(Type=Both);港股列表_左侧toolbar:SetParam(Type=Both);港股个股列表:SetParam(Type=CFG);LNavigation_container:SetSync(全球);" />
+		<command name="GGBKFXSTKLIST_QUOT" change_style="港股列表" dispatch="港股列表_左侧toolbar:OnSetActiveTab(板块分析);港股列表左上.substyle:SetSubStyle(港股板块分析.substyle);*:SetParam(Type=Both);港股列表_左侧toolbar:SetParam(Type=Both);LNavigation_container:SetSync(全球);" />
+
+		<!-- 期货 -->
+		<command name="QHSTKLIST_QUOT" change_style="期货列表" dispatch="期货列表_substyle:SetSubStyle(期货列表.substyle);期货行情标签栏:SetParam();期货列表_左侧toolbar:SetParam(Type=Both);*:SetParam(Type=Both);期货列表_左侧toolbar:OnSetActiveTab(行情报价);" />
+		<command name="QHSTKLIST_DGTL" change_style="期货列表" dispatch="期货列表_substyle:SetSubStyle(期货列表.多股同列.substyle);多周期同列:SetParam(Type=Both);期货列表_左侧toolbar:OnSetActiveTab(多股同列);" />
+		<command name="QHZHP" change_style="期货综合屏" dispatch="期货行情标签栏:SetParam();LNavigation_container:SetSync(全球);" />
+	
+		<!-- 债券 -->
+		<command name="ZQSTKLIST_QUOT" change_style="债券列表" dispatch="债券列表_substyle:SetSubStyle(债券列表.substyle);个股列表标签栏:SetParam();债券列表_左侧toolbar:SetParam(Type=Both);*:SetParam(Type=Both);债券列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(沪深京);" />
+		<command name="ZQSTKLIST_GZLD" change_style="债券列表" dispatch="(!*)债券列表_substyle:SetSubStyle(债券列表.股债联动.substyle);股债联动:SetParam(Type=Both);债券列表_左侧toolbar:OnSetActiveTab(股债联动);LNavigation_container:SetSync(沪深京);" />
+		<command name="ZQSTKLIST_DGTL" change_style="债券列表" dispatch="债券列表_substyle:SetSubStyle(债券列表.多股同列.substyle);多周期同列:SetParam(Type=Both);债券列表_左侧toolbar:OnSetActiveTab(多股同列);LNavigation_container:SetSync(沪深京);" />
+		<command name="ZQSTKLIST_KZZ" change_style="债券列表" dispatch="债券列表_substyle:SetSubStyle(债券列表.可转债.substyle);个股列表标签栏:SetParam();可转债:SetParam(Type=Both);债券列表_左侧toolbar:SetParam(Type=Both);*:SetParam(Type=Both);债券列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(沪深京);" />
+		<command name="ZQSTKLIST_ZQHG" change_style="债券列表" dispatch="债券列表_substyle:SetSubStyle(债券列表.债券回购.substyle);个股列表标签栏:SetParam();债券回购:SetParam(Type=Both);债券列表_左侧toolbar:OnSetActiveTab(行情报价);LNavigation_container:SetSync(沪深京);" />
+
+		<command name="HKBKGroupCfg" dispatch="(!*)个股行情_盘口.substyle:SetSubStyle(港股板块行情盘口.substyle);港股简易成份股:SetParam();" />
+		<command name="BKGroupCfg" dispatch="(!*)个股行情_盘口.substyle:SetSubStyle(板块行情盘口.substyle);简易成份股:SetParam();" />
+		<command name="zxglist_style" change_style="全部自选_行情列表" dispatch="全部自选_行情列表_左侧tab:OnSetActiveTab(行情报价);全部自选.substyle:SetSubStyle(全部自选.列表.substyle);条件自选股列表.substyle:SetSubStyle(自选股列表.substyle);自选标签栏::SetParam(Type=Both);tab自选股列表:SetParam(Type=Both);多周期同列:SetParam(Type=Both);" />
+
+        <command name="cmdRefreshKLine"  dispatch="*:OnRefreshKLine()" />
+		<command name="yin_ind_short"  dispatch="*:SetInd()" />
+		<command name="yin_ind_show"  dispatch="*:ShowInd()" />
+		<command name="yin_ind_show_new" change_style="magic|个股K线" dispatch="*:SetParam();*:ShowInd()" />
+		<command name="cmdAITest" change_style="AIDiagnosis" />
+		<command name="SetDstbSubRange" change_style="涨跌分布_详情页" dispatch="onSetDstbSubRange();" />
+		<command name="K线.多副图"  dispatch="*:SetChartNum()" />
+		<command name="CmdStyleCYGN" change_style="常用功能界面" /> 
+		<command name="CmdStyleHSZH" /> 
+		<command name="CmdStyleHSGT" change_style="沪深港通" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.BJSJ" change_style="比价数据" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleJJJG" change_style="狙击机构" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleLHJJ" change_style="龙虎掘金" dispatch="(!*)龙虎掘金个股信息TAB:SetParam();VIP.导航标签栏:SetParam();LNavigation_container:SetSync(智投);" />
+		<command name="CmdStyleLHJJ.sy" change_style="龙虎掘金.首页" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleLHJJ.NoRights" change_style="龙虎掘金.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleJJJG.NoRights" change_style="狙击机构.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleXGQ" change_style="选股器" dispatch="LNavigation_container:SetSync(选股);"/>
+		<command name="CmdStyle.JJXG" change_style="基金选股" dispatch="LNavigation_container:SetSync(选股);"/>
+		<command name="CmdStyleBXZJFX" change_style="北向资金分析" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO" change_style="新股IPO" dispatch="(!*)新股综合屏_已上市新股:SetParam();新股综合屏_待上市新股:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_XGZHP);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO_XGZHP" change_style="新股IPO" dispatch="(!*)新股综合屏_已上市新股:SetParam();新股综合屏_待上市新股:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_XGZHP);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO_XGSG" change_style="新股IPO" dispatch="(!*)新股申购:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_XGSG);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO_SSBX" change_style="新股IPO" dispatch="(!*)上市表现:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_SSBX);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO_XGSH" change_style="新股IPO" dispatch="(!*)新股上会:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_XGSF);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXGIPO_ZZSG" change_style="新股IPO" dispatch="(!*)转债申购:SetParam();数据.导航标签栏:SetParam();新股IPO集合:SetSubStyle(TabXGIPO_ZZSG);LNavigation_container:SetSync(数据);"/>
+		
+		<command name="CmdStyleCYL" change_style="产业链" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleCYL.NoRights" change_style="产业链.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleCYLStock" change_style="产业链个股" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleCYLStock.NoRights" change_style="产业链个股.无权限" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdStyleDSZZ" change_style="大势追踪" />
+		<command name="CmdStyleDSZZ.NoRights" change_style="大势追踪.无权限" />
+		<command name="CmdStyleXSJJ" change_style="限售解禁" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleXSJJPT" change_style="限售解禁详情页" />
+		
+		<command name="CmdWHALL" change_style="外汇列表" dispatch="LNavigation_container:SetSync(全球);"/>
+		<command name="CmdStyleYZYQ" change_style="研报掘金" dispatch="(!*)数据.导航标签栏:SetParam();研报掘金_TAB:SetSubStyle(ybjj.yuqipage);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleJPTJ" change_style="研报掘金" dispatch="(!*)数据.导航标签栏:SetParam();研报掘金_TAB:SetSubStyle(ybjj.tjpage);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleFXS" change_style="研报掘金" dispatch="(!*)数据.导航标签栏:SetParam();研报掘金_TAB:SetSubStyle(ybjj.fxsbd);LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyleJGGZ" change_style="研报掘金" dispatch="(!*)数据.导航标签栏:SetParam();研报掘金_TAB:SetSubStyle(ybjj.jggzpage);LNavigation_container:SetSync(数据);"/>
+
+		<command name="CmdStyleIPOXGSG" change_style="新股IPO" dispatch="(!*)新股IPO集合:SetSubStyle(TabXGIPO_XGSG);数据.导航标签栏:SetParam();"/>
+		<command name="CmdStyleIPOSSBX" change_style="新股IPO" dispatch="(!*)新股IPO集合:SetSubStyle(TabXGIPO_SSBX);数据.导航标签栏:SetParam();"/>
+		
+		<!-- 键盘热键使用命令-->
+		<command name="hk_ssbk"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=ssbk);" desc="所属板块热键"/>
+		<command name="hk_jrzx"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=jrzx);" desc="加入自选热键"/>
+		<command name="hk_cmfb"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=cmfb);" desc="筹码分布热键"/>
+		<command name="hk_tjgpbj"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=tjgpbj);" desc="添加股票标记"/>
+		<command name="hk_kghxgj"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=kghxgj);" desc="开启或关闭画线工具"/>
+		<command name="hk_kgqxzl"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=kgqxzl);" desc="开启或关闭权息资料"/>
+		<command name="hk_qjtj"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=qjtj);" desc="区间统计"/>
+		<command name="hk_qhhfq"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=qhhfq);" desc="切换后复权/不复权"/>
+		<command name="hk_qhqfq"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=qhqfq);" desc="切换前复权/不复权"/>
+		<command name="hk_tkqkxsyc"  dispatch="(!*)%FO%:OnHotkey(hotkeytype=tkqkxsyc);" desc="跳空缺口显示隐藏"/>
+		<!-- 键盘热键使用命令-->
+		<command name="CmdStyle.DGDZC" change_style="大股东持股" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.JJZC" change_style="基金重仓" dispatch="基金重仓_左侧toolbar:SetParam();基金重仓_左侧toolbar:OnSetActiveTab(基金重仓);LNavigation_container:SetSync(数据);" />
+		<command name="CmdStyle.GGZC" change_style="高管增持"  dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.GGZC_SINGLE" change_style="高管增持详情页" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.TPFP" change_style="停牌复牌" dispatch="停牌复牌_左侧toolbar:SetParam();停牌复牌_左侧toolbar:OnSetActiveTab(停牌复牌);LNavigation_container:SetSync(数据);" />
+		<command name="CmdStyle.WDM" change_style="问董秘" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.DYDXWEB" change_style="调研动向" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.JGZCWEB" change_style="机构重仓" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.JJZCWEB" change_style="基金重仓.web" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.TZWZWEB" change_style="投资王者" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdStyle.ZDTMXWEB" change_style="涨跌停明细" dispatch="LNavigation_container:SetSync(数据);"/>
+		<command name="CmdSetMiniDlg" dispatch="(!*)迷你弹窗_TAB:SetMiniParam();dlg.mini.自选股:SetMiniParam();dlg.mini.异动数据:SetMiniParam();dlg.mini.综合排行:SetMiniParam();7x24全球资讯mini:SetMiniParam()"/>
+		<command name="CmdSetWarnCount" dispatch="*:SetWarnCount();"/>
+		<command name="CmdStyle.zdybm" change_style="自定义面板_默认" />
+		<command name="CmdStyle.AddStyle" dispatch="*:AddStyle();" />
+		<command name="CmdStyle.CloseStyle" dispatch="(!*)mylayout:CloseStyle();" />
+		<command name="A1" change_style="CustomPanel_ZJLX" dispatch="*::SetParam(Skip=false)"/>
+		<command name="A2" change_style="CustomPanel_DDEJC" dispatch="*::SetParam(Skip=false)"/>
+		<command name="A3" change_style="CustomPanel_BKLD" dispatch="*::SetParam(Skip=false)"/>
+		<command name="A4" change_style="CustomPanel_GGZZ" dispatch="*::SetParam(Skip=false)"/>
+		<command name="A5" change_style="CustomPanel_DXJJ" dispatch="*::SetParam(Skip=false)"/>
+		<command name="A6" change_style="CustomPanel_ZHKP" dispatch="*::SetParam(Skip=false)"/>
+		<command name="quote_list_click" dispatch="*:SetParam();" />
+		<command name="CmdStyle.FloatMiniK" dispatch="(!*)浮动窗口K线:SetParam();"/>
+		<command name="OpenUrlInMainwnd_cmdEvent" change_style="WebInnerStyle" dispatch="*:SetParam(Type=Both);LNavigation_container:SetSync(直播);" addtion_data=""/>
+		<command name="ibs.xgjg" change_style="全部自选_行情列表" dispatch="*:SetParam(Type=Both)" addtion_data=""/>
+		<command name="cmdstyle.fund.open" change_style="场外开放型基金详情" dispatch="*:SetParam(Type=Both)" addtion_data=""/>
+		<command name="自选品种.场外基金" change_style="全部自选_行情列表" sender_name="全部自选_行情列表_左侧tab" dispatch="(!*)全部自选.substyle:SetSubStyle(全部自选.场外基金.substyle);自选标签栏:SetParam();全部自选_行情列表_左侧tab:SetParam();自选股资讯TAB集合:SetParam();tab自选股列表:SetParam(Type=Both);LNavigation_container:SetSync(自选);"  />
+		<command name="HSJZS" change_style="沪深京指数详情" dispatch="(!*)沪深京指数.substyle:SetSubStyle(沪深京指数.substyle);沪深京指数标签栏:SetParam();沪深京指数列表:SetParam();全球市场标签栏:SetParam();LNavigation_container:SetSync(全球);"  />
+		<command name="ZYZSZHP" change_style="沪深京指数详情" dispatch="(!*)沪深京指数.substyle:SetSubStyle(重要指数综合屏.substyle);沪深京指数标签栏:SetParam();A股重要指数列表:SetParam();全球重要指数列表:SetParam();重要汇率列表:SetParam();重要商品列表:SetParam();全球市场标签栏:SetParam();LNavigation_container:SetSync(全球);"  />
+		<command name="CmdStyleVIPTH" change_style="VIP特惠" dispatch="LNavigation_container:SetSync(智投);"/>
+		<command name="CmdSetNorthFilter" dispatch="(!*)涨跌分布:SetNorthCheck();涨跌趋势:SetNorthCheck();"/>
+	</command_event>
+</event_list>

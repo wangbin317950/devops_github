@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+<FileItem>
+	<name>SelfSelectStock_Sign.data</name>
+	<desc>股票标记</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath/>	
+</FileItem>
+<FileItem>
+	<name>index_user_custom.dat</name>
+    <desc>自编技术指标</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath>./Data/UserCustom/index_user_custom.dat</definePath>
+</FileItem>
+<FileItem>
+	<name>IndicatorDisplay.xml</name>
+	<desc>指标样式</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath>./Data/UserCustom/IndicatorDisplay.xml</definePath>	
+</FileItem>
+<FileItem>
+	<name>UserIndicatorParam.dat</name>
+	<desc>指标参数</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath>./Data/UserCustom/UserIndicatorParam.dat</definePath>
+</FileItem>
+<FileItem>
+	<name>IndicatorTemplateCfg.xml</name>
+	<desc>指标模板</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath>./Data/IndicatorTemplateCfg.xml</definePath>
+</FileItem>
+<FileItem>
+	<name>FenshiDisplay.xml</name>
+	<desc>分时线</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath/>	
+</FileItem>
+<FileItem>
+	<name>CombineCondition.xml</name>
+	<desc>条件选股组合</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath>./Data/UserCustom/CombineCondition.xml</definePath>	
+</FileItem>
+<FileItem>
+	<name>ToolBarCfgUser.xml</name>
+	<desc>用户自定义导航栏</desc>
+	<version>0</version>
+	<Absolutedir/>
+	<definePath/>	
+</FileItem>
+</root>

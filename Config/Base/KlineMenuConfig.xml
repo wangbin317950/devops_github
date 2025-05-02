@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+<Menu-K>
+	<ITEM name='标记股票' ItemType='string' ItemSubID='ID_SUBMENU_TAG1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='bjgp' ItemStkType='6' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='删除自选|加入自选' ItemType='string' ItemSubID='ID_MENU_KLINE_ADDMYOPTION' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zxg' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='加入自选分组' ItemType='string' ItemSubID='ID_MENU_MIN_ADDSELGROUP' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zxgfz' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='周期切换' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zqqh' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='1分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='5分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_5MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='15分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_15MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='30分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_30MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='60分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_60MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='120分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_120MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='180分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_180MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='240分钟' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_240MIN' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='日线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1DAY' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='周线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1WEEK' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='月线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1MONTH' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='季线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1SEASON' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='半年线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_6MONTH' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='年线' ItemType='string' ItemSubID='ID_MENU_KLINE_PERIOD_1YEAR' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>			
+	</ITEM> 
+	<ITEM name='主图线型' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='ztxx' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='蜡烛图（K线）' ItemType='string' ItemSubID='ID_CHART_CANDLELINE' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='美国线' ItemType='string' ItemSubID='ID_CHART_USALINE' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='收盘线' ItemType='string' ItemSubID='ID_CHART_CLOSELINE' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='宝塔线' ItemType='string' ItemSubID='ID_CHART_BAOTALINE' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>	
+		<ITEM name='实心线' ItemType='string' ItemSubID='ID_CHART_SOLIDK' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='买卖量及明细显示金额' ItemType='string' ItemSubID='ID_MENU_SHOWAMOUNT' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='showamount' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='坐标切换' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zbqh' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='普通坐标' ItemType='string' ItemSubID='IDM_COMMON_AXIS' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='百分比坐标' ItemType='string' ItemSubID='IDM_PECENT_ANXIS' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='缺口提示' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='qkts' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='显示1个缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_SHOW_GAP_1' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='显示2个缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_SHOW_GAP_2' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='显示3个缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_SHOW_GAP_3' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='显示4个缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_SHOW_GAP_4' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='显示5个缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_SHOW_GAP_5' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='隐藏缺口' ItemType='string' ItemSubID='ID_MENU_KLINE_HIDE_GAP' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='股票预警' ItemType='string' ItemSubID='ID_MENU_STOCK_WARN' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+    <ITEM name='粘贴画线' ItemType='string' ItemSubID='ID_MENU_PASTE_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>		
+	<ITEM name='多图组合' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='dtzh' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='一图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_1PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+1' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='二图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_2PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+2' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='三图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_3PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+3' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='四图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_4PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+4' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='五图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_5PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+5' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='六图组合' ItemType='string' ItemSubID='ID_MENU_KLINE_6PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+6' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='除权处理' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='cqcl' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='不复权' ItemType='string' ItemSubID='ID_MENU_KLINE_NO_REVERSION' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='前复权' ItemType='string' ItemSubID='ID_MENU_KLINE_FORMER_REVERSION' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+V' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='后复权' ItemType='string' ItemSubID='ID_MENU_KLINE_BACK_REVERSION' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+B' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='切换指标' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='qhzb' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<!--ITEM name='叠加指标' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='djzb' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM--> 
+	<ITEM name='叠加指标' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Jfzt_Qlb|Product_Dyzt|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='kl_djzb' ItemStkType='-1' ItemDebugVisyble='false'>
+	    <ITEM name='临时叠加(主图)' ItemType='string' ItemSubID='ID_MENU_MAIN_MULTIOVERLAP' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='一键叠加' ItemType='string' ItemSubID='ID_MENU_ALL_MULTIOVERLAP' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='恢复默认' ItemType='string' ItemSubID='ID_MENU_RESET_INDICATOR' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='十字光标（双击）' ItemType='string' ItemSubID='ID_MENU_KLINE_DOUBLCLICK_CURSOR' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='上一个品种' ItemType='string' ItemSubID='ID_MENU_KLINE_PAGEUP' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='PageUp' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='下一个品种' ItemType='string' ItemSubID='ID_MENU_KLINE_PAGEDOWN' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='PageDown' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='价格波动线(现价线)' ItemType='string' ItemSubID='ID_MENU_KLINE_FLUCTUATION' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='jgbdx' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='画线工具' ItemType='string' ItemSubID='ID_MENU_KLINE_DRAWTOOL' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+F12' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='形态预测' ItemType='string' ItemSubID='ID_MENU_KLINE_FORECAST' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false' ItemStkMarket='IS_HSA' ItemKType='DAY' ItemSupport='Support_Forecast'>
+	</ITEM> 
+	<ITEM name='区间统计' ItemType='string' ItemSubID='ID_MENU_REGION_TONGJI' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+W' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='沙盘推演' ItemType='string' ItemSubID='ID_MENU_SCENARIO_PLANNING' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='46' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='所属板块' ItemType='string' ItemSubID='ID_MENU_SSBK' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Dyzt|Product_Jfzt_Qlb|Product_JFZT_PRO' ItemShortCut='Ctrl+R' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Dyzt|Product_Jfzt_Qlb|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='设置技术指标（MA）参数' ItemType='string' ItemSubID='ID_MENU_TA_CHANGE_PARA' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='szjszbcs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='设置技术指标（MA）显示' ItemType='string' ItemSubID='ID_MENU_TA_CHANGE_STYLE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='szjszbxs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='修改技术指标（MA）公式' ItemType='string' ItemSubID='ID_MENU_TA_MODIFY_FORMULAR' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Jfzt_Qlb|Product_JFZT_PRO|Product_Dyzt' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='xgjszbgs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	
+	<ITEM name='将指标<xx>设为常用' ItemType='string' ItemSubID='ID_MENU_OFFEN' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='szcy' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	
+	<ITEM name='指标编辑器' ItemType='string' ItemSubID='ID_MENU_TA_MANAGER' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+F' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='导出数据' ItemType='string' ItemSubID='ID_MENU_EXPORT_DATA' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='刷新数据' ItemType='string' ItemSubID='ID_MENU_REFRESH_DATA' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='F11' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='条件选股' ItemType='string' ItemSubID='ID_MENU_TEST_BEGIN1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='true'>
+	</ITEM> 
+	<ITEM name='数据下载' ItemType='string' ItemSubID='ID_MENU_TEST_BEGIN2' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='true'>
+	</ITEM> 
+</Menu-K>
+
+<Menu-FS_K>
+	<ITEM name='标记股票' ItemType='string' ItemSubID='ID_SUBMENU_TAG1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='bjgp' ItemStkType='6' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='删除自选|加入自选' ItemType='string' ItemSubID='ID_MENU_KLINE_ADDMYOPTION' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zxg' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='加入自选分组' ItemType='string' ItemSubID='ID_MENU_MIN_ADDSELGROUP' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='zxgfz' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Jfzt_Tv|Product_Dyzt|Product_Jfzt_Qlb|Product_Fl|Product_Fd|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+    <ITEM name='粘贴画线' ItemType='string' ItemSubID='ID_MENU_PASTE_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>		
+	<ITEM name='多图组合' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='dtzh' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='一图组合' ItemType='string' ItemSubID='ID_MENU_MIN_1PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+1' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='二图组合' ItemType='string' ItemSubID='ID_MENU_MIN_2PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+2' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='三图组合' ItemType='string' ItemSubID='ID_MENU_MIN_3PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+3' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='四图组合' ItemType='string' ItemSubID='ID_MENU_MIN_4PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+4' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='五图组合' ItemType='string' ItemSubID='ID_MENU_MIN_5PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+5' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='六图组合' ItemType='string' ItemSubID='ID_MENU_MIN_6PIC' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Alt+6' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM> 
+	<ITEM name='切换指标' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='qhzb' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='分时主图坐标' ItemType='string' ItemSubID='ID_MENU_SUB1' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='fszt' ItemStkType='-1' ItemDebugVisyble='false'>
+		<ITEM name='普通坐标' ItemType='string' ItemSubID='IDM_COMMON_AXIS' ItemSub='2' ItemSubParentID='0' ItemSel='true' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='涨停板坐标' ItemType='string' ItemSubID='IDM_RISE_AXIS' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='满占坐标' ItemType='string' ItemSubID='IDM_FULL_AXIS' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+		<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM> 
+		<ITEM name='切换坐标类型（分号;）' ItemType='string' ItemSubID='IDM_CHANGE_AXIS' ItemSub='2' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+		</ITEM>
+	</ITEM>
+	<ITEM name='分时线显示设置' ItemType='string' ItemSubID='IDM_FENSHI_LINE_SETTING' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='fsxsz' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='买卖量及明细显示金额' ItemType='string' ItemSubID='ID_MENU_SHOWAMOUNT' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='showamount' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='十字光标（双击）' ItemType='string' ItemSubID='ID_MENU_1MIN_DOUBLE_CURSOR' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='上一个品种' ItemType='string' ItemSubID='ID_MENU_1MIN_PAGEUP' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='PageUp' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='下一个品种' ItemType='string' ItemSubID='ID_MENU_1MIN_PAGEDOWN' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='PageDown' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='价格波动线(现价线)' ItemType='string' ItemSubID='ID_MENU_1MIN_FLUCTUATION' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='jgbdx' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='区间统计' ItemType='string' ItemSubID='ID_MENU_REGION_TONGJI' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+W' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='所属板块' ItemType='string' ItemSubID='ID_MENU_SSBK' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Dyzt|Product_Jfzt_Qlb|Product_JFZT_PRO' ItemShortCut='Ctrl+R' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='' ItemType='separator' ItemSubID='ID_MENU_SPLIT_LINE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Hxg|Product_Dyzt|Product_Jfzt_Qlb|Product_JFZT_PRO' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='设置技术指标（MA）参数' ItemType='string' ItemSubID='ID_MENU_TA_CHANGE_PARA' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='szjszbcs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+	<ITEM name='设置技术指标（MA）显示' ItemType='string' ItemSubID='ID_MENU_TA_CHANGE_STYLE' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='szjszbxs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='修改技术指标（MA）公式' ItemType='string' ItemSubID='ID_MENU_TA_MODIFY_FORMULAR' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='Product_Jfzt_Qjb|Product_Jfzt_Qlb|Product_JFZT_PRO|Product_Dyzt' ItemShortCut='' ItmeStatus='enable' ItemVisible='true' ItemTag='xgjszbgs' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM>
+	<ITEM name='指标编辑器' ItemType='string' ItemSubID='ID_MENU_TA_MANAGER' ItemSub='1' ItemSubParentID='0' ItemSel='false' ItemVersion='' ItemShortCut='Ctrl+F' ItmeStatus='enable' ItemVisible='true' ItemTag='' ItemStkType='-1' ItemDebugVisyble='false'>
+	</ITEM> 
+</Menu-FS_K>
+
+</root>

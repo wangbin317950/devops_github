@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<SWMENUBAR>
+		<MENU>
+			<MENU NAME="系统" SHORTCUT="S" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="重新登录" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="系统设置" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="显示设置" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="课程直播设置" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="检查更新" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="上传日志" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="退出系统" IS_FIR_PATH_VALID="1"/>			
+			</MENU>
+			<MENU NAME="VIP" SHORTCUT="V" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+        <MENU NAME="策略组合" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="掘金龙虎" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="财报擒牛" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="捷报擒牛" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="名师指标" IS_FIR_PATH_VALID="1">
+          <MENU NAME="牛熊点"/>
+          <MENU NAME="强弱趋势"/>
+          <MENU NAME="五色量柱"/>
+          <MENU NAME="布林彩虹"/>
+          <MENU NAME="太极趋"/>
+          <MENU NAME="情绪周期"/>
+          <MENU NAME="主力风向标"/>
+          <MENU NAME="志量N型"/>
+          <MENU NAME="主力吸筹"/>
+          <MENU NAME="红中红"/>
+          <MENU NAME="上层空间"/>
+          <MENU NAME="趋势鸿图"/>
+        </MENU>
+        <MENU NAME="多维选股王" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="牛点狙击" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="九方擒龙" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="板块风向标" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="潜力龙头" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="技术股池" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="九维选股" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="产业链" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="九转榜单" IS_FIR_PATH_VALID="1"/>
+		<MENU NAME="多空盯盘" IS_FIR_PATH_VALID="1"/>
+		<MENU NAME="底部掘金" IS_FIR_PATH_VALID="1"/>
+		<MENU NAME="AI顶底" IS_FIR_PATH_VALID="1"/>
+        <MENU NAME="名师股池" POWER_TYPE="YK_USER_POWER_SHORTCATTLE" >
+          <MENU NAME="短线擒牛"/>
+        </MENU>
+			</MENU>				
+			<MENU NAME="行情" SHORTCUT="Q" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="自选">
+					<MENU NAME="自选股" SHORTCUT=" F6" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="自选品种"/>
+					<MENU NAME="自选分组"/>
+					<MENU NAME="选股结果" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="最近浏览" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="自选设置" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="导入自选" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+
+				<MENU NAME="沪深京涨幅">
+					<MENU NAME="沪深京A股" SHORTCUT="611" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="沪深A股" SHORTCUT="60" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" SHORTCUT="61" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" SHORTCUT="63" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="北证A股" SHORTCUT="69" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板"  IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证B股" SHORTCUT="62" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证B股" SHORTCUT="64" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+
+				<MENU NAME="沪深京市场">
+					<MENU NAME="沪深京A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="沪深A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" SHORTCUT="1" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" SHORTCUT="3" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="北证A股" SHORTCUT="9" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证B股" SHORTCUT="2" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证B股" SHORTCUT="4" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="沪深京指数">
+					<MENU NAME="重要指数综合屏" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="沪深京指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证系列指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证系列指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="中证系列指数">
+						<MENU NAME="中证系列指数"/>
+						<MENU NAME="中证海外指数"/>
+					</MENU>
+					<MENU NAME="北证系列指数" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="沪深板块">
+					<MENU NAME="全部板块" SHORTCUT=" 30" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="行业板块" SHORTCUT="301" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="概念板块" SHORTCUT="302" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="地区板块" SHORTCUT="303" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				
+
+				<MENU NAME="黄金" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="港股">
+					<MENU NAME="港股市场">
+						<MENU NAME="全部港股"/>
+						<MENU NAME="港股主板"/>
+						<MENU NAME="港股创业板"/>
+						<MENU NAME="港股ETF"/>
+						<MENU NAME="港股轮证"/>
+					</MENU>
+					<MENU NAME="港股通">
+						<MENU NAME="港股通(沪)"/>
+						<MENU NAME="港股通(深)"/>
+					</MENU>
+					<MENU NAME="香港指数成分股">
+						<MENU NAME="恒指成分股"/>
+						<MENU NAME="国指成分股"/>
+						<MENU NAME="红筹成分股"/>
+					</MENU>
+					<MENU NAME="港股板块">
+						<MENU NAME="全部板块"/>
+						<MENU NAME="行业板块"/>
+						<MENU NAME="概念板块"/>
+					</MENU>
+				</MENU>
+				<MENU NAME="美股">
+					<MENU NAME="美股市场">
+						<MENU NAME="纽交所"/>
+						<MENU NAME="美交所"/>
+						<MENU NAME="纳斯达克"/>
+						<MENU NAME="美股ETF"/>
+					</MENU>
+					<MENU NAME="中概股" />
+					<MENU NAME="明星股" />
+					<MENU NAME="美股板块">
+						<MENU NAME="全部板块"/>
+						<MENU NAME="行业板块"/>
+						<MENU NAME="概念板块"/>
+					</MENU>
+				</MENU>
+				<MENU NAME="基金">
+					<MENU NAME="场内基金">
+						<MENU NAME="上证基金"/>
+						<MENU NAME="深证基金"/>
+						<MENU NAME="ETF" />
+						<MENU NAME="LOF" />
+						<MENU NAME="REITs" />
+					</MENU>
+					<MENU NAME="场外基金">
+						<MENU NAME="开放式基金" />
+						<MENU NAME="货币型基金" />
+					</MENU>
+				</MENU>
+
+				<MENU NAME="债券">
+					<MENU NAME="上证债券" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证债券" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="可转债">
+						<MENU NAME="全部转债"/>
+					 	<MENU NAME="上证转债"/>
+					 	<MENU NAME="深证转债"/>
+					</MENU>
+					<MENU NAME="债券回购" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="期货">
+					<MENU NAME="期货综合屏" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="期货现货">
+						<MENU NAME="中金所CFFEX"/>
+						<MENU NAME="上期所SHFE"/>
+						<MENU NAME="大商所DCE"/>
+						<MENU NAME="郑商所CZCE"/>
+						<MENU NAME="上期能源INE"/>
+						<MENU NAME="上金所SSGE"/>
+					</MENU>
+					<MENU NAME="外盘期货">
+						<MENU NAME="纽约NYMEX"/>
+						<MENU NAME="纽约COMEX"/>
+						<MENU NAME="芝加哥CME"/>
+						<MENU NAME="香港HKEX"/>
+						<MENU NAME="新加坡SGX"/>
+					</MENU>
+				</MENU>
+				<MENU NAME="外汇" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="全球">
+					<MENU NAME="全部指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="重要指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="亚洲指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="欧洲指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="美洲指数" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="其他指数" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+			</MENU>
+			<MENU NAME="看点" SHORTCUT="N" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="九方投研" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="九方精选" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="九方视点" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="投资机会" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="公司聚焦" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="市场头条" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="全球动态" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="财经日历" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="7x24全球" IS_FIR_PATH_VALID="1"/>
+				
+				<MENU NAME="财经焦点" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="行业动态" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="研报大全" IS_FIR_PATH_VALID="1"/>
+			</MENU>
+
+			<MENU NAME="直播" SHORTCUT="L" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<!-- <MENU NAME="财神道" IS_FIR_PATH_VALID="1"/> -->
+				<!-- <MENU NAME="王牌健言" IS_FIR_PATH_VALID="1"/> -->
+				<!-- <MENU NAME="财志解码" IS_FIR_PATH_VALID="1"/> -->
+				<!-- <MENU NAME="生财有道" IS_FIR_PATH_VALID="1"/> -->
+				<!-- <MENU NAME="擒龙解盘" IS_FIR_PATH_VALID="1"/> -->
+				<!-- <MENU NAME="擒龙课堂" IS_FIR_PATH_VALID="1"/> -->
+				<MENU NAME="军师说股" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="财志点金" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="帮主解盘" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="炒股这点事" IS_FIR_PATH_VALID="1"/>
+			</MENU>
+
+			<MENU NAME="数据" SHORTCUT="D" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<!-- <MENU NAME="擒龙榜单" IS_FIR_PATH_VALID="1"/> -->
+				<MENU NAME="公告掘金" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="涨跌分布">
+					<MENU NAME="涨跌分布" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="涨跌停全景" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="涨跌停明细" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<!-- <MENU NAME="技术选股"> -->
+					<!-- <MENU NAME="技术选股" IS_FIR_PATH_VALID="1"/> -->
+					<!-- <MENU NAME="条件选股" IS_FIR_PATH_VALID="1"/> -->
+				<!-- </MENU> -->
+				<MENU NAME="长线决策" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="研报掘金">
+					<MENU NAME="研报掘金" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="一致预期榜" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="金牌推荐榜" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="分析师榜单" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="机构关注榜" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="成份选股" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="基金选股" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="沪深港通" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="龙虎榜单" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="融资融券" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="宏观数据" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="比价数据" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="大宗交易" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="限售解禁" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="业绩速递" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="新股IPO" IS_FIR_PATH_VALID="1">
+					<MENU NAME="新股综合屏"  IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="新股申购"  IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上市表现" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="新股上会" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="转债申购" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="机构动向" IS_FIR_PATH_VALID="1">
+					<MENU NAME="调研动向"  IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="机构重仓"  IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="基金重仓" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="投资王者" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="停牌复牌" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="高管增持" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="大股东持股" IS_FIR_PATH_VALID="1"/>
+				<MENU NAME="问董秘" IS_FIR_PATH_VALID="1"/>	
+				<!-- <MENU NAME="选股器" IS_FIR_PATH_VALID="1"/>-->
+			</MENU>
+			<MENU NAME="分析" SHORTCUT="I" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="资金流向">
+					<MENU NAME="沪深A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="全部板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="行业板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="概念板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="地区板块" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="增仓排行">
+					<MENU NAME="沪深A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="全部板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="行业板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="概念板块" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="地区板块" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="综合排行">
+					<MENU NAME="沪深A股综合" SHORTCUT=" 80" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股综合" SHORTCUT=" 81" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股综合" SHORTCUT=" 83" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板综合" SHORTCUT="804" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板综合" SHORTCUT="803" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证B股综合" SHORTCUT="82" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证B股综合" SHORTCUT="84" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证债券综合" SHORTCUT="85" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证债券综合" SHORTCUT="86" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证基金综合" SHORTCUT="87" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证基金综合" SHORTCUT="88" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="DDE决策">
+					<MENU NAME="沪深京A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="股本数据">
+					<MENU NAME="沪深京A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="财务数据">
+					<MENU NAME="沪深京A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="阶段统计">
+					<MENU NAME="沪深京A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="上证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="深证A股" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="科创板" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="创业板" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="分时图">
+					<MENU NAME="分时图" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="分时成交" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="分价表" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="K线图">
+					<MENU NAME="K线图" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="多周期" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="多股同列">
+					<MENU NAME="4图" IS_FIR_PATH_VALID="1" />
+					<MENU NAME="9图" IS_FIR_PATH_VALID="1" />
+					<MENU NAME="16图" IS_FIR_PATH_VALID="1" />
+				</MENU>
+				<MENU NAME="星空图">
+					<MENU NAME="个股星空图" IS_FIR_PATH_VALID="1" />
+					<MENU NAME="板块星空图" IS_FIR_PATH_VALID="1" />
+				</MENU>
+				<MENU NAME="板块分析">
+					<MENU NAME="沪深板块" IS_FIR_PATH_VALID="1" />
+					<MENU NAME="港股板块" IS_FIR_PATH_VALID="1" />
+					<MENU NAME="美股板块" IS_FIR_PATH_VALID="1" />
+				</MENU>
+				<MENU NAME="热点聚焦" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="F10资料" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="选股器" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="条件选股" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="条件预警">
+					<MENU NAME="条件预警" IS_FIR_PATH_VALID="1"/>
+					<MENU NAME="条件预警列表" IS_FIR_PATH_VALID="1"/>
+				</MENU>
+				<MENU NAME="数据下载" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="数据复原" IS_FIR_PATH_VALID="1" />
+			</MENU>
+			<MENU NAME="课程" SHORTCUT="C" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="课程主页" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="服务热线" IS_FIR_PATH_VALID="1" />
+			</MENU>
+			<MENU NAME="帮助" SHORTCUT="H" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="九方智投官网" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="留言反馈" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="操作指南" IS_FIR_PATH_VALID="1" />
+				<MENU NAME="关于" IS_FIR_PATH_VALID="1" />
+			</MENU>	
+			<MENU NAME="官网" SHORTCUT="G" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected" />	
+			<MENU NAME="常用功能" SHORTCUT="F" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected" />
+
+	<!-- 测试菜单注释块 -->
+			<!-- <MENU NAME="测试" SHORTCUT="T" NORMAL_TEXT_COLOR="CaptionbarWnd.CLR.ItemCommonNormal" SELECTED_TEXT_COLOR="CaptionbarWnd.CLR.ItemSelected">
+				<MENU NAME="自定义版面" IS_FIR_PATH_VALID="1" />
+			</MENU> -->
+	
+			
+		</MENU>
+	</SWMENUBAR>
+	<BUTTON>
+		<OPENACCOUNT URL="http://win.gu166.com/web2/xiangcai/index.html"></OPENACCOUNT>
+    	<DOWNLOADAPP URL="https://upload.chongnengjihua.com/production/zxg-pc/advertisement.html"></DOWNLOADAPP>
+	</BUTTON>
+  <SYSSETTING>
+    <AUTORUN>1</AUTORUN>
+    <ISTRAY>0</ISTRAY>
+	<QUICKZXGROUP>1</QUICKZXGROUP>
+    <AUTOFLICKER>1</AUTOFLICKER>
+  </SYSSETTING>
+ </ROOT>

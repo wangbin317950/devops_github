@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+	<EventPara Name="自选股">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vlistcode]</list_code>
+				</stock_list>
+				<dyfunc>自选标签.自选股</dyfunc>
+				<GroupType>[vgrouptype]</GroupType>
+				<click_bk>1</click_bk>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="全部自选">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>自选股</list_code>
+				</stock_list>
+				<dyfunc>自选标签.自选股</dyfunc>
+				<GroupType>1</GroupType>
+				<click_bk>1</click_bk>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="STOCKLIST.DGTL">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vlist_code]</list_code>
+					<sort_id>738</sort_id>
+					<sort_type>0</sort_type>
+				</stock_list>
+				<multi_trend_state_cycle>0</multi_trend_state_cycle>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="STOCKLIST.DGTL.NUM">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vlist_code]</list_code>
+					<sort_id>738</sort_id>
+					<sort_type>0</sort_type>
+				</stock_list>
+				<multi_trend_state_chart_num>[multi_trend_state_chart_num]</multi_trend_state_chart_num>
+				<multi_trend_state_cycle>0</multi_trend_state_cycle>
+			</params>
+		</XmlPara>
+	</EventPara>
+	
+	<EventPara Name="DATALIST">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vlist_code]</list_code>
+				</stock_list>
+				<click_bk>1</click_bk>
+				<web_inner_url>[web_url]</web_inner_url>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="DATALIST.nobackspace">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vlist_code]</list_code>
+				</stock_list>
+				<click_bk>1</click_bk>
+				<web_inner_url>[web_url]</web_inner_url>
+				<is_not_push_backspace_stack>1</is_not_push_backspace_stack>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="SetInd">
+		<XmlPara>
+			<params>
+				<ind_alias>[ind_alias]</ind_alias>
+				<periodstr>DAY</periodstr>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="SetIndIngnore">
+		<XmlPara>
+			<params>
+				<ind_alias>[ind_alias]</ind_alias>
+				<periodstr>DAY</periodstr>
+				<ingnore_paras>1</ingnore_paras>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="BKFL.QUOTE">
+		<XmlPara>
+			<params>
+					<is_change_style>1</is_change_style>
+					<stock_list>
+						<list_code>[vlist_code]</list_code>
+						<sort_id>4</sort_id>
+						<sort_type>0</sort_type>
+					</stock_list>
+					<click_bk>1</click_bk>
+					<request_datatype>[vlist_code]</request_datatype>
+					<market>2</market>
+					<code>[vbkcode]</code>
+					<dyfunc>ClickBk</dyfunc>
+					<type>STKLIST_QUOT</type>
+				</params>
+		</XmlPara>
+	</EventPara>
+	
+	<EventPara Name="K线.多副图">
+		<XmlPara>
+			<params>
+				<chart_num>[vChartNum]</chart_num>
+			</params>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="STOCK">
+		<XmlPara>
+			<params>
+				<code>[vcode]</code>
+				<market>[vmarket]</market>
+			</params>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="LISTTAG">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[vcode]</list_code>
+				</stock_list>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="FSZS" desc="个股分时参数">
+		<XmlPara>
+			<params>
+				<code>[vcode]</code>
+				<market>[vmarket]</market>
+				<periodstr></periodstr>
+				<StyleName>FSZS</StyleName>
+				<TabName>分时图</TabName>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	
+<!-- 基金综合页面参数 -->
+	<EventPara Name="FUND_STKLIST_QUOT.getlistevent" desc="基金综合参数模板.getlistevent">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[list_code]</list_code>
+					<sort_id>4</sort_id>
+					<sort_type>0</sort_type>
+				</stock_list>
+				<type>[type]</type>
+				<active>[type]</active>
+				<SetList>1</SetList>
+				<eventname>[eventname]</eventname>
+			</params>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="REF.FUND_STKLIST.getlistevent" desc="基金综合参数动态计算引用参数">
+		<XmlPara>
+			<refparams>
+				<list_code element="个股列表标签栏" key="list_code" default="YK_IL_SHANGZHENGJIJIN_INDEX" /> <!--基金列表标签栏-->
+				<type element="基金列表_左侧toolbar" key="functype" default="STKLIST_QUOT" />
+				<active element="基金列表_左侧toolbar" key="functype" default="STKLIST_QUOT" />
+				<cmdevent element="基金列表_左侧toolbar" key="CmdEvent" default="STKLIST_QUOT" />
+				<eventname func="getlistevent" listcode="[list_code]" type="[cmdevent]" active="[active]" />
+			</refparams>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="FUND_STKLIST_QUOT" desc="基金综合参数模板">
+		<XmlPara>
+			<params>
+				<stock_list>
+					<list_code>[list_code]</list_code>
+					<sort_id>4</sort_id>
+					<sort_type>0</sort_type>
+				</stock_list>
+				<type>[type]</type>
+				<active>[type]</active>
+				<SetList>1</SetList>
+			</params>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="REF.QUOTE_YK_IL_HUSHENZHISHUETF_INDEX" desc="沪深指数ETF行情列表引用参数">
+		<XmlPara>
+			<refparams>
+				<list_code default="IL_HUSHENZHISHUETF_INDEX" />
+				<type default="STKLIST_QUOT" />
+				<eventname default="STKLIST_QUOT.ETF" />
+			</refparams>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="REF.QUOTE_YK_IL_SHANGZHENGJIJIN_INDEX" desc="上证基金行情列表引用参数">
+		<XmlPara>
+			<refparams>
+				<list_code default="IL_SHANGZHENGJIJIN_INDEX" />
+				<type default="STKLIST_QUOT" />
+				<eventname default="STKLIST_QUOT.ETF.SH" />
+			</refparams>
+		</XmlPara>
+	</EventPara>
+	<EventPara Name="REF.QUOTE_YK_ILSHENZHENGJIJIN_INDEX" desc="深证基金行情列表引用参数">
+		<XmlPara>
+			<refparams>
+				<list_code default="ILSHENZHENGJIJIN_INDEX" />
+				<type default="STKLIST_QUOT" />
+				<eventname default="STKLIST_QUOT.ETF.SZ" />
+			</refparams>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="FSZS.ind" desc="个股分时带指标参数">
+		<XmlPara>
+			<params>
+				<code>vcode</code>
+				<market>vmarket</market>
+				<technique_type>0</technique_type>
+				<technique_name></technique_name>
+				<element_InfoTab>
+					<SubTabName></SubTabName>
+				</element_InfoTab>
+				<QUOTE_TAB_pt>
+					<SubTabName></SubTabName>
+				</QUOTE_TAB_pt>
+				<level2_orderchart_type>-1</level2_orderchart_type>
+				<StyleName>FSZS</StyleName>
+				<code>vcode</code>
+				<market>vmarket</market>
+				<TabName>分时图</TabName>
+				<flag_container_style>R</flag_container_style>
+				<ind_alias>vind</ind_alias>
+				<periodstr>DAY</periodstr>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+	<EventPara Name="JSFX.ind" desc="个股K线带指标参数">
+		<XmlPara>
+			<params>
+				<kline_special_event>0</kline_special_event>
+				<StyleName>JSFX</StyleName>
+				<code>vcode</code>
+				<market>vmarket</market>
+				<TabName>K线图</TabName>
+				<ind_alias>vind</ind_alias>
+				<flag_container_style>K</flag_container_style>
+			</params>
+		</XmlPara>
+	</EventPara>
+
+<!-- 基金综合页面参数 -->
+</ROOT>
